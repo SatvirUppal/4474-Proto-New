@@ -15,6 +15,7 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+# TEST TEST TEST TEST
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
