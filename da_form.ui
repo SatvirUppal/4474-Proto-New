@@ -46,8 +46,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>570</width>
-         <height>1818</height>
+         <width>581</width>
+         <height>1824</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -74,12 +74,12 @@
              <x>70</x>
              <y>10</y>
              <width>431</width>
-             <height>31</height>
+             <height>33</height>
             </rect>
            </property>
            <layout class="QGridLayout" name="gridSearch">
             <item row="0" column="0">
-             <widget class="QLineEdit" name="lineEdit">
+             <widget class="QLineEdit" name="searchLineCurr">
               <property name="text">
                <string/>
               </property>
@@ -89,7 +89,7 @@
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QPushButton" name="pushButton">
+             <widget class="QPushButton" name="searchButtonCurr">
               <property name="text">
                <string>Search</string>
               </property>
@@ -110,7 +110,7 @@
             <item row="0" column="0">
              <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,0,0,0,10">
               <item row="0" column="0" rowspan="2">
-               <widget class="QLabel" name="label_3">
+               <widget class="QLabel" name="tempCurr">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -131,7 +131,7 @@
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QLabel" name="label_5">
+               <widget class="QLabel" name="tempLowCurr">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -149,7 +149,7 @@
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="QLabel" name="label_4">
+               <widget class="QLabel" name="tempHighCurr">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -167,7 +167,7 @@
                </widget>
               </item>
               <item row="0" column="3" rowspan="2">
-               <widget class="QLabel" name="label">
+               <widget class="QLabel" name="imageCurr">
                 <property name="text">
                  <string>Wimage</string>
                 </property>
@@ -190,7 +190,7 @@
                </spacer>
               </item>
               <item row="0" column="4" rowspan="2">
-               <widget class="QLabel" name="label_2">
+               <widget class="QLabel" name="locationCurr">
                 <property name="text">
                  <string>Location</string>
                 </property>
@@ -250,8 +250,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1018</width>
-                 <height>270</height>
+                 <width>1024</width>
+                 <height>277</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -553,13 +553,6 @@
             </rect>
            </property>
            <layout class="QGridLayout" name="gridMultipleDay">
-            <item row="0" column="0">
-             <widget class="Line" name="line_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
             <item row="3" column="0">
              <widget class="QScrollArea" name="scrollArea_3">
               <property name="verticalScrollBarPolicy">
@@ -576,8 +569,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1018</width>
-                 <height>273</height>
+                 <width>1024</width>
+                 <height>274</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -615,13 +608,6 @@
                     <layout class="QGridLayout" name="gridLayout_5">
                      <item row="0" column="1">
                       <widget class="QLabel" name="label_61">
-                       <property name="text">
-                        <string>TextLabel</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="0" column="3">
-                      <widget class="QLabel" name="label_39">
                        <property name="text">
                         <string>TextLabel</string>
                        </property>
@@ -886,6 +872,13 @@
                        </item>
                       </layout>
                      </item>
+                     <item row="0" column="3">
+                      <widget class="QLabel" name="label_39">
+                       <property name="text">
+                        <string>TextLabel</string>
+                       </property>
+                      </widget>
+                     </item>
                     </layout>
                    </item>
                   </layout>
@@ -893,13 +886,6 @@
                 </item>
                </layout>
               </widget>
-             </widget>
-            </item>
-            <item row="4" column="0">
-             <widget class="Line" name="line_4">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
              </widget>
             </item>
             <item row="2" column="0">
@@ -922,6 +908,20 @@
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="Line" name="line_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="Line" name="line_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
@@ -1107,29 +1107,29 @@
             <rect>
              <x>0</x>
              <y>1580</y>
-             <width>561</width>
-             <height>211</height>
+             <width>121</width>
+             <height>66</height>
             </rect>
            </property>
-           <layout class="QGridLayout" name="gridSunriseSet">
-            <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_73">
+              <property name="text">
+               <string>Sunrise/Sunset Icon</string>
+              </property>
+             </widget>
+            </item>
+            <item>
              <widget class="QLabel" name="label_74">
               <property name="text">
                <string>Sunrise Time</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="0">
+            <item>
              <widget class="QLabel" name="label_72">
               <property name="text">
                <string>Sunset Time</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1" rowspan="2">
-             <widget class="QLabel" name="label_73">
-              <property name="text">
-               <string>Sunrise/Sunset Icon</string>
               </property>
              </widget>
             </item>
@@ -1162,7 +1162,7 @@
      <x>0</x>
      <y>0</y>
      <width>607</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

@@ -21,6 +21,7 @@ from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
     QMenu, QMenuBar, QPushButton, QScrollArea,
     QSizePolicy, QSpacerItem, QVBoxLayout, QWidget)
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
@@ -55,15 +56,15 @@ class Ui_MainWindow(object):
         self.gridSearch = QGridLayout(self.gridLayoutWidget)
         self.gridSearch.setObjectName(u"gridSearch")
         self.gridSearch.setContentsMargins(0, 0, 0, 0)
-        self.lineEdit = QLineEdit(self.gridLayoutWidget)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.searchLineCurr = QLineEdit(self.gridLayoutWidget)
+        self.searchLineCurr.setObjectName(u"searchLineCurr")
 
-        self.gridSearch.addWidget(self.lineEdit, 0, 0, 1, 1)
+        self.gridSearch.addWidget(self.searchLineCurr, 0, 0, 1, 1)
 
-        self.pushButton = QPushButton(self.gridLayoutWidget)
-        self.pushButton.setObjectName(u"pushButton")
+        self.searchButtonCurr = QPushButton(self.gridLayoutWidget)
+        self.searchButtonCurr.setObjectName(u"searchButtonCurr")
 
-        self.gridSearch.addWidget(self.pushButton, 0, 1, 1, 1)
+        self.gridSearch.addWidget(self.searchButtonCurr, 0, 1, 1, 1)
 
         self.gridLayoutWidget_3 = QWidget(self.frame)
         self.gridLayoutWidget_3.setObjectName(u"gridLayoutWidget_3")
@@ -73,51 +74,51 @@ class Ui_MainWindow(object):
         self.gridCurrent.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.label_3 = QLabel(self.gridLayoutWidget_3)
-        self.label_3.setObjectName(u"label_3")
+        self.tempCurr = QLabel(self.gridLayoutWidget_3)
+        self.tempCurr.setObjectName(u"tempCurr")
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
-        self.label_3.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.tempCurr.sizePolicy().hasHeightForWidth())
+        self.tempCurr.setSizePolicy(sizePolicy)
         font = QFont()
         font.setPointSize(11)
-        self.label_3.setFont(font)
-        self.label_3.setAutoFillBackground(False)
+        self.tempCurr.setFont(font)
+        self.tempCurr.setAutoFillBackground(False)
 
-        self.gridLayout_2.addWidget(self.label_3, 0, 0, 2, 1)
+        self.gridLayout_2.addWidget(self.tempCurr, 0, 0, 2, 1)
 
-        self.label_5 = QLabel(self.gridLayoutWidget_3)
-        self.label_5.setObjectName(u"label_5")
-        sizePolicy.setHeightForWidth(self.label_5.sizePolicy().hasHeightForWidth())
-        self.label_5.setSizePolicy(sizePolicy)
+        self.tempLowCurr = QLabel(self.gridLayoutWidget_3)
+        self.tempLowCurr.setObjectName(u"tempLowCurr")
+        sizePolicy.setHeightForWidth(self.tempLowCurr.sizePolicy().hasHeightForWidth())
+        self.tempLowCurr.setSizePolicy(sizePolicy)
         font1 = QFont()
         font1.setPointSize(7)
-        self.label_5.setFont(font1)
+        self.tempLowCurr.setFont(font1)
 
-        self.gridLayout_2.addWidget(self.label_5, 1, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.tempLowCurr, 1, 1, 1, 1)
 
-        self.label_4 = QLabel(self.gridLayoutWidget_3)
-        self.label_4.setObjectName(u"label_4")
-        sizePolicy.setHeightForWidth(self.label_4.sizePolicy().hasHeightForWidth())
-        self.label_4.setSizePolicy(sizePolicy)
-        self.label_4.setFont(font1)
+        self.tempHighCurr = QLabel(self.gridLayoutWidget_3)
+        self.tempHighCurr.setObjectName(u"tempHighCurr")
+        sizePolicy.setHeightForWidth(self.tempHighCurr.sizePolicy().hasHeightForWidth())
+        self.tempHighCurr.setSizePolicy(sizePolicy)
+        self.tempHighCurr.setFont(font1)
 
-        self.gridLayout_2.addWidget(self.label_4, 0, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.tempHighCurr, 0, 1, 1, 1)
 
-        self.label = QLabel(self.gridLayoutWidget_3)
-        self.label.setObjectName(u"label")
+        self.imageCurr = QLabel(self.gridLayoutWidget_3)
+        self.imageCurr.setObjectName(u"imageCurr")
 
-        self.gridLayout_2.addWidget(self.label, 0, 3, 2, 1)
+        self.gridLayout_2.addWidget(self.imageCurr, 0, 3, 2, 1)
 
         self.horizontalSpacer = QSpacerItem(200, 10, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.gridLayout_2.addItem(self.horizontalSpacer, 0, 2, 2, 1)
 
-        self.label_2 = QLabel(self.gridLayoutWidget_3)
-        self.label_2.setObjectName(u"label_2")
+        self.locationCurr = QLabel(self.gridLayoutWidget_3)
+        self.locationCurr.setObjectName(u"locationCurr")
 
-        self.gridLayout_2.addWidget(self.label_2, 0, 4, 2, 1)
+        self.gridLayout_2.addWidget(self.locationCurr, 0, 4, 2, 1)
 
         self.gridLayout_2.setColumnStretch(4, 10)
 
@@ -829,14 +830,14 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.lineEdit.setText("")
-        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search for a location...", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Search", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Current Temperature", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"TempLowDay", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"TempHighDay", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Wimage", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Location", None))
+        self.searchLineCurr.setText("")
+        self.searchLineCurr.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search for a location...", None))
+        self.searchButtonCurr.setText(QCoreApplication.translate("MainWindow", u"Search", None))
+        self.tempCurr.setText(QCoreApplication.translate("MainWindow", u"Current Temperature", None))
+        self.tempLowCurr.setText(QCoreApplication.translate("MainWindow", u"TempLowDay", None))
+        self.tempHighCurr.setText(QCoreApplication.translate("MainWindow", u"TempHighDay", None))
+        self.imageCurr.setText(QCoreApplication.translate("MainWindow", u"Wimage", None))
+        self.locationCurr.setText(QCoreApplication.translate("MainWindow", u"Location", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Hourly Forecast", None))
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"Time", None))
@@ -931,4 +932,11 @@ class Ui_MainWindow(object):
         self.menuNews.setTitle(QCoreApplication.translate("MainWindow", u"News", None))
         self.menuSettings.setTitle(QCoreApplication.translate("MainWindow", u"Settings", None))
     # retranslateUi
+
+
+
+
+
+
+
 
