@@ -1,6 +1,7 @@
 {
     "files": [
         "mainwindow.py",
-        "da_form.ui"
+        "da_form.ui",
+        "news.ui"
     ]
 }
