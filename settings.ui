@@ -199,7 +199,35 @@
               </property>
              </widget>
             </item>
-            <item row="3" column="0" rowspan="2">
+            <item row="2" column="0">
+             <layout class="QVBoxLayout" name="verticalLayoutTime">
+              <item>
+               <widget class="QLabel" name="labelTime">
+                <property name="text">
+                 <string>Time Format</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton12h">
+                <property name="text">
+                 <string>12 hours</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton24h">
+                <property name="text">
+                 <string>24 hours</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="4" column="0" rowspan="2">
              <widget class="Line" name="line">
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
@@ -234,30 +262,32 @@
               </item>
              </layout>
             </item>
-            <item row="2" column="0">
-             <layout class="QVBoxLayout" name="verticalLayoutTime">
+            <item row="3" column="0">
+             <layout class="QVBoxLayout" name="verticalLayoutLang">
               <item>
-               <widget class="QLabel" name="labelTime">
+               <widget class="QLabel" name="labelLang">
                 <property name="text">
-                 <string>Time Format</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 <string>Language</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QRadioButton" name="radioButton12h">
-                <property name="text">
-                 <string>12 hours</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QRadioButton" name="radioButton24h">
-                <property name="text">
-                 <string>24 hours</string>
-                </property>
+               <widget class="QComboBox" name="comboBoxLang">
+                <item>
+                 <property name="text">
+                  <string>English</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>French</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Spanish</string>
+                 </property>
+                </item>
                </widget>
               </item>
              </layout>
