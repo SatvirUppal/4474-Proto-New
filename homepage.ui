@@ -1,0 +1,2895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>607</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>607</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Geneva</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>591</width>
+      <height>911</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="Page1">
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>19</y>
+           <width>591</width>
+           <height>831</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_8">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>587</width>
+               <height>1873</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_22">
+              <item>
+               <layout class="QGridLayout" name="searchGrid">
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="search_btn">
+                  <property name="text">
+                   <string>Search</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLineEdit" name="search_entry">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="maxLength">
+                   <number>100</number>
+                  </property>
+                  <property name="frame">
+                   <bool>false</bool>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Search for a location...</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>1800</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_11">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>320</y>
+                   <width>551</width>
+                   <height>331</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridHourly_3">
+                  <item row="0" column="0">
+                   <widget class="Line" name="line_13">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="hourlyLabel">
+                    <property name="text">
+                     <string>Hourly Forecast</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="Line" name="line_14">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QScrollArea" name="hourlyTimeLine">
+                    <property name="verticalScrollBarPolicy">
+                     <enum>Qt::ScrollBarAlwaysOff</enum>
+                    </property>
+                    <property name="horizontalScrollBarPolicy">
+                     <enum>Qt::ScrollBarAsNeeded</enum>
+                    </property>
+                    <property name="widgetResizable">
+                     <bool>true</bool>
+                    </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents_9">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>1024</width>
+                       <height>276</height>
+                      </rect>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_23">
+                      <item>
+                       <widget class="QFrame" name="frame_8">
+                        <property name="enabled">
+                         <bool>true</bool>
+                        </property>
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>1000</width>
+                          <height>250</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>1000</width>
+                          <height>250</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_6">
+                         <item>
+                          <layout class="QGridLayout" name="gridLayout_36">
+                           <item row="0" column="0">
+                            <layout class="QVBoxLayout" name="hour1">
+                             <item>
+                              <widget class="QLabel" name="time_1">
+                               <property name="font">
+                                <font>
+                                 <family>Geneva</family>
+                                 <pointsize>14</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Time</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="temp_1">
+                               <property name="text">
+                                <string>Temp</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="image_1">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>75</width>
+                                 <height>75</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>weatherImage</string>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipImage_1">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipPer_1">
+                               <property name="text">
+                                <string>precipitationPercent</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="0" column="4">
+                            <layout class="QVBoxLayout" name="hour5">
+                             <item>
+                              <widget class="QLabel" name="time_5">
+                               <property name="font">
+                                <font>
+                                 <family>Geneva</family>
+                                 <pointsize>14</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Time</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="temp_5">
+                               <property name="text">
+                                <string>Temp</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="image_5">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>75</width>
+                                 <height>75</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>weatherImage</string>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipImage_10">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipPer_5">
+                               <property name="text">
+                                <string>precipitationPercent</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="0" column="3">
+                            <layout class="QVBoxLayout" name="hour4">
+                             <item>
+                              <widget class="QLabel" name="time_4">
+                               <property name="font">
+                                <font>
+                                 <family>Geneva</family>
+                                 <pointsize>14</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Time</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="temp_4">
+                               <property name="text">
+                                <string>Temp</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="image_4">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>75</width>
+                                 <height>75</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>weatherImage</string>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipImage_9">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipPer_4">
+                               <property name="text">
+                                <string>precipitationPercent</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="0" column="6">
+                            <layout class="QVBoxLayout" name="hour7">
+                             <item>
+                              <widget class="QLabel" name="time_7">
+                               <property name="font">
+                                <font>
+                                 <family>Geneva</family>
+                                 <pointsize>14</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Time</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="temp_7">
+                               <property name="text">
+                                <string>Temp</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="image_7">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>75</width>
+                                 <height>75</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>weatherImage</string>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipImage_12">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipPer_7">
+                               <property name="text">
+                                <string>precipitationPercent</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="0" column="1">
+                            <layout class="QVBoxLayout" name="hour2">
+                             <item>
+                              <widget class="QLabel" name="time_2">
+                               <property name="font">
+                                <font>
+                                 <family>Geneva</family>
+                                 <pointsize>14</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Time</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="temp_2">
+                               <property name="text">
+                                <string>Temp</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="image_2">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>75</width>
+                                 <height>75</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>weatherImage</string>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipImage_2">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipPer_2">
+                               <property name="text">
+                                <string>precipitationPercent</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="0" column="5">
+                            <layout class="QVBoxLayout" name="hour6">
+                             <item>
+                              <widget class="QLabel" name="time_6">
+                               <property name="font">
+                                <font>
+                                 <family>Geneva</family>
+                                 <pointsize>14</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Time</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="temp_6">
+                               <property name="text">
+                                <string>Temp</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="image_6">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>75</width>
+                                 <height>75</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>weatherImage</string>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipImage_11">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipPer_6">
+                               <property name="text">
+                                <string>precipitationPercent</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="0" column="2">
+                            <layout class="QVBoxLayout" name="hour3">
+                             <item>
+                              <widget class="QLabel" name="time_3">
+                               <property name="font">
+                                <font>
+                                 <family>Geneva</family>
+                                 <pointsize>14</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Time</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="temp_3">
+                               <property name="text">
+                                <string>Temp</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="image_3">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>75</width>
+                                 <height>67</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>weatherImage</string>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipImage_8">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignHCenter">
+                              <widget class="QLabel" name="percipPer_3">
+                               <property name="text">
+                                <string>precipitationPercent</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QLabel" name="label_214">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>640</y>
+                   <width>551</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>551</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Geneva</family>
+                   <pointsize>20</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>⌈AD CONTAINER⌋</string>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QWidget" name="gridLayoutWidget_12">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>730</y>
+                   <width>551</width>
+                   <height>361</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridMultipleDay_3">
+                  <item row="3" column="0">
+                   <widget class="QScrollArea" name="muliDayScroll">
+                    <property name="verticalScrollBarPolicy">
+                     <enum>Qt::ScrollBarAlwaysOff</enum>
+                    </property>
+                    <property name="horizontalScrollBarPolicy">
+                     <enum>Qt::ScrollBarAlwaysOn</enum>
+                    </property>
+                    <property name="widgetResizable">
+                     <bool>true</bool>
+                    </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents_10">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>1024</width>
+                       <height>274</height>
+                      </rect>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_31">
+                      <item>
+                       <widget class="QFrame" name="multiDay">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>1000</width>
+                          <height>250</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>1000</width>
+                          <height>250</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_7">
+                         <item>
+                          <layout class="QGridLayout" name="gridLayout_37">
+                           <item row="2" column="1">
+                            <layout class="QGridLayout" name="day2Info">
+                             <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day2TempLow">
+                               <property name="text">
+                                <string>TempLow</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day2Desc">
+                               <property name="text">
+                                <string>WDescrip</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day2TempHi">
+                               <property name="text">
+                                <string>TempHigh</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="percipImage_5">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="1" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                            <widget class="QLabel" name="day3Image">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>Date/Day</string>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="3" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                            <widget class="QLabel" name="day4Image">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>Date/Day</string>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="3" alignment="Qt::AlignHCenter">
+                            <widget class="QLabel" name="day4Date">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Geneva</family>
+                               <pointsize>18</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                            <widget class="QLabel" name="day1Image">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>Date/Day</string>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="2" column="4">
+                            <layout class="QGridLayout" name="day5Info">
+                             <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day5TempLow">
+                               <property name="text">
+                                <string>TempLow</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day5Desc">
+                               <property name="text">
+                                <string>WDescrip</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day5TempHi">
+                               <property name="text">
+                                <string>TempHigh</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="percipImage_13">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="1" column="4" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                            <widget class="QLabel" name="day5Image">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>Date/Day</string>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                            <widget class="QLabel" name="day2Image">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>Date/Day</string>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="5" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                            <widget class="QLabel" name="day6Date">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Geneva</family>
+                               <pointsize>18</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="5" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                            <widget class="QLabel" name="day6Image">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>100</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>Date/Day</string>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="2" column="5">
+                            <layout class="QGridLayout" name="day6Info">
+                             <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day6TempLow">
+                               <property name="text">
+                                <string>TempLow</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day6Desc">
+                               <property name="text">
+                                <string>WDescrip</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day6TempHi">
+                               <property name="text">
+                                <string>TempHigh</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="percipImage_14">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="2" column="3">
+                            <layout class="QGridLayout" name="day4Info">
+                             <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day4TempLow">
+                               <property name="text">
+                                <string>TempLow</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day4Desc">
+                               <property name="text">
+                                <string>WDescrip</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day4TempHi">
+                               <property name="text">
+                                <string>TempHigh</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="percipImage_7">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="2" column="2">
+                            <layout class="QGridLayout" name="day3Info">
+                             <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day3TempLow">
+                               <property name="text">
+                                <string>TempLow</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day3Desc">
+                               <property name="text">
+                                <string>WDescrip</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day3TempHi">
+                               <property name="text">
+                                <string>TempHigh</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="percipImage_6">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="2" column="0">
+                            <layout class="QGridLayout" name="day1Info">
+                             <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day1TempLow">
+                               <property name="text">
+                                <string>TempLow</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day1Desc">
+                               <property name="text">
+                                <string>WDescrip</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                              <widget class="QLabel" name="day1TempHi">
+                               <property name="text">
+                                <string>TempHigh</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                              <widget class="QLabel" name="percipImage_3">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>30</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="textFormat">
+                                <enum>Qt::AutoText</enum>
+                               </property>
+                               <property name="pixmap">
+                                <pixmap>icons/raindrop.png</pixmap>
+                               </property>
+                               <property name="scaledContents">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="indent">
+                                <number>0</number>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item row="0" column="2" alignment="Qt::AlignHCenter">
+                            <widget class="QLabel" name="day3Date">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Geneva</family>
+                               <pointsize>18</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1" alignment="Qt::AlignHCenter">
+                            <widget class="QLabel" name="day2Date">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Geneva</family>
+                               <pointsize>18</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="4" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                            <widget class="QLabel" name="day5Date">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Geneva</family>
+                               <pointsize>18</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0" alignment="Qt::AlignHCenter">
+                            <widget class="QLabel" name="day1Date">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>15</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Geneva</family>
+                               <pointsize>18</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Date/Day</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="Line" name="line_16">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QComboBox" name="chooseDay">
+                    <property name="editable">
+                     <bool>false</bool>
+                    </property>
+                    <property name="currentText">
+                     <string/>
+                    </property>
+                    <property name="maxVisibleItems">
+                     <number>3</number>
+                    </property>
+                    <property name="maxCount">
+                     <number>3</number>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Choose Days</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>7-Day Forecast</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>3-Day Forecast</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>14-Day Forecast</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="Line" name="line_15">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_250">
+                    <property name="text">
+                     <string>Weather Forecast</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="Line" name="line_17">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>1100</y>
+                   <width>551</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+                <widget class="Line" name="line_18">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>1550</y>
+                   <width>551</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+                <widget class="QWidget" name="gridLayoutWidget_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>70</y>
+                   <width>781</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridCurrent">
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,0,0,0,0">
+                    <item row="0" column="2" rowspan="2">
+                     <spacer name="horizontalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>0</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="0" column="3" rowspan="2">
+                     <widget class="QLabel" name="imageCurr">
+                      <property name="maximumSize">
+                       <size>
+                        <width>150</width>
+                        <height>150</height>
+                       </size>
+                      </property>
+                      <property name="mouseTracking">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>Wimage</string>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignHCenter|Qt::AlignTop">
+                     <widget class="QLabel" name="tempLowCurr">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>18</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>TempLowDay</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" rowspan="2">
+                     <widget class="QLabel" name="tempCurr">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>48</pointsize>
+                       </font>
+                      </property>
+                      <property name="autoFillBackground">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1" alignment="Qt::AlignBottom">
+                     <widget class="QLabel" name="tempHighCurr">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>18</pointsize>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>TempHighDay</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="4" rowspan="2">
+                     <widget class="QLabel" name="locationCurr">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>24</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Location</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="gridLayoutWidget_14">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>1110</y>
+                   <width>541</width>
+                   <height>451</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridMetrics">
+                  <item row="1" column="0">
+                   <layout class="QGridLayout" name="gridLayout_15">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_80">
+                      <property name="maximumSize">
+                       <size>
+                        <width>75</width>
+                        <height>75</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap>icons/aQual.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                     <widget class="QLabel" name="precipTotal">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Value</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_82">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Precipitation</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="2">
+                   <layout class="QGridLayout" name="gridLayout_16">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_83">
+                      <property name="maximumSize">
+                       <size>
+                        <width>60</width>
+                        <height>60</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap>icons/pressure.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                     <widget class="QLabel" name="pressureVal">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Value</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_77">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Pressure</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="2">
+                   <layout class="QGridLayout" name="gridLayout_17">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_85">
+                      <property name="maximumSize">
+                       <size>
+                        <width>75</width>
+                        <height>75</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap>icons/windSpeed.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                     <widget class="QLabel" name="windSpeed">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Value</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_87">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Wind</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_14">
+                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                     <widget class="QLabel" name="airQual">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Value</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_76">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Visibility</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_78">
+                      <property name="maximumSize">
+                       <size>
+                        <width>75</width>
+                        <height>75</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap>icons/visibility.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="1">
+                   <layout class="QGridLayout" name="gridLayout_18">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_88">
+                      <property name="maximumSize">
+                       <size>
+                        <width>60</width>
+                        <height>60</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap>icons/humidityIndex.svg</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                     <widget class="QLabel" name="humidityIndex">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Value</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_90">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Humidity</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="1">
+                   <layout class="QGridLayout" name="gridLayout_19">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_91">
+                      <property name="maximumSize">
+                       <size>
+                        <width>65</width>
+                        <height>65</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap>icons/uvIndexIcon.webp</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                     <widget class="QLabel" name="uvIndex">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Value</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_93">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>UV-Index</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="horizontalLayoutWidget_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>1570</y>
+                   <width>531</width>
+                   <height>139</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_8">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignTop">
+                     <widget class="QLabel" name="sunrise">
+                      <property name="text">
+                       <string>Sunrise Time</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_5">
+                      <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                       <widget class="QLabel" name="label_84">
+                        <property name="maximumSize">
+                         <size>
+                          <width>75</width>
+                          <height>75</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap>icons/sunrise.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignTop">
+                     <widget class="QLabel" name="sunset">
+                      <property name="text">
+                       <string>Sunset Time</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_2">
+                      <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                       <widget class="QLabel" name="label_81">
+                        <property name="maximumSize">
+                         <size>
+                          <width>75</width>
+                          <height>75</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap>icons/sunset.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Page2">
+        <widget class="QWidget" name="gridLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>-10</x>
+           <y>0</y>
+           <width>621</width>
+           <height>793</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>589</width>
+              <height>779</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>images/Screenshot 2024-04-01 at 15.31.35.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Page3">
+        <widget class="QTextEdit" name="textEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>211</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt;News - The Weather Network&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Page4">
+        <widget class="QWidget" name="verticalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>581</width>
+           <height>771</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>750</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>577</width>
+               <height>748</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>750</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QFrame" name="frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>70</x>
+                   <y>10</y>
+                   <width>431</width>
+                   <height>38</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridTitle">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="labelTitle">
+                    <property name="font">
+                     <font>
+                      <family>Geneva</family>
+                      <pointsize>16</pointsize>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Settings</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="gridLayoutWidget_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>60</y>
+                   <width>602</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridProfile">
+                  <property name="horizontalSpacing">
+                   <number>2</number>
+                  </property>
+                  <item row="0" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout">
+                    <property name="spacing">
+                     <number>2</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="imageProfile">
+                      <property name="maximumSize">
+                       <size>
+                        <width>100</width>
+                        <height>100</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Profile Image</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_6">
+                      <item>
+                       <widget class="QLabel" name="labelUsername">
+                        <property name="text">
+                         <string>Username</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="indent">
+                         <number>0</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_3">
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout">
+                          <item row="0" column="0">
+                           <widget class="QComboBox" name="comboBoxManageAccount">
+                            <property name="maximumSize">
+                             <size>
+                              <width>100</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <item>
+                             <property name="text">
+                              <string>Manage</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>Profile</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>Uploads</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>Edit Locations</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>Alerts</string>
+                             </property>
+                            </item>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout_6">
+                          <item row="0" column="0">
+                           <widget class="QPushButton" name="buttonLogout">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>60</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>Logout</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_3">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeType">
+                           <enum>QSizePolicy::Fixed</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>30</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="gridLayoutWidget_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>320</y>
+                   <width>551</width>
+                   <height>381</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridOtherSettings">
+                  <item row="0" column="0">
+                   <widget class="Line" name="line_2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <layout class="QVBoxLayout" name="verticalLayoutTime">
+                    <item>
+                     <widget class="QLabel" name="labelTime">
+                      <property name="text">
+                       <string>Time Format</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="radioButton12h">
+                      <property name="text">
+                       <string>12-hour</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="radioButton24h">
+                      <property name="text">
+                       <string>24-hour</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="4" column="0" rowspan="2">
+                   <widget class="Line" name="line">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <layout class="QVBoxLayout" name="verticalLayoutUnits">
+                    <item>
+                     <widget class="QLabel" name="labelUnits">
+                      <property name="text">
+                       <string>Units</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="radioButtonMetric">
+                      <property name="text">
+                       <string>Metric (mph/ °F)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="radioButtonImperial">
+                      <property name="text">
+                       <string>Imperial (km/h / °C)</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="3" column="0">
+                   <layout class="QVBoxLayout" name="verticalLayoutLang">
+                    <item>
+                     <widget class="QLabel" name="labelLang">
+                      <property name="text">
+                       <string>Language</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="comboBoxLang">
+                      <item>
+                       <property name="text">
+                        <string>English</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>French</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spanish</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QLabel" name="label_35">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>720</y>
+                   <width>551</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Geneva</family>
+                   <pointsize>20</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Ad Container</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="Line" name="line_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>1100</y>
+                   <width>551</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+                <widget class="QWidget" name="gridLayoutWidget_21">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>1580</y>
+                   <width>158</width>
+                   <height>88</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="label_73">
+                    <property name="text">
+                     <string>Sunrise/Sunset Icon</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_74">
+                    <property name="text">
+                     <string>Sunrise Time</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_72">
+                    <property name="text">
+                     <string>Sunset Time</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="Line" name="line_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>1550</y>
+                   <width>551</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="verticalWidget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="1" column="0">
+            <widget class="QPushButton" name="home_btn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icons/home_icon.png</normaloff>icons/home_icon.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="radar_btn">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icons/radar_icon.png</normaloff>icons/radar_icon.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QPushButton" name="sett_btn">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icons/settings_icon.png</normaloff>icons/settings_icon.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="news_btn">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icons/news_icon.png</normaloff>icons/news_icon.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>607</width>
+     <height>43</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -6,9 +6,22 @@ from retry_requests import retry
 
 class Location:
 
-    def __init__(self, latitude, longitude, name):
-        self._latitude = latitude
-        self._longitude = longitude
+    def __init__(self, name):
+        city_coordinates = {
+            "New York, NY": (40.7128, -74.0060),
+            "Los Angeles, CA": (34.0522, -118.2437),
+            "Chicago, IL": (41.8781, -87.6298),
+            "Houston, TX": (29.7604, -95.3698),
+            "Phoenix, AZ": (33.4484, -112.0740),
+            "Philadelphia, PA": (39.9526, -75.1652),
+            "San Antonio, TX": (29.4241, -98.4936),
+            "San Diego, CA": (32.7157, -117.1611),
+            "Dallas, TX": (32.7767, -96.7970),
+            "San Jose, FL": (37.3382, -121.8863),
+        }
+
+        self._latitude = city_coordinates[name][0]
+        self._longitude = city_coordinates[name][1]
         self._name = name
 
         # hourly info list
@@ -112,8 +125,8 @@ class Location:
         # The order of variables in hourly or daily is important to assign them correctly below
         url = "https://api.open-meteo.com/v1/forecast"
         params = {
-            "latitude": 52.52,
-            "longitude": 13.41,
+            "latitude": self._latitude,
+            "longitude": self._longitude,
             "hourly": ["temperature_2m", "relative_humidity_2m", "precipitation_probability", "weather_code",
                        "surface_pressure", "visibility", "wind_speed_10m", "wind_direction_10m", "uv_index"],
             "daily": ["temperature_2m_max", "temperature_2m_min", "sunrise", "sunset", "precipitation_sum"],
@@ -257,35 +270,6 @@ class Location:
 
         if morningStart <= datetime_pd < eveningStart:
             weatherIconMap = {
-                0: "00-ClearSkyDay",
-                1: "0102-ClearCloudyDay",
-                2: "0102-ClearCloudyDay",
-                3: "03-Overcast",
-                45: "45-Fog",
-                48: "45-Fog",
-                51: "5153-DrizzleDay",
-                53: "5153-DrizzleDay",
-                55: "5561-DrizzleRain",
-                56: "5561-DrizzleRain",
-                57: "5561-DrizzleRain",
-                61: "5561-DrizzleRain",
-                63: "63-Rain",
-                65: "65-Rain",
-                66: "63-Rain",
-                67: "65-Rain",
-                71: "717375-Snow",
-                73: "717375-Snow",
-                75: "717375-Snow",
-                77: "717375-Snow",
-                80: "5153-DrizzleDay",
-                81: "5153-DrizzleDay",
-                82: "5153-DrizzleDay",
-                85: "8586-SnowDay",
-                86: "8586-SnowDay",
-                95: "95-Thunderstorm"
-            }
-        else:
-            weatherIconMap = {
                 0: "00-ClearSkyNight",
                 1: "0102-ClearCloudyNight",
                 2: "0102-ClearCloudyNight",
@@ -313,9 +297,36 @@ class Location:
                 86: "8586-SnowNight",
                 95: "95-Thunderstorm"
             }
+        else:
+            weatherIconMap = {
+                0: "00-ClearSkyDay",
+                1: "0102-ClearCloudyDay",
+                2: "0102-ClearCloudyDay",
+                3: "03-Overcast",
+                45: "45-Fog",
+                48: "45-Fog",
+                51: "5153-DrizzleDay",
+                53: "5153-DrizzleDay",
+                55: "5561-DrizzleRain",
+                56: "5561-DrizzleRain",
+                57: "5561-DrizzleRain",
+                61: "5561-DrizzleRain",
+                63: "63-Rain",
+                65: "65-Rain",
+                66: "63-Rain",
+                67: "65-Rain",
+                71: "717375-Snow",
+                73: "717375-Snow",
+                75: "717375-Snow",
+                77: "717375-Snow",
+                80: "5153-DrizzleDay",
+                81: "5153-DrizzleDay",
+                82: "5153-DrizzleDay",
+                85: "8586-SnowDay",
+                86: "8586-SnowDay",
+                95: "95-Thunderstorm"
+            }
         return weatherIconMap.get(self._weatherCode.iloc[offset])
-
-
 
     """
     DAILY GETTERS: All offsets are divided by 24 and rounded down
@@ -337,6 +348,7 @@ class Location:
         return round(self._minTempCelc.iloc[offset//24])
 
 
+"""
 if __name__ == '__main__':
     testSite = Location(52.52, 13.41, "Toronto")
     print("Location testing:\n")
@@ -361,3 +373,4 @@ if __name__ == '__main__':
 
     print("Icon name current: ", testSite.getIconName())
     print("Icon name 96 hours from now: ", testSite.getIconName(offset=96))
+"""
