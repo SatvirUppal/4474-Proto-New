@@ -270,35 +270,6 @@ class Location:
 
         if morningStart <= datetime_pd < eveningStart:
             weatherIconMap = {
-                0: "00-ClearSkyNight",
-                1: "0102-ClearCloudyNight",
-                2: "0102-ClearCloudyNight",
-                3: "03-Overcast",
-                45: "45-Fog",
-                48: "45-Fog",
-                51: "5153-DrizzleNight",
-                53: "5153-DrizzleNight",
-                55: "5561-DrizzleRain",
-                56: "5561-DrizzleRain",
-                57: "5561-DrizzleRain",
-                61: "5561-DrizzleRain",
-                63: "63-Rain",
-                65: "65-Rain",
-                66: "63-Rain",
-                67: "65-Rain",
-                71: "717375-Snow",
-                73: "717375-Snow",
-                75: "717375-Snow",
-                77: "717375-Snow",
-                80: "5153-DrizzleNight",
-                81: "5153-DrizzleNight",
-                82: "5153-DrizzleNight",
-                85: "8586-SnowNight",
-                86: "8586-SnowNight",
-                95: "95-Thunderstorm"
-            }
-        else:
-            weatherIconMap = {
                 0: "00-ClearSkyDay",
                 1: "0102-ClearCloudyDay",
                 2: "0102-ClearCloudyDay",
@@ -326,6 +297,36 @@ class Location:
                 86: "8586-SnowDay",
                 95: "95-Thunderstorm"
             }
+        else:
+            weatherIconMap = {
+                0: "00-ClearSkyNight",
+                1: "0102-ClearCloudyNight",
+                2: "0102-ClearCloudyNight",
+                3: "03-Overcast",
+                45: "45-Fog",
+                48: "45-Fog",
+                51: "5153-DrizzleNight",
+                53: "5153-DrizzleNight",
+                55: "5561-DrizzleRain",
+                56: "5561-DrizzleRain",
+                57: "5561-DrizzleRain",
+                61: "5561-DrizzleRain",
+                63: "63-Rain",
+                65: "65-Rain",
+                66: "63-Rain",
+                67: "65-Rain",
+                71: "717375-Snow",
+                73: "717375-Snow",
+                75: "717375-Snow",
+                77: "717375-Snow",
+                80: "5153-DrizzleNight",
+                81: "5153-DrizzleNight",
+                82: "5153-DrizzleNight",
+                85: "8586-SnowNight",
+                86: "8586-SnowNight",
+                95: "95-Thunderstorm"
+            }
+           
         return weatherIconMap.get(self._weatherCode.iloc[offset])
 
     """

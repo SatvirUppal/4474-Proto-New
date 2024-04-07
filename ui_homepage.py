@@ -15,11 +15,12 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
-    QHBoxLayout, QLabel, QLineEdit, QMainWindow,
-    QMenuBar, QPushButton, QRadioButton, QScrollArea,
-    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
-    QTextEdit, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QButtonGroup, QComboBox, QFrame,
+    QGridLayout, QHBoxLayout, QLabel, QLayout,
+    QLineEdit, QMainWindow, QMenuBar, QPushButton,
+    QRadioButton, QScrollArea, QSizePolicy, QSpacerItem,
+    QStackedWidget, QStatusBar, QTextEdit, QVBoxLayout,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -33,6 +34,7 @@ class Ui_MainWindow(object):
         MainWindow.setFont(font)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
+        self.centralwidget.setEnabled(True)
         self.verticalLayoutWidget_2 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_2.setObjectName(u"verticalLayoutWidget_2")
         self.verticalLayoutWidget_2.setGeometry(QRect(10, 0, 591, 911))
@@ -57,7 +59,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_8 = QWidget()
         self.scrollAreaWidgetContents_8.setObjectName(u"scrollAreaWidgetContents_8")
-        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, 0, 587, 1873))
+        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, -291, 572, 1873))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_8)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.searchGrid = QGridLayout()
@@ -86,41 +88,23 @@ class Ui_MainWindow(object):
         self.frame_7.setFrameShadow(QFrame.Raised)
         self.gridLayoutWidget_11 = QWidget(self.frame_7)
         self.gridLayoutWidget_11.setObjectName(u"gridLayoutWidget_11")
-        self.gridLayoutWidget_11.setGeometry(QRect(0, 320, 551, 331))
+        self.gridLayoutWidget_11.setGeometry(QRect(0, 320, 551, 341))
         self.gridHourly_3 = QGridLayout(self.gridLayoutWidget_11)
         self.gridHourly_3.setObjectName(u"gridHourly_3")
         self.gridHourly_3.setContentsMargins(0, 0, 0, 0)
-        self.line_13 = QFrame(self.gridLayoutWidget_11)
-        self.line_13.setObjectName(u"line_13")
-        self.line_13.setFrameShape(QFrame.HLine)
-        self.line_13.setFrameShadow(QFrame.Sunken)
-
-        self.gridHourly_3.addWidget(self.line_13, 0, 0, 1, 1)
-
-        self.hourlyLabel = QLabel(self.gridLayoutWidget_11)
-        self.hourlyLabel.setObjectName(u"hourlyLabel")
-        self.hourlyLabel.setAlignment(Qt.AlignCenter)
-
-        self.gridHourly_3.addWidget(self.hourlyLabel, 1, 0, 1, 1)
-
-        self.line_14 = QFrame(self.gridLayoutWidget_11)
-        self.line_14.setObjectName(u"line_14")
-        self.line_14.setFrameShape(QFrame.HLine)
-        self.line_14.setFrameShadow(QFrame.Sunken)
-
-        self.gridHourly_3.addWidget(self.line_14, 3, 0, 1, 1)
-
         self.hourlyTimeLine = QScrollArea(self.gridLayoutWidget_11)
         self.hourlyTimeLine.setObjectName(u"hourlyTimeLine")
+        self.hourlyTimeLine.setEnabled(True)
         self.hourlyTimeLine.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.hourlyTimeLine.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         self.hourlyTimeLine.setWidgetResizable(True)
         self.scrollAreaWidgetContents_9 = QWidget()
         self.scrollAreaWidgetContents_9.setObjectName(u"scrollAreaWidgetContents_9")
         self.scrollAreaWidgetContents_9.setEnabled(True)
-        self.scrollAreaWidgetContents_9.setGeometry(QRect(0, 0, 1024, 276))
+        self.scrollAreaWidgetContents_9.setGeometry(QRect(-35, 0, 1010, 271))
         self.verticalLayout_23 = QVBoxLayout(self.scrollAreaWidgetContents_9)
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_23.setContentsMargins(5, 5, 5, 5)
         self.frame_8 = QFrame(self.scrollAreaWidgetContents_9)
         self.frame_8.setObjectName(u"frame_8")
         self.frame_8.setEnabled(True)
@@ -138,287 +122,30 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.gridLayout_36 = QGridLayout()
         self.gridLayout_36.setObjectName(u"gridLayout_36")
-        self.hour1 = QVBoxLayout()
-        self.hour1.setObjectName(u"hour1")
-        self.time_1 = QLabel(self.frame_8)
-        self.time_1.setObjectName(u"time_1")
-        font1 = QFont()
-        font1.setFamilies([u"Geneva"])
-        font1.setPointSize(14)
-        self.time_1.setFont(font1)
-        self.time_1.setAlignment(Qt.AlignCenter)
-
-        self.hour1.addWidget(self.time_1)
-
-        self.temp_1 = QLabel(self.frame_8)
-        self.temp_1.setObjectName(u"temp_1")
-        self.temp_1.setAlignment(Qt.AlignCenter)
-
-        self.hour1.addWidget(self.temp_1)
-
-        self.image_1 = QLabel(self.frame_8)
-        self.image_1.setObjectName(u"image_1")
-        self.image_1.setMaximumSize(QSize(75, 75))
-        self.image_1.setScaledContents(True)
-        self.image_1.setAlignment(Qt.AlignCenter)
-
-        self.hour1.addWidget(self.image_1, 0, Qt.AlignHCenter)
-
-        self.percipImage_1 = QLabel(self.frame_8)
-        self.percipImage_1.setObjectName(u"percipImage_1")
-        self.percipImage_1.setMinimumSize(QSize(30, 30))
-        self.percipImage_1.setMaximumSize(QSize(30, 30))
-        self.percipImage_1.setTextFormat(Qt.AutoText)
-        self.percipImage_1.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_1.setScaledContents(True)
-        self.percipImage_1.setAlignment(Qt.AlignCenter)
-        self.percipImage_1.setIndent(0)
-
-        self.hour1.addWidget(self.percipImage_1, 0, Qt.AlignHCenter)
-
-        self.percipPer_1 = QLabel(self.frame_8)
-        self.percipPer_1.setObjectName(u"percipPer_1")
-        self.percipPer_1.setAlignment(Qt.AlignCenter)
-
-        self.hour1.addWidget(self.percipPer_1, 0, Qt.AlignHCenter)
-
-
-        self.gridLayout_36.addLayout(self.hour1, 0, 0, 1, 1)
-
-        self.hour5 = QVBoxLayout()
-        self.hour5.setObjectName(u"hour5")
-        self.time_5 = QLabel(self.frame_8)
-        self.time_5.setObjectName(u"time_5")
-        self.time_5.setFont(font1)
-        self.time_5.setAlignment(Qt.AlignCenter)
-
-        self.hour5.addWidget(self.time_5)
-
-        self.temp_5 = QLabel(self.frame_8)
-        self.temp_5.setObjectName(u"temp_5")
-        self.temp_5.setAlignment(Qt.AlignCenter)
-
-        self.hour5.addWidget(self.temp_5)
-
-        self.image_5 = QLabel(self.frame_8)
-        self.image_5.setObjectName(u"image_5")
-        self.image_5.setMaximumSize(QSize(75, 75))
-        self.image_5.setScaledContents(True)
-        self.image_5.setAlignment(Qt.AlignCenter)
-
-        self.hour5.addWidget(self.image_5, 0, Qt.AlignHCenter)
-
-        self.percipImage_10 = QLabel(self.frame_8)
-        self.percipImage_10.setObjectName(u"percipImage_10")
-        self.percipImage_10.setMinimumSize(QSize(30, 30))
-        self.percipImage_10.setMaximumSize(QSize(30, 30))
-        self.percipImage_10.setTextFormat(Qt.AutoText)
-        self.percipImage_10.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_10.setScaledContents(True)
-        self.percipImage_10.setAlignment(Qt.AlignCenter)
-        self.percipImage_10.setIndent(0)
-
-        self.hour5.addWidget(self.percipImage_10, 0, Qt.AlignHCenter)
-
-        self.percipPer_5 = QLabel(self.frame_8)
-        self.percipPer_5.setObjectName(u"percipPer_5")
-        self.percipPer_5.setAlignment(Qt.AlignCenter)
-
-        self.hour5.addWidget(self.percipPer_5, 0, Qt.AlignHCenter)
-
-
-        self.gridLayout_36.addLayout(self.hour5, 0, 4, 1, 1)
-
-        self.hour4 = QVBoxLayout()
-        self.hour4.setObjectName(u"hour4")
-        self.time_4 = QLabel(self.frame_8)
-        self.time_4.setObjectName(u"time_4")
-        self.time_4.setFont(font1)
-        self.time_4.setAlignment(Qt.AlignCenter)
-
-        self.hour4.addWidget(self.time_4)
-
-        self.temp_4 = QLabel(self.frame_8)
-        self.temp_4.setObjectName(u"temp_4")
-        self.temp_4.setAlignment(Qt.AlignCenter)
-
-        self.hour4.addWidget(self.temp_4)
-
-        self.image_4 = QLabel(self.frame_8)
-        self.image_4.setObjectName(u"image_4")
-        self.image_4.setMaximumSize(QSize(75, 75))
-        self.image_4.setScaledContents(True)
-        self.image_4.setAlignment(Qt.AlignCenter)
-
-        self.hour4.addWidget(self.image_4, 0, Qt.AlignHCenter)
-
-        self.percipImage_9 = QLabel(self.frame_8)
-        self.percipImage_9.setObjectName(u"percipImage_9")
-        self.percipImage_9.setMinimumSize(QSize(30, 30))
-        self.percipImage_9.setMaximumSize(QSize(30, 30))
-        self.percipImage_9.setTextFormat(Qt.AutoText)
-        self.percipImage_9.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_9.setScaledContents(True)
-        self.percipImage_9.setAlignment(Qt.AlignCenter)
-        self.percipImage_9.setIndent(0)
-
-        self.hour4.addWidget(self.percipImage_9, 0, Qt.AlignHCenter)
-
-        self.percipPer_4 = QLabel(self.frame_8)
-        self.percipPer_4.setObjectName(u"percipPer_4")
-        self.percipPer_4.setAlignment(Qt.AlignCenter)
-
-        self.hour4.addWidget(self.percipPer_4, 0, Qt.AlignHCenter)
-
-
-        self.gridLayout_36.addLayout(self.hour4, 0, 3, 1, 1)
-
-        self.hour7 = QVBoxLayout()
-        self.hour7.setObjectName(u"hour7")
-        self.time_7 = QLabel(self.frame_8)
-        self.time_7.setObjectName(u"time_7")
-        self.time_7.setFont(font1)
-        self.time_7.setAlignment(Qt.AlignCenter)
-
-        self.hour7.addWidget(self.time_7)
-
-        self.temp_7 = QLabel(self.frame_8)
-        self.temp_7.setObjectName(u"temp_7")
-        self.temp_7.setAlignment(Qt.AlignCenter)
-
-        self.hour7.addWidget(self.temp_7)
-
-        self.image_7 = QLabel(self.frame_8)
-        self.image_7.setObjectName(u"image_7")
-        self.image_7.setMaximumSize(QSize(75, 75))
-        self.image_7.setScaledContents(True)
-        self.image_7.setAlignment(Qt.AlignCenter)
-
-        self.hour7.addWidget(self.image_7, 0, Qt.AlignHCenter)
-
-        self.percipImage_12 = QLabel(self.frame_8)
-        self.percipImage_12.setObjectName(u"percipImage_12")
-        self.percipImage_12.setMinimumSize(QSize(30, 30))
-        self.percipImage_12.setMaximumSize(QSize(30, 30))
-        self.percipImage_12.setTextFormat(Qt.AutoText)
-        self.percipImage_12.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_12.setScaledContents(True)
-        self.percipImage_12.setAlignment(Qt.AlignCenter)
-        self.percipImage_12.setIndent(0)
-
-        self.hour7.addWidget(self.percipImage_12, 0, Qt.AlignHCenter)
-
-        self.percipPer_7 = QLabel(self.frame_8)
-        self.percipPer_7.setObjectName(u"percipPer_7")
-        self.percipPer_7.setAlignment(Qt.AlignCenter)
-
-        self.hour7.addWidget(self.percipPer_7, 0, Qt.AlignHCenter)
-
-
-        self.gridLayout_36.addLayout(self.hour7, 0, 6, 1, 1)
-
-        self.hour2 = QVBoxLayout()
-        self.hour2.setObjectName(u"hour2")
-        self.time_2 = QLabel(self.frame_8)
-        self.time_2.setObjectName(u"time_2")
-        self.time_2.setFont(font1)
-        self.time_2.setAlignment(Qt.AlignCenter)
-
-        self.hour2.addWidget(self.time_2)
-
-        self.temp_2 = QLabel(self.frame_8)
-        self.temp_2.setObjectName(u"temp_2")
-        self.temp_2.setAlignment(Qt.AlignCenter)
-
-        self.hour2.addWidget(self.temp_2)
-
-        self.image_2 = QLabel(self.frame_8)
-        self.image_2.setObjectName(u"image_2")
-        self.image_2.setMaximumSize(QSize(75, 75))
-        self.image_2.setScaledContents(True)
-        self.image_2.setAlignment(Qt.AlignCenter)
-
-        self.hour2.addWidget(self.image_2, 0, Qt.AlignHCenter)
-
-        self.percipImage_2 = QLabel(self.frame_8)
-        self.percipImage_2.setObjectName(u"percipImage_2")
-        self.percipImage_2.setMinimumSize(QSize(30, 30))
-        self.percipImage_2.setMaximumSize(QSize(30, 30))
-        self.percipImage_2.setTextFormat(Qt.AutoText)
-        self.percipImage_2.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_2.setScaledContents(True)
-        self.percipImage_2.setAlignment(Qt.AlignCenter)
-        self.percipImage_2.setIndent(0)
-
-        self.hour2.addWidget(self.percipImage_2, 0, Qt.AlignHCenter)
-
-        self.percipPer_2 = QLabel(self.frame_8)
-        self.percipPer_2.setObjectName(u"percipPer_2")
-        self.percipPer_2.setAlignment(Qt.AlignCenter)
-
-        self.hour2.addWidget(self.percipPer_2, 0, Qt.AlignHCenter)
-
-
-        self.gridLayout_36.addLayout(self.hour2, 0, 1, 1, 1)
-
-        self.hour6 = QVBoxLayout()
-        self.hour6.setObjectName(u"hour6")
-        self.time_6 = QLabel(self.frame_8)
-        self.time_6.setObjectName(u"time_6")
-        self.time_6.setFont(font1)
-        self.time_6.setAlignment(Qt.AlignCenter)
-
-        self.hour6.addWidget(self.time_6)
-
-        self.temp_6 = QLabel(self.frame_8)
-        self.temp_6.setObjectName(u"temp_6")
-        self.temp_6.setAlignment(Qt.AlignCenter)
-
-        self.hour6.addWidget(self.temp_6)
-
-        self.image_6 = QLabel(self.frame_8)
-        self.image_6.setObjectName(u"image_6")
-        self.image_6.setMaximumSize(QSize(75, 75))
-        self.image_6.setScaledContents(True)
-        self.image_6.setAlignment(Qt.AlignCenter)
-
-        self.hour6.addWidget(self.image_6, 0, Qt.AlignHCenter)
-
-        self.percipImage_11 = QLabel(self.frame_8)
-        self.percipImage_11.setObjectName(u"percipImage_11")
-        self.percipImage_11.setMinimumSize(QSize(30, 30))
-        self.percipImage_11.setMaximumSize(QSize(30, 30))
-        self.percipImage_11.setTextFormat(Qt.AutoText)
-        self.percipImage_11.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_11.setScaledContents(True)
-        self.percipImage_11.setAlignment(Qt.AlignCenter)
-        self.percipImage_11.setIndent(0)
-
-        self.hour6.addWidget(self.percipImage_11, 0, Qt.AlignHCenter)
-
-        self.percipPer_6 = QLabel(self.frame_8)
-        self.percipPer_6.setObjectName(u"percipPer_6")
-        self.percipPer_6.setAlignment(Qt.AlignCenter)
-
-        self.hour6.addWidget(self.percipPer_6, 0, Qt.AlignHCenter)
-
-
-        self.gridLayout_36.addLayout(self.hour6, 0, 5, 1, 1)
+        self.line_19 = QFrame(self.frame_8)
+        self.line_19.setObjectName(u"line_19")
+        self.line_19.setFrameShape(QFrame.VLine)
+        self.line_19.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_36.addWidget(self.line_19, 0, 7, 1, 1)
 
         self.hour3 = QVBoxLayout()
         self.hour3.setObjectName(u"hour3")
         self.time_3 = QLabel(self.frame_8)
         self.time_3.setObjectName(u"time_3")
+        font1 = QFont()
+        font1.setFamilies([u"Geneva"])
+        font1.setPointSize(14)
         self.time_3.setFont(font1)
         self.time_3.setAlignment(Qt.AlignCenter)
 
-        self.hour3.addWidget(self.time_3)
+        self.hour3.addWidget(self.time_3, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.temp_3 = QLabel(self.frame_8)
         self.temp_3.setObjectName(u"temp_3")
         self.temp_3.setAlignment(Qt.AlignCenter)
 
-        self.hour3.addWidget(self.temp_3)
+        self.hour3.addWidget(self.temp_3, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.image_3 = QLabel(self.frame_8)
         self.image_3.setObjectName(u"image_3")
@@ -426,7 +153,7 @@ class Ui_MainWindow(object):
         self.image_3.setScaledContents(True)
         self.image_3.setAlignment(Qt.AlignCenter)
 
-        self.hour3.addWidget(self.image_3, 0, Qt.AlignHCenter)
+        self.hour3.addWidget(self.image_3, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.percipImage_8 = QLabel(self.frame_8)
         self.percipImage_8.setObjectName(u"percipImage_8")
@@ -438,16 +165,315 @@ class Ui_MainWindow(object):
         self.percipImage_8.setAlignment(Qt.AlignCenter)
         self.percipImage_8.setIndent(0)
 
-        self.hour3.addWidget(self.percipImage_8, 0, Qt.AlignHCenter)
+        self.hour3.addWidget(self.percipImage_8, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.percipPer_3 = QLabel(self.frame_8)
         self.percipPer_3.setObjectName(u"percipPer_3")
         self.percipPer_3.setAlignment(Qt.AlignCenter)
 
-        self.hour3.addWidget(self.percipPer_3, 0, Qt.AlignHCenter)
+        self.hour3.addWidget(self.percipPer_3, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
 
-        self.gridLayout_36.addLayout(self.hour3, 0, 2, 1, 1)
+        self.gridLayout_36.addLayout(self.hour3, 0, 4, 1, 1)
+
+        self.hour6 = QVBoxLayout()
+        self.hour6.setObjectName(u"hour6")
+        self.time_6 = QLabel(self.frame_8)
+        self.time_6.setObjectName(u"time_6")
+        self.time_6.setFont(font1)
+        self.time_6.setAlignment(Qt.AlignCenter)
+
+        self.hour6.addWidget(self.time_6, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.temp_6 = QLabel(self.frame_8)
+        self.temp_6.setObjectName(u"temp_6")
+        self.temp_6.setAlignment(Qt.AlignCenter)
+
+        self.hour6.addWidget(self.temp_6, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.image_6 = QLabel(self.frame_8)
+        self.image_6.setObjectName(u"image_6")
+        self.image_6.setMaximumSize(QSize(75, 75))
+        self.image_6.setScaledContents(True)
+        self.image_6.setAlignment(Qt.AlignCenter)
+
+        self.hour6.addWidget(self.image_6, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipImage_11 = QLabel(self.frame_8)
+        self.percipImage_11.setObjectName(u"percipImage_11")
+        self.percipImage_11.setMinimumSize(QSize(30, 30))
+        self.percipImage_11.setMaximumSize(QSize(30, 30))
+        self.percipImage_11.setTextFormat(Qt.AutoText)
+        self.percipImage_11.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_11.setScaledContents(True)
+        self.percipImage_11.setAlignment(Qt.AlignCenter)
+        self.percipImage_11.setIndent(0)
+
+        self.hour6.addWidget(self.percipImage_11, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipPer_6 = QLabel(self.frame_8)
+        self.percipPer_6.setObjectName(u"percipPer_6")
+        self.percipPer_6.setAlignment(Qt.AlignCenter)
+
+        self.hour6.addWidget(self.percipPer_6, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.gridLayout_36.addLayout(self.hour6, 0, 10, 1, 1)
+
+        self.line_20 = QFrame(self.frame_8)
+        self.line_20.setObjectName(u"line_20")
+        self.line_20.setFrameShape(QFrame.VLine)
+        self.line_20.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_36.addWidget(self.line_20, 0, 9, 1, 1)
+
+        self.hour5 = QVBoxLayout()
+        self.hour5.setObjectName(u"hour5")
+        self.time_5 = QLabel(self.frame_8)
+        self.time_5.setObjectName(u"time_5")
+        self.time_5.setFont(font1)
+        self.time_5.setAlignment(Qt.AlignCenter)
+
+        self.hour5.addWidget(self.time_5, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.temp_5 = QLabel(self.frame_8)
+        self.temp_5.setObjectName(u"temp_5")
+        self.temp_5.setAlignment(Qt.AlignCenter)
+
+        self.hour5.addWidget(self.temp_5, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.image_5 = QLabel(self.frame_8)
+        self.image_5.setObjectName(u"image_5")
+        self.image_5.setMaximumSize(QSize(75, 75))
+        self.image_5.setScaledContents(True)
+        self.image_5.setAlignment(Qt.AlignCenter)
+
+        self.hour5.addWidget(self.image_5, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipImage_10 = QLabel(self.frame_8)
+        self.percipImage_10.setObjectName(u"percipImage_10")
+        self.percipImage_10.setMinimumSize(QSize(30, 30))
+        self.percipImage_10.setMaximumSize(QSize(30, 30))
+        self.percipImage_10.setTextFormat(Qt.AutoText)
+        self.percipImage_10.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_10.setScaledContents(True)
+        self.percipImage_10.setAlignment(Qt.AlignCenter)
+        self.percipImage_10.setIndent(0)
+
+        self.hour5.addWidget(self.percipImage_10, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipPer_5 = QLabel(self.frame_8)
+        self.percipPer_5.setObjectName(u"percipPer_5")
+        self.percipPer_5.setAlignment(Qt.AlignCenter)
+
+        self.hour5.addWidget(self.percipPer_5, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.gridLayout_36.addLayout(self.hour5, 0, 8, 1, 1)
+
+        self.line_11 = QFrame(self.frame_8)
+        self.line_11.setObjectName(u"line_11")
+        self.line_11.setFrameShape(QFrame.VLine)
+        self.line_11.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_36.addWidget(self.line_11, 0, 3, 1, 1)
+
+        self.hour7 = QVBoxLayout()
+        self.hour7.setObjectName(u"hour7")
+        self.time_7 = QLabel(self.frame_8)
+        self.time_7.setObjectName(u"time_7")
+        self.time_7.setFont(font1)
+        self.time_7.setAlignment(Qt.AlignCenter)
+
+        self.hour7.addWidget(self.time_7, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.temp_7 = QLabel(self.frame_8)
+        self.temp_7.setObjectName(u"temp_7")
+        self.temp_7.setAlignment(Qt.AlignCenter)
+
+        self.hour7.addWidget(self.temp_7, 0, Qt.AlignVCenter)
+
+        self.image_7 = QLabel(self.frame_8)
+        self.image_7.setObjectName(u"image_7")
+        self.image_7.setMaximumSize(QSize(75, 75))
+        self.image_7.setScaledContents(True)
+        self.image_7.setAlignment(Qt.AlignCenter)
+
+        self.hour7.addWidget(self.image_7, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipImage_12 = QLabel(self.frame_8)
+        self.percipImage_12.setObjectName(u"percipImage_12")
+        self.percipImage_12.setMinimumSize(QSize(30, 30))
+        self.percipImage_12.setMaximumSize(QSize(30, 30))
+        self.percipImage_12.setTextFormat(Qt.AutoText)
+        self.percipImage_12.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_12.setScaledContents(True)
+        self.percipImage_12.setAlignment(Qt.AlignCenter)
+        self.percipImage_12.setIndent(0)
+
+        self.hour7.addWidget(self.percipImage_12, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipPer_7 = QLabel(self.frame_8)
+        self.percipPer_7.setObjectName(u"percipPer_7")
+        self.percipPer_7.setAlignment(Qt.AlignCenter)
+
+        self.hour7.addWidget(self.percipPer_7, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.gridLayout_36.addLayout(self.hour7, 0, 12, 1, 1)
+
+        self.hour2 = QVBoxLayout()
+        self.hour2.setObjectName(u"hour2")
+        self.time_2 = QLabel(self.frame_8)
+        self.time_2.setObjectName(u"time_2")
+        self.time_2.setFont(font1)
+        self.time_2.setAlignment(Qt.AlignCenter)
+
+        self.hour2.addWidget(self.time_2, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.temp_2 = QLabel(self.frame_8)
+        self.temp_2.setObjectName(u"temp_2")
+        self.temp_2.setAlignment(Qt.AlignCenter)
+
+        self.hour2.addWidget(self.temp_2, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.image_2 = QLabel(self.frame_8)
+        self.image_2.setObjectName(u"image_2")
+        self.image_2.setMaximumSize(QSize(75, 75))
+        self.image_2.setScaledContents(True)
+        self.image_2.setAlignment(Qt.AlignCenter)
+
+        self.hour2.addWidget(self.image_2, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipImage_2 = QLabel(self.frame_8)
+        self.percipImage_2.setObjectName(u"percipImage_2")
+        self.percipImage_2.setMinimumSize(QSize(30, 30))
+        self.percipImage_2.setMaximumSize(QSize(30, 30))
+        self.percipImage_2.setTextFormat(Qt.AutoText)
+        self.percipImage_2.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_2.setScaledContents(True)
+        self.percipImage_2.setAlignment(Qt.AlignCenter)
+        self.percipImage_2.setIndent(0)
+
+        self.hour2.addWidget(self.percipImage_2, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipPer_2 = QLabel(self.frame_8)
+        self.percipPer_2.setObjectName(u"percipPer_2")
+        self.percipPer_2.setAlignment(Qt.AlignCenter)
+
+        self.hour2.addWidget(self.percipPer_2, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.gridLayout_36.addLayout(self.hour2, 0, 2, 1, 1)
+
+        self.line_21 = QFrame(self.frame_8)
+        self.line_21.setObjectName(u"line_21")
+        self.line_21.setFrameShape(QFrame.VLine)
+        self.line_21.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_36.addWidget(self.line_21, 0, 11, 1, 1)
+
+        self.hour4 = QVBoxLayout()
+        self.hour4.setObjectName(u"hour4")
+        self.time_4 = QLabel(self.frame_8)
+        self.time_4.setObjectName(u"time_4")
+        self.time_4.setFont(font1)
+        self.time_4.setAlignment(Qt.AlignCenter)
+
+        self.hour4.addWidget(self.time_4, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.temp_4 = QLabel(self.frame_8)
+        self.temp_4.setObjectName(u"temp_4")
+        self.temp_4.setAlignment(Qt.AlignCenter)
+
+        self.hour4.addWidget(self.temp_4, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.image_4 = QLabel(self.frame_8)
+        self.image_4.setObjectName(u"image_4")
+        self.image_4.setMaximumSize(QSize(75, 75))
+        self.image_4.setScaledContents(True)
+        self.image_4.setAlignment(Qt.AlignCenter)
+
+        self.hour4.addWidget(self.image_4, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipImage_9 = QLabel(self.frame_8)
+        self.percipImage_9.setObjectName(u"percipImage_9")
+        self.percipImage_9.setMinimumSize(QSize(30, 30))
+        self.percipImage_9.setMaximumSize(QSize(30, 30))
+        self.percipImage_9.setTextFormat(Qt.AutoText)
+        self.percipImage_9.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_9.setScaledContents(True)
+        self.percipImage_9.setAlignment(Qt.AlignCenter)
+        self.percipImage_9.setIndent(0)
+
+        self.hour4.addWidget(self.percipImage_9, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipPer_4 = QLabel(self.frame_8)
+        self.percipPer_4.setObjectName(u"percipPer_4")
+        self.percipPer_4.setAlignment(Qt.AlignCenter)
+
+        self.hour4.addWidget(self.percipPer_4, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.gridLayout_36.addLayout(self.hour4, 0, 6, 1, 1)
+
+        self.hour1 = QVBoxLayout()
+        self.hour1.setObjectName(u"hour1")
+        self.time_1 = QLabel(self.frame_8)
+        self.time_1.setObjectName(u"time_1")
+        self.time_1.setFont(font1)
+        self.time_1.setAlignment(Qt.AlignCenter)
+
+        self.hour1.addWidget(self.time_1, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.temp_1 = QLabel(self.frame_8)
+        self.temp_1.setObjectName(u"temp_1")
+        self.temp_1.setAlignment(Qt.AlignCenter)
+
+        self.hour1.addWidget(self.temp_1, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.image_1 = QLabel(self.frame_8)
+        self.image_1.setObjectName(u"image_1")
+        self.image_1.setMaximumSize(QSize(75, 75))
+        self.image_1.setScaledContents(True)
+        self.image_1.setAlignment(Qt.AlignCenter)
+
+        self.hour1.addWidget(self.image_1, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipImage_1 = QLabel(self.frame_8)
+        self.percipImage_1.setObjectName(u"percipImage_1")
+        self.percipImage_1.setMinimumSize(QSize(30, 30))
+        self.percipImage_1.setMaximumSize(QSize(30, 30))
+        self.percipImage_1.setTextFormat(Qt.AutoText)
+        self.percipImage_1.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_1.setScaledContents(True)
+        self.percipImage_1.setAlignment(Qt.AlignCenter)
+        self.percipImage_1.setIndent(0)
+
+        self.hour1.addWidget(self.percipImage_1, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.percipPer_1 = QLabel(self.frame_8)
+        self.percipPer_1.setObjectName(u"percipPer_1")
+        self.percipPer_1.setAlignment(Qt.AlignCenter)
+
+        self.hour1.addWidget(self.percipPer_1, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.gridLayout_36.addLayout(self.hour1, 0, 0, 1, 1)
+
+        self.line_12 = QFrame(self.frame_8)
+        self.line_12.setObjectName(u"line_12")
+        self.line_12.setFrameShape(QFrame.VLine)
+        self.line_12.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_36.addWidget(self.line_12, 0, 5, 1, 1)
+
+        self.line_10 = QFrame(self.frame_8)
+        self.line_10.setObjectName(u"line_10")
+        self.line_10.setFrameShape(QFrame.VLine)
+        self.line_10.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_36.addWidget(self.line_10, 0, 1, 1, 1)
 
 
         self.horizontalLayout_6.addLayout(self.gridLayout_36)
@@ -458,6 +484,26 @@ class Ui_MainWindow(object):
         self.hourlyTimeLine.setWidget(self.scrollAreaWidgetContents_9)
 
         self.gridHourly_3.addWidget(self.hourlyTimeLine, 2, 0, 1, 1)
+
+        self.hourlyLabel = QLabel(self.gridLayoutWidget_11)
+        self.hourlyLabel.setObjectName(u"hourlyLabel")
+        self.hourlyLabel.setAlignment(Qt.AlignCenter)
+
+        self.gridHourly_3.addWidget(self.hourlyLabel, 1, 0, 1, 1)
+
+        self.line_14 = QFrame(self.gridLayoutWidget_11)
+        self.line_14.setObjectName(u"line_14")
+        self.line_14.setFrameShape(QFrame.HLine)
+        self.line_14.setFrameShadow(QFrame.Sunken)
+
+        self.gridHourly_3.addWidget(self.line_14, 3, 0, 1, 1)
+
+        self.line_13 = QFrame(self.gridLayoutWidget_11)
+        self.line_13.setObjectName(u"line_13")
+        self.line_13.setFrameShape(QFrame.HLine)
+        self.line_13.setFrameShadow(QFrame.Sunken)
+
+        self.gridHourly_3.addWidget(self.line_13, 0, 0, 1, 1)
 
         self.label_214 = QLabel(self.frame_7)
         self.label_214.setObjectName(u"label_214")
@@ -471,353 +517,16 @@ class Ui_MainWindow(object):
         self.label_214.setAlignment(Qt.AlignCenter)
         self.gridLayoutWidget_12 = QWidget(self.frame_7)
         self.gridLayoutWidget_12.setObjectName(u"gridLayoutWidget_12")
-        self.gridLayoutWidget_12.setGeometry(QRect(0, 730, 551, 361))
+        self.gridLayoutWidget_12.setGeometry(QRect(0, 730, 551, 381))
         self.gridMultipleDay_3 = QGridLayout(self.gridLayoutWidget_12)
         self.gridMultipleDay_3.setObjectName(u"gridMultipleDay_3")
         self.gridMultipleDay_3.setContentsMargins(0, 0, 0, 0)
-        self.muliDayScroll = QScrollArea(self.gridLayoutWidget_12)
-        self.muliDayScroll.setObjectName(u"muliDayScroll")
-        self.muliDayScroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.muliDayScroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        self.muliDayScroll.setWidgetResizable(True)
-        self.scrollAreaWidgetContents_10 = QWidget()
-        self.scrollAreaWidgetContents_10.setObjectName(u"scrollAreaWidgetContents_10")
-        self.scrollAreaWidgetContents_10.setGeometry(QRect(0, 0, 1024, 274))
-        self.verticalLayout_31 = QVBoxLayout(self.scrollAreaWidgetContents_10)
-        self.verticalLayout_31.setObjectName(u"verticalLayout_31")
-        self.multiDay = QFrame(self.scrollAreaWidgetContents_10)
-        self.multiDay.setObjectName(u"multiDay")
-        sizePolicy.setHeightForWidth(self.multiDay.sizePolicy().hasHeightForWidth())
-        self.multiDay.setSizePolicy(sizePolicy)
-        self.multiDay.setMinimumSize(QSize(1000, 250))
-        self.multiDay.setMaximumSize(QSize(1000, 250))
-        self.multiDay.setStyleSheet(u"")
-        self.multiDay.setFrameShape(QFrame.StyledPanel)
-        self.multiDay.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_7 = QHBoxLayout(self.multiDay)
-        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.gridLayout_37 = QGridLayout()
-        self.gridLayout_37.setObjectName(u"gridLayout_37")
-        self.day2Info = QGridLayout()
-        self.day2Info.setObjectName(u"day2Info")
-        self.day2TempLow = QLabel(self.multiDay)
-        self.day2TempLow.setObjectName(u"day2TempLow")
-
-        self.day2Info.addWidget(self.day2TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.day2Desc = QLabel(self.multiDay)
-        self.day2Desc.setObjectName(u"day2Desc")
-        self.day2Desc.setAlignment(Qt.AlignCenter)
-
-        self.day2Info.addWidget(self.day2Desc, 1, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-        self.day2TempHi = QLabel(self.multiDay)
-        self.day2TempHi.setObjectName(u"day2TempHi")
-
-        self.day2Info.addWidget(self.day2TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.percipImage_5 = QLabel(self.multiDay)
-        self.percipImage_5.setObjectName(u"percipImage_5")
-        self.percipImage_5.setMinimumSize(QSize(30, 30))
-        self.percipImage_5.setMaximumSize(QSize(30, 30))
-        self.percipImage_5.setTextFormat(Qt.AutoText)
-        self.percipImage_5.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_5.setScaledContents(True)
-        self.percipImage_5.setAlignment(Qt.AlignCenter)
-        self.percipImage_5.setIndent(0)
-
-        self.day2Info.addWidget(self.percipImage_5, 0, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-
-        self.gridLayout_37.addLayout(self.day2Info, 2, 1, 1, 1)
-
-        self.day3Image = QLabel(self.multiDay)
-        self.day3Image.setObjectName(u"day3Image")
-        self.day3Image.setMinimumSize(QSize(100, 100))
-        self.day3Image.setMaximumSize(QSize(100, 100))
-        self.day3Image.setScaledContents(True)
-        self.day3Image.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day3Image, 1, 2, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.day4Image = QLabel(self.multiDay)
-        self.day4Image.setObjectName(u"day4Image")
-        self.day4Image.setMinimumSize(QSize(100, 100))
-        self.day4Image.setMaximumSize(QSize(100, 100))
-        self.day4Image.setScaledContents(True)
-        self.day4Image.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day4Image, 1, 3, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.day4Date = QLabel(self.multiDay)
-        self.day4Date.setObjectName(u"day4Date")
-        self.day4Date.setMinimumSize(QSize(100, 15))
-        self.day4Date.setMaximumSize(QSize(100, 15))
-        font3 = QFont()
-        font3.setFamilies([u"Geneva"])
-        font3.setPointSize(18)
-        self.day4Date.setFont(font3)
-        self.day4Date.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day4Date, 0, 3, 1, 1, Qt.AlignHCenter)
-
-        self.day1Image = QLabel(self.multiDay)
-        self.day1Image.setObjectName(u"day1Image")
-        self.day1Image.setMinimumSize(QSize(100, 100))
-        self.day1Image.setMaximumSize(QSize(100, 100))
-        self.day1Image.setScaledContents(True)
-        self.day1Image.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day1Image, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.day5Info = QGridLayout()
-        self.day5Info.setObjectName(u"day5Info")
-        self.day5TempLow = QLabel(self.multiDay)
-        self.day5TempLow.setObjectName(u"day5TempLow")
-
-        self.day5Info.addWidget(self.day5TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.day5Desc = QLabel(self.multiDay)
-        self.day5Desc.setObjectName(u"day5Desc")
-
-        self.day5Info.addWidget(self.day5Desc, 1, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-        self.day5TempHi = QLabel(self.multiDay)
-        self.day5TempHi.setObjectName(u"day5TempHi")
-
-        self.day5Info.addWidget(self.day5TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.percipImage_13 = QLabel(self.multiDay)
-        self.percipImage_13.setObjectName(u"percipImage_13")
-        self.percipImage_13.setMinimumSize(QSize(30, 30))
-        self.percipImage_13.setMaximumSize(QSize(30, 30))
-        self.percipImage_13.setTextFormat(Qt.AutoText)
-        self.percipImage_13.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_13.setScaledContents(True)
-        self.percipImage_13.setAlignment(Qt.AlignCenter)
-        self.percipImage_13.setIndent(0)
-
-        self.day5Info.addWidget(self.percipImage_13, 0, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-
-        self.gridLayout_37.addLayout(self.day5Info, 2, 4, 1, 1)
-
-        self.day5Image = QLabel(self.multiDay)
-        self.day5Image.setObjectName(u"day5Image")
-        self.day5Image.setMinimumSize(QSize(100, 100))
-        self.day5Image.setMaximumSize(QSize(100, 100))
-        self.day5Image.setScaledContents(True)
-        self.day5Image.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day5Image, 1, 4, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.day2Image = QLabel(self.multiDay)
-        self.day2Image.setObjectName(u"day2Image")
-        self.day2Image.setMinimumSize(QSize(100, 100))
-        self.day2Image.setMaximumSize(QSize(100, 100))
-        self.day2Image.setScaledContents(True)
-        self.day2Image.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day2Image, 1, 1, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.day6Date = QLabel(self.multiDay)
-        self.day6Date.setObjectName(u"day6Date")
-        self.day6Date.setMinimumSize(QSize(100, 15))
-        self.day6Date.setMaximumSize(QSize(100, 15))
-        self.day6Date.setFont(font3)
-        self.day6Date.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day6Date, 0, 5, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.day6Image = QLabel(self.multiDay)
-        self.day6Image.setObjectName(u"day6Image")
-        self.day6Image.setMinimumSize(QSize(100, 100))
-        self.day6Image.setMaximumSize(QSize(100, 100))
-        self.day6Image.setScaledContents(True)
-        self.day6Image.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day6Image, 1, 5, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.day6Info = QGridLayout()
-        self.day6Info.setObjectName(u"day6Info")
-        self.day6TempLow = QLabel(self.multiDay)
-        self.day6TempLow.setObjectName(u"day6TempLow")
-
-        self.day6Info.addWidget(self.day6TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.day6Desc = QLabel(self.multiDay)
-        self.day6Desc.setObjectName(u"day6Desc")
-
-        self.day6Info.addWidget(self.day6Desc, 1, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-        self.day6TempHi = QLabel(self.multiDay)
-        self.day6TempHi.setObjectName(u"day6TempHi")
-
-        self.day6Info.addWidget(self.day6TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.percipImage_14 = QLabel(self.multiDay)
-        self.percipImage_14.setObjectName(u"percipImage_14")
-        self.percipImage_14.setMinimumSize(QSize(30, 30))
-        self.percipImage_14.setMaximumSize(QSize(30, 30))
-        self.percipImage_14.setTextFormat(Qt.AutoText)
-        self.percipImage_14.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_14.setScaledContents(True)
-        self.percipImage_14.setAlignment(Qt.AlignCenter)
-        self.percipImage_14.setIndent(0)
-
-        self.day6Info.addWidget(self.percipImage_14, 0, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-
-        self.gridLayout_37.addLayout(self.day6Info, 2, 5, 1, 1)
-
-        self.day4Info = QGridLayout()
-        self.day4Info.setObjectName(u"day4Info")
-        self.day4TempLow = QLabel(self.multiDay)
-        self.day4TempLow.setObjectName(u"day4TempLow")
-
-        self.day4Info.addWidget(self.day4TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.day4Desc = QLabel(self.multiDay)
-        self.day4Desc.setObjectName(u"day4Desc")
-
-        self.day4Info.addWidget(self.day4Desc, 1, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-        self.day4TempHi = QLabel(self.multiDay)
-        self.day4TempHi.setObjectName(u"day4TempHi")
-
-        self.day4Info.addWidget(self.day4TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.percipImage_7 = QLabel(self.multiDay)
-        self.percipImage_7.setObjectName(u"percipImage_7")
-        self.percipImage_7.setMinimumSize(QSize(30, 30))
-        self.percipImage_7.setMaximumSize(QSize(30, 30))
-        self.percipImage_7.setTextFormat(Qt.AutoText)
-        self.percipImage_7.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_7.setScaledContents(True)
-        self.percipImage_7.setAlignment(Qt.AlignCenter)
-        self.percipImage_7.setIndent(0)
-
-        self.day4Info.addWidget(self.percipImage_7, 0, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-
-        self.gridLayout_37.addLayout(self.day4Info, 2, 3, 1, 1)
-
-        self.day3Info = QGridLayout()
-        self.day3Info.setObjectName(u"day3Info")
-        self.day3TempLow = QLabel(self.multiDay)
-        self.day3TempLow.setObjectName(u"day3TempLow")
-
-        self.day3Info.addWidget(self.day3TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.day3Desc = QLabel(self.multiDay)
-        self.day3Desc.setObjectName(u"day3Desc")
-
-        self.day3Info.addWidget(self.day3Desc, 1, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-        self.day3TempHi = QLabel(self.multiDay)
-        self.day3TempHi.setObjectName(u"day3TempHi")
-
-        self.day3Info.addWidget(self.day3TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.percipImage_6 = QLabel(self.multiDay)
-        self.percipImage_6.setObjectName(u"percipImage_6")
-        self.percipImage_6.setMinimumSize(QSize(30, 30))
-        self.percipImage_6.setMaximumSize(QSize(30, 30))
-        self.percipImage_6.setTextFormat(Qt.AutoText)
-        self.percipImage_6.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_6.setScaledContents(True)
-        self.percipImage_6.setAlignment(Qt.AlignCenter)
-        self.percipImage_6.setIndent(0)
-
-        self.day3Info.addWidget(self.percipImage_6, 0, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-
-        self.gridLayout_37.addLayout(self.day3Info, 2, 2, 1, 1)
-
-        self.day1Info = QGridLayout()
-        self.day1Info.setObjectName(u"day1Info")
-        self.day1TempLow = QLabel(self.multiDay)
-        self.day1TempLow.setObjectName(u"day1TempLow")
-
-        self.day1Info.addWidget(self.day1TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.day1Desc = QLabel(self.multiDay)
-        self.day1Desc.setObjectName(u"day1Desc")
-
-        self.day1Info.addWidget(self.day1Desc, 1, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-        self.day1TempHi = QLabel(self.multiDay)
-        self.day1TempHi.setObjectName(u"day1TempHi")
-
-        self.day1Info.addWidget(self.day1TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.percipImage_3 = QLabel(self.multiDay)
-        self.percipImage_3.setObjectName(u"percipImage_3")
-        self.percipImage_3.setMinimumSize(QSize(30, 30))
-        self.percipImage_3.setMaximumSize(QSize(30, 30))
-        self.percipImage_3.setTextFormat(Qt.AutoText)
-        self.percipImage_3.setPixmap(QPixmap(u"icons/raindrop.png"))
-        self.percipImage_3.setScaledContents(True)
-        self.percipImage_3.setAlignment(Qt.AlignCenter)
-        self.percipImage_3.setIndent(0)
-
-        self.day1Info.addWidget(self.percipImage_3, 0, 0, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
-
-
-        self.gridLayout_37.addLayout(self.day1Info, 2, 0, 1, 1)
-
-        self.day3Date = QLabel(self.multiDay)
-        self.day3Date.setObjectName(u"day3Date")
-        self.day3Date.setMinimumSize(QSize(100, 15))
-        self.day3Date.setMaximumSize(QSize(100, 15))
-        self.day3Date.setFont(font3)
-        self.day3Date.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day3Date, 0, 2, 1, 1, Qt.AlignHCenter)
-
-        self.day2Date = QLabel(self.multiDay)
-        self.day2Date.setObjectName(u"day2Date")
-        self.day2Date.setMinimumSize(QSize(100, 15))
-        self.day2Date.setMaximumSize(QSize(100, 15))
-        self.day2Date.setFont(font3)
-        self.day2Date.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day2Date, 0, 1, 1, 1, Qt.AlignHCenter)
-
-        self.day5Date = QLabel(self.multiDay)
-        self.day5Date.setObjectName(u"day5Date")
-        self.day5Date.setMinimumSize(QSize(100, 15))
-        self.day5Date.setMaximumSize(QSize(100, 15))
-        self.day5Date.setFont(font3)
-        self.day5Date.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day5Date, 0, 4, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.day1Date = QLabel(self.multiDay)
-        self.day1Date.setObjectName(u"day1Date")
-        self.day1Date.setMinimumSize(QSize(100, 15))
-        self.day1Date.setMaximumSize(QSize(100, 15))
-        self.day1Date.setFont(font3)
-        self.day1Date.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_37.addWidget(self.day1Date, 0, 0, 1, 1, Qt.AlignHCenter)
-
-
-        self.horizontalLayout_7.addLayout(self.gridLayout_37)
-
-
-        self.verticalLayout_31.addWidget(self.multiDay)
-
-        self.muliDayScroll.setWidget(self.scrollAreaWidgetContents_10)
-
-        self.gridMultipleDay_3.addWidget(self.muliDayScroll, 3, 0, 1, 1)
-
-        self.line_16 = QFrame(self.gridLayoutWidget_12)
-        self.line_16.setObjectName(u"line_16")
-        self.line_16.setFrameShape(QFrame.HLine)
-        self.line_16.setFrameShadow(QFrame.Sunken)
-
-        self.gridMultipleDay_3.addWidget(self.line_16, 4, 0, 1, 1)
+        self.line_15 = QFrame(self.gridLayoutWidget_12)
+        self.line_15.setObjectName(u"line_15")
+        self.line_15.setFrameShape(QFrame.HLine)
+        self.line_15.setFrameShadow(QFrame.Sunken)
+
+        self.gridMultipleDay_3.addWidget(self.line_15, 0, 0, 1, 1)
 
         self.chooseDay = QComboBox(self.gridLayoutWidget_12)
         self.chooseDay.addItem("")
@@ -830,18 +539,394 @@ class Ui_MainWindow(object):
 
         self.gridMultipleDay_3.addWidget(self.chooseDay, 2, 0, 1, 1)
 
-        self.line_15 = QFrame(self.gridLayoutWidget_12)
-        self.line_15.setObjectName(u"line_15")
-        self.line_15.setFrameShape(QFrame.HLine)
-        self.line_15.setFrameShadow(QFrame.Sunken)
+        self.line_16 = QFrame(self.gridLayoutWidget_12)
+        self.line_16.setObjectName(u"line_16")
+        self.line_16.setFrameShape(QFrame.HLine)
+        self.line_16.setFrameShadow(QFrame.Sunken)
 
-        self.gridMultipleDay_3.addWidget(self.line_15, 0, 0, 1, 1)
+        self.gridMultipleDay_3.addWidget(self.line_16, 4, 0, 1, 1)
 
         self.label_250 = QLabel(self.gridLayoutWidget_12)
         self.label_250.setObjectName(u"label_250")
         self.label_250.setAlignment(Qt.AlignCenter)
 
         self.gridMultipleDay_3.addWidget(self.label_250, 1, 0, 1, 1)
+
+        self.muliDayScroll = QScrollArea(self.gridLayoutWidget_12)
+        self.muliDayScroll.setObjectName(u"muliDayScroll")
+        self.muliDayScroll.setEnabled(True)
+        self.muliDayScroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.muliDayScroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.muliDayScroll.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_10 = QWidget()
+        self.scrollAreaWidgetContents_10.setObjectName(u"scrollAreaWidgetContents_10")
+        self.scrollAreaWidgetContents_10.setEnabled(True)
+        self.scrollAreaWidgetContents_10.setGeometry(QRect(0, 0, 1024, 275))
+        self.verticalLayout_31 = QVBoxLayout(self.scrollAreaWidgetContents_10)
+        self.verticalLayout_31.setObjectName(u"verticalLayout_31")
+        self.multiDay = QFrame(self.scrollAreaWidgetContents_10)
+        self.multiDay.setObjectName(u"multiDay")
+        self.multiDay.setEnabled(True)
+        sizePolicy.setHeightForWidth(self.multiDay.sizePolicy().hasHeightForWidth())
+        self.multiDay.setSizePolicy(sizePolicy)
+        self.multiDay.setMinimumSize(QSize(1000, 250))
+        self.multiDay.setMaximumSize(QSize(1000, 250))
+        self.multiDay.setStyleSheet(u"")
+        self.multiDay.setFrameShape(QFrame.StyledPanel)
+        self.multiDay.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_7 = QHBoxLayout(self.multiDay)
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.horizontalLayout_7.setContentsMargins(5, 5, 5, 5)
+        self.gridLayout_37 = QGridLayout()
+        self.gridLayout_37.setObjectName(u"gridLayout_37")
+        self.day2Date = QLabel(self.multiDay)
+        self.day2Date.setObjectName(u"day2Date")
+        self.day2Date.setMinimumSize(QSize(100, 15))
+        self.day2Date.setMaximumSize(QSize(100, 15))
+        font3 = QFont()
+        font3.setFamilies([u"Geneva"])
+        font3.setPointSize(18)
+        self.day2Date.setFont(font3)
+        self.day2Date.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day2Date, 0, 2, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+        self.day2Info = QGridLayout()
+        self.day2Info.setObjectName(u"day2Info")
+        self.day2TempLow = QLabel(self.multiDay)
+        self.day2TempLow.setObjectName(u"day2TempLow")
+
+        self.day2Info.addWidget(self.day2TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignTop)
+
+        self.day2Desc = QLabel(self.multiDay)
+        self.day2Desc.setObjectName(u"day2Desc")
+        self.day2Desc.setAlignment(Qt.AlignCenter)
+
+        self.day2Info.addWidget(self.day2Desc, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignTop)
+
+        self.day2TempHi = QLabel(self.multiDay)
+        self.day2TempHi.setObjectName(u"day2TempHi")
+
+        self.day2Info.addWidget(self.day2TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.percipImage_5 = QLabel(self.multiDay)
+        self.percipImage_5.setObjectName(u"percipImage_5")
+        self.percipImage_5.setMinimumSize(QSize(30, 30))
+        self.percipImage_5.setMaximumSize(QSize(30, 30))
+        self.percipImage_5.setTextFormat(Qt.AutoText)
+        self.percipImage_5.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_5.setScaledContents(True)
+        self.percipImage_5.setAlignment(Qt.AlignCenter)
+        self.percipImage_5.setIndent(0)
+
+        self.day2Info.addWidget(self.percipImage_5, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+
+        self.gridLayout_37.addLayout(self.day2Info, 2, 2, 1, 1)
+
+        self.day4Info = QGridLayout()
+        self.day4Info.setObjectName(u"day4Info")
+        self.day4TempLow = QLabel(self.multiDay)
+        self.day4TempLow.setObjectName(u"day4TempLow")
+
+        self.day4Info.addWidget(self.day4TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignTop)
+
+        self.day4Desc = QLabel(self.multiDay)
+        self.day4Desc.setObjectName(u"day4Desc")
+
+        self.day4Info.addWidget(self.day4Desc, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignTop)
+
+        self.day4TempHi = QLabel(self.multiDay)
+        self.day4TempHi.setObjectName(u"day4TempHi")
+
+        self.day4Info.addWidget(self.day4TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.percipImage_7 = QLabel(self.multiDay)
+        self.percipImage_7.setObjectName(u"percipImage_7")
+        self.percipImage_7.setMinimumSize(QSize(30, 30))
+        self.percipImage_7.setMaximumSize(QSize(30, 30))
+        self.percipImage_7.setTextFormat(Qt.AutoText)
+        self.percipImage_7.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_7.setScaledContents(True)
+        self.percipImage_7.setAlignment(Qt.AlignCenter)
+        self.percipImage_7.setIndent(0)
+
+        self.day4Info.addWidget(self.percipImage_7, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+
+        self.gridLayout_37.addLayout(self.day4Info, 2, 6, 1, 1)
+
+        self.day6Info = QGridLayout()
+        self.day6Info.setObjectName(u"day6Info")
+        self.day6TempLow = QLabel(self.multiDay)
+        self.day6TempLow.setObjectName(u"day6TempLow")
+
+        self.day6Info.addWidget(self.day6TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignTop)
+
+        self.day6Desc = QLabel(self.multiDay)
+        self.day6Desc.setObjectName(u"day6Desc")
+
+        self.day6Info.addWidget(self.day6Desc, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignTop)
+
+        self.day6TempHi = QLabel(self.multiDay)
+        self.day6TempHi.setObjectName(u"day6TempHi")
+
+        self.day6Info.addWidget(self.day6TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.percipImage_14 = QLabel(self.multiDay)
+        self.percipImage_14.setObjectName(u"percipImage_14")
+        self.percipImage_14.setMinimumSize(QSize(30, 30))
+        self.percipImage_14.setMaximumSize(QSize(30, 30))
+        self.percipImage_14.setTextFormat(Qt.AutoText)
+        self.percipImage_14.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_14.setScaledContents(True)
+        self.percipImage_14.setAlignment(Qt.AlignCenter)
+        self.percipImage_14.setIndent(0)
+
+        self.day6Info.addWidget(self.percipImage_14, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+
+        self.gridLayout_37.addLayout(self.day6Info, 2, 10, 1, 1)
+
+        self.day1Date = QLabel(self.multiDay)
+        self.day1Date.setObjectName(u"day1Date")
+        self.day1Date.setMinimumSize(QSize(100, 15))
+        self.day1Date.setMaximumSize(QSize(100, 15))
+        self.day1Date.setFont(font3)
+        self.day1Date.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day1Date, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+        self.day3Date = QLabel(self.multiDay)
+        self.day3Date.setObjectName(u"day3Date")
+        self.day3Date.setMinimumSize(QSize(100, 15))
+        self.day3Date.setMaximumSize(QSize(100, 15))
+        self.day3Date.setFont(font3)
+        self.day3Date.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day3Date, 0, 4, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+        self.day1Info = QGridLayout()
+        self.day1Info.setObjectName(u"day1Info")
+        self.day1TempLow = QLabel(self.multiDay)
+        self.day1TempLow.setObjectName(u"day1TempLow")
+
+        self.day1Info.addWidget(self.day1TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignTop)
+
+        self.day1Desc = QLabel(self.multiDay)
+        self.day1Desc.setObjectName(u"day1Desc")
+
+        self.day1Info.addWidget(self.day1Desc, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignTop)
+
+        self.day1TempHi = QLabel(self.multiDay)
+        self.day1TempHi.setObjectName(u"day1TempHi")
+
+        self.day1Info.addWidget(self.day1TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.percipImage_3 = QLabel(self.multiDay)
+        self.percipImage_3.setObjectName(u"percipImage_3")
+        self.percipImage_3.setMinimumSize(QSize(30, 30))
+        self.percipImage_3.setMaximumSize(QSize(30, 30))
+        self.percipImage_3.setTextFormat(Qt.AutoText)
+        self.percipImage_3.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_3.setScaledContents(True)
+        self.percipImage_3.setAlignment(Qt.AlignCenter)
+        self.percipImage_3.setIndent(0)
+
+        self.day1Info.addWidget(self.percipImage_3, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+
+        self.gridLayout_37.addLayout(self.day1Info, 2, 0, 1, 1)
+
+        self.day4Image = QLabel(self.multiDay)
+        self.day4Image.setObjectName(u"day4Image")
+        self.day4Image.setMinimumSize(QSize(100, 100))
+        self.day4Image.setMaximumSize(QSize(100, 100))
+        self.day4Image.setScaledContents(True)
+        self.day4Image.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day4Image, 1, 6, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.line_7 = QFrame(self.multiDay)
+        self.line_7.setObjectName(u"line_7")
+        self.line_7.setFrameShape(QFrame.VLine)
+        self.line_7.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_37.addWidget(self.line_7, 1, 5, 1, 1)
+
+        self.day5Info = QGridLayout()
+        self.day5Info.setObjectName(u"day5Info")
+        self.day5TempLow = QLabel(self.multiDay)
+        self.day5TempLow.setObjectName(u"day5TempLow")
+
+        self.day5Info.addWidget(self.day5TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignTop)
+
+        self.day5Desc = QLabel(self.multiDay)
+        self.day5Desc.setObjectName(u"day5Desc")
+
+        self.day5Info.addWidget(self.day5Desc, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignTop)
+
+        self.day5TempHi = QLabel(self.multiDay)
+        self.day5TempHi.setObjectName(u"day5TempHi")
+
+        self.day5Info.addWidget(self.day5TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.percipImage_13 = QLabel(self.multiDay)
+        self.percipImage_13.setObjectName(u"percipImage_13")
+        self.percipImage_13.setMinimumSize(QSize(30, 30))
+        self.percipImage_13.setMaximumSize(QSize(30, 30))
+        self.percipImage_13.setTextFormat(Qt.AutoText)
+        self.percipImage_13.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_13.setScaledContents(True)
+        self.percipImage_13.setAlignment(Qt.AlignCenter)
+        self.percipImage_13.setIndent(0)
+
+        self.day5Info.addWidget(self.percipImage_13, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+
+        self.gridLayout_37.addLayout(self.day5Info, 2, 8, 1, 1)
+
+        self.day4Date = QLabel(self.multiDay)
+        self.day4Date.setObjectName(u"day4Date")
+        self.day4Date.setMinimumSize(QSize(100, 15))
+        self.day4Date.setMaximumSize(QSize(100, 15))
+        self.day4Date.setFont(font3)
+        self.day4Date.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day4Date, 0, 6, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+        self.day2Image = QLabel(self.multiDay)
+        self.day2Image.setObjectName(u"day2Image")
+        self.day2Image.setMinimumSize(QSize(100, 100))
+        self.day2Image.setMaximumSize(QSize(100, 100))
+        self.day2Image.setScaledContents(True)
+        self.day2Image.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day2Image, 1, 2, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.day1Image = QLabel(self.multiDay)
+        self.day1Image.setObjectName(u"day1Image")
+        self.day1Image.setMinimumSize(QSize(100, 100))
+        self.day1Image.setMaximumSize(QSize(100, 100))
+        self.day1Image.setScaledContents(True)
+        self.day1Image.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day1Image, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.line_4 = QFrame(self.multiDay)
+        self.line_4.setObjectName(u"line_4")
+        self.line_4.setFrameShape(QFrame.VLine)
+        self.line_4.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_37.addWidget(self.line_4, 1, 3, 1, 1)
+
+        self.day5Image = QLabel(self.multiDay)
+        self.day5Image.setObjectName(u"day5Image")
+        self.day5Image.setMinimumSize(QSize(100, 100))
+        self.day5Image.setMaximumSize(QSize(100, 100))
+        self.day5Image.setScaledContents(True)
+        self.day5Image.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day5Image, 1, 8, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.day3Info = QGridLayout()
+        self.day3Info.setObjectName(u"day3Info")
+        self.day3TempLow = QLabel(self.multiDay)
+        self.day3TempLow.setObjectName(u"day3TempLow")
+
+        self.day3Info.addWidget(self.day3TempLow, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignTop)
+
+        self.day3Desc = QLabel(self.multiDay)
+        self.day3Desc.setObjectName(u"day3Desc")
+
+        self.day3Info.addWidget(self.day3Desc, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignTop)
+
+        self.day3TempHi = QLabel(self.multiDay)
+        self.day3TempHi.setObjectName(u"day3TempHi")
+
+        self.day3Info.addWidget(self.day3TempHi, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.percipImage_6 = QLabel(self.multiDay)
+        self.percipImage_6.setObjectName(u"percipImage_6")
+        self.percipImage_6.setMinimumSize(QSize(30, 30))
+        self.percipImage_6.setMaximumSize(QSize(30, 30))
+        self.percipImage_6.setTextFormat(Qt.AutoText)
+        self.percipImage_6.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_6.setScaledContents(True)
+        self.percipImage_6.setAlignment(Qt.AlignCenter)
+        self.percipImage_6.setIndent(0)
+
+        self.day3Info.addWidget(self.percipImage_6, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+
+        self.gridLayout_37.addLayout(self.day3Info, 2, 4, 1, 1)
+
+        self.day6Date = QLabel(self.multiDay)
+        self.day6Date.setObjectName(u"day6Date")
+        self.day6Date.setMinimumSize(QSize(100, 15))
+        self.day6Date.setMaximumSize(QSize(100, 15))
+        self.day6Date.setFont(font3)
+        self.day6Date.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day6Date, 0, 10, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+        self.line_3 = QFrame(self.multiDay)
+        self.line_3.setObjectName(u"line_3")
+        self.line_3.setFrameShape(QFrame.VLine)
+        self.line_3.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_37.addWidget(self.line_3, 1, 1, 1, 1)
+
+        self.line_8 = QFrame(self.multiDay)
+        self.line_8.setObjectName(u"line_8")
+        self.line_8.setFrameShape(QFrame.VLine)
+        self.line_8.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_37.addWidget(self.line_8, 1, 7, 1, 1)
+
+        self.day6Image = QLabel(self.multiDay)
+        self.day6Image.setObjectName(u"day6Image")
+        self.day6Image.setMinimumSize(QSize(100, 100))
+        self.day6Image.setMaximumSize(QSize(100, 100))
+        self.day6Image.setScaledContents(True)
+        self.day6Image.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day6Image, 1, 10, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.day5Date = QLabel(self.multiDay)
+        self.day5Date.setObjectName(u"day5Date")
+        self.day5Date.setMinimumSize(QSize(100, 15))
+        self.day5Date.setMaximumSize(QSize(100, 15))
+        self.day5Date.setFont(font3)
+        self.day5Date.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day5Date, 0, 8, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+
+        self.day3Image = QLabel(self.multiDay)
+        self.day3Image.setObjectName(u"day3Image")
+        self.day3Image.setMinimumSize(QSize(100, 100))
+        self.day3Image.setMaximumSize(QSize(100, 100))
+        self.day3Image.setScaledContents(True)
+        self.day3Image.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_37.addWidget(self.day3Image, 1, 4, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.line_9 = QFrame(self.multiDay)
+        self.line_9.setObjectName(u"line_9")
+        self.line_9.setFrameShape(QFrame.VLine)
+        self.line_9.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_37.addWidget(self.line_9, 1, 9, 1, 1)
+
+
+        self.horizontalLayout_7.addLayout(self.gridLayout_37)
+
+
+        self.verticalLayout_31.addWidget(self.multiDay)
+
+        self.muliDayScroll.setWidget(self.scrollAreaWidgetContents_10)
+
+        self.gridMultipleDay_3.addWidget(self.muliDayScroll, 3, 0, 1, 1)
 
         self.line_17 = QFrame(self.frame_7)
         self.line_17.setObjectName(u"line_17")
@@ -1164,9 +1249,140 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.Page2)
         self.Page3 = QWidget()
         self.Page3.setObjectName(u"Page3")
-        self.textEdit_2 = QTextEdit(self.Page3)
-        self.textEdit_2.setObjectName(u"textEdit_2")
-        self.textEdit_2.setGeometry(QRect(0, 0, 211, 51))
+        self.verticalLayoutWidget_4 = QWidget(self.Page3)
+        self.verticalLayoutWidget_4.setObjectName(u"verticalLayoutWidget_4")
+        self.verticalLayoutWidget_4.setGeometry(QRect(0, 10, 591, 931))
+        self.verticalLayout_8 = QVBoxLayout(self.verticalLayoutWidget_4)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.labelTitle_2 = QLabel(self.verticalLayoutWidget_4)
+        self.labelTitle_2.setObjectName(u"labelTitle_2")
+        font7 = QFont()
+        font7.setFamilies([u"Geneva"])
+        font7.setPointSize(24)
+        font7.setBold(False)
+        self.labelTitle_2.setFont(font7)
+        self.labelTitle_2.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_8.addWidget(self.labelTitle_2)
+
+        self.verticalLayout_9 = QVBoxLayout()
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.scrollArea_3 = QScrollArea(self.verticalLayoutWidget_4)
+        self.scrollArea_3.setObjectName(u"scrollArea_3")
+        self.scrollArea_3.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_7 = QWidget()
+        self.scrollAreaWidgetContents_7.setObjectName(u"scrollAreaWidgetContents_7")
+        self.scrollAreaWidgetContents_7.setGeometry(QRect(0, 0, 585, 887))
+        self.layoutWidget_6 = QWidget(self.scrollAreaWidgetContents_7)
+        self.layoutWidget_6.setObjectName(u"layoutWidget_6")
+        self.layoutWidget_6.setGeometry(QRect(10, 0, 571, 81))
+        self.gridLayout_24 = QGridLayout(self.layoutWidget_6)
+        self.gridLayout_24.setObjectName(u"gridLayout_24")
+        self.gridLayout_24.setContentsMargins(0, 0, 0, 0)
+        self.scienceButton_6 = QPushButton(self.layoutWidget_6)
+        self.scienceButton_6.setObjectName(u"scienceButton_6")
+
+        self.gridLayout_24.addWidget(self.scienceButton_6, 0, 1, 1, 1)
+
+        self.spaceButton_6 = QPushButton(self.layoutWidget_6)
+        self.spaceButton_6.setObjectName(u"spaceButton_6")
+
+        self.gridLayout_24.addWidget(self.spaceButton_6, 0, 3, 1, 1)
+
+        self.localButton_6 = QPushButton(self.layoutWidget_6)
+        self.localButton_6.setObjectName(u"localButton_6")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.localButton_6.sizePolicy().hasHeightForWidth())
+        self.localButton_6.setSizePolicy(sizePolicy1)
+
+        self.gridLayout_24.addWidget(self.localButton_6, 0, 0, 1, 1)
+
+        self.natureButton_6 = QPushButton(self.layoutWidget_6)
+        self.natureButton_6.setObjectName(u"natureButton_6")
+
+        self.gridLayout_24.addWidget(self.natureButton_6, 0, 2, 1, 1)
+
+        self.gridLayoutWidget_6 = QWidget(self.scrollAreaWidgetContents_7)
+        self.gridLayoutWidget_6.setObjectName(u"gridLayoutWidget_6")
+        self.gridLayoutWidget_6.setGeometry(QRect(10, 80, 591, 811))
+        self.gridLayout_25 = QGridLayout(self.gridLayoutWidget_6)
+        self.gridLayout_25.setObjectName(u"gridLayout_25")
+        self.gridLayout_25.setSizeConstraint(QLayout.SetFixedSize)
+        self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
+        self.label_4 = QLabel(self.gridLayoutWidget_6)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setMaximumSize(QSize(231, 151))
+        self.label_4.setPixmap(QPixmap(u"newsImgs/ficke.png"))
+        self.label_4.setScaledContents(True)
+
+        self.gridLayout_25.addWidget(self.label_4, 3, 0, 1, 1)
+
+        self.label_3 = QLabel(self.gridLayoutWidget_6)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setMaximumSize(QSize(231, 151))
+        self.label_3.setPixmap(QPixmap(u"newsImgs/solarEclipse.png"))
+        self.label_3.setScaledContents(True)
+
+        self.gridLayout_25.addWidget(self.label_3, 2, 0, 1, 1)
+
+        self.textEdit_21 = QTextEdit(self.gridLayoutWidget_6)
+        self.textEdit_21.setObjectName(u"textEdit_21")
+        sizePolicy.setHeightForWidth(self.textEdit_21.sizePolicy().hasHeightForWidth())
+        self.textEdit_21.setSizePolicy(sizePolicy)
+        self.textEdit_21.setMaximumSize(QSize(300, 151))
+
+        self.gridLayout_25.addWidget(self.textEdit_21, 0, 1, 1, 1)
+
+        self.textEdit_22 = QTextEdit(self.gridLayoutWidget_6)
+        self.textEdit_22.setObjectName(u"textEdit_22")
+        sizePolicy.setHeightForWidth(self.textEdit_22.sizePolicy().hasHeightForWidth())
+        self.textEdit_22.setSizePolicy(sizePolicy)
+        self.textEdit_22.setMaximumSize(QSize(300, 151))
+
+        self.gridLayout_25.addWidget(self.textEdit_22, 2, 1, 1, 1)
+
+        self.textEdit_23 = QTextEdit(self.gridLayoutWidget_6)
+        self.textEdit_23.setObjectName(u"textEdit_23")
+        sizePolicy.setHeightForWidth(self.textEdit_23.sizePolicy().hasHeightForWidth())
+        self.textEdit_23.setSizePolicy(sizePolicy)
+        self.textEdit_23.setMaximumSize(QSize(300, 151))
+
+        self.gridLayout_25.addWidget(self.textEdit_23, 1, 1, 1, 1)
+
+        self.label_2 = QLabel(self.gridLayoutWidget_6)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMaximumSize(QSize(231, 151))
+        self.label_2.setPixmap(QPixmap(u"newsImgs/albertaFires.png"))
+        self.label_2.setScaledContents(True)
+
+        self.gridLayout_25.addWidget(self.label_2, 0, 0, 1, 1)
+
+        self.label_5 = QLabel(self.gridLayoutWidget_6)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setMaximumSize(QSize(231, 151))
+        self.label_5.setPixmap(QPixmap(u"newsImgs/springStorm.png"))
+        self.label_5.setScaledContents(True)
+
+        self.gridLayout_25.addWidget(self.label_5, 1, 0, 1, 1)
+
+        self.textEdit_24 = QTextEdit(self.gridLayoutWidget_6)
+        self.textEdit_24.setObjectName(u"textEdit_24")
+        sizePolicy.setHeightForWidth(self.textEdit_24.sizePolicy().hasHeightForWidth())
+        self.textEdit_24.setSizePolicy(sizePolicy)
+        self.textEdit_24.setMaximumSize(QSize(300, 151))
+
+        self.gridLayout_25.addWidget(self.textEdit_24, 3, 1, 1, 1)
+
+        self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_7)
+
+        self.verticalLayout_9.addWidget(self.scrollArea_3)
+
+
+        self.verticalLayout_8.addLayout(self.verticalLayout_9)
+
         self.stackedWidget.addWidget(self.Page3)
         self.Page4 = QWidget()
         self.Page4.setObjectName(u"Page4")
@@ -1203,11 +1419,11 @@ class Ui_MainWindow(object):
         self.gridTitle.setContentsMargins(0, 0, 0, 0)
         self.labelTitle = QLabel(self.gridLayoutWidget)
         self.labelTitle.setObjectName(u"labelTitle")
-        font7 = QFont()
-        font7.setFamilies([u"Geneva"])
-        font7.setPointSize(16)
-        font7.setBold(False)
-        self.labelTitle.setFont(font7)
+        font8 = QFont()
+        font8.setFamilies([u"Geneva"])
+        font8.setPointSize(16)
+        font8.setBold(False)
+        self.labelTitle.setFont(font8)
         self.labelTitle.setAlignment(Qt.AlignCenter)
 
         self.gridTitle.addWidget(self.labelTitle, 0, 0, 1, 1)
@@ -1302,11 +1518,16 @@ class Ui_MainWindow(object):
         self.verticalLayoutTime.addWidget(self.labelTime)
 
         self.radioButton12h = QRadioButton(self.gridLayoutWidget_5)
+        self.buttonGroup = QButtonGroup(MainWindow)
+        self.buttonGroup.setObjectName(u"buttonGroup")
+        self.buttonGroup.addButton(self.radioButton12h)
         self.radioButton12h.setObjectName(u"radioButton12h")
+        self.radioButton12h.setChecked(True)
 
         self.verticalLayoutTime.addWidget(self.radioButton12h)
 
         self.radioButton24h = QRadioButton(self.gridLayoutWidget_5)
+        self.buttonGroup.addButton(self.radioButton24h)
         self.radioButton24h.setObjectName(u"radioButton24h")
 
         self.verticalLayoutTime.addWidget(self.radioButton24h)
@@ -1330,12 +1551,17 @@ class Ui_MainWindow(object):
         self.verticalLayoutUnits.addWidget(self.labelUnits)
 
         self.radioButtonMetric = QRadioButton(self.gridLayoutWidget_5)
+        self.buttonGroup_2 = QButtonGroup(MainWindow)
+        self.buttonGroup_2.setObjectName(u"buttonGroup_2")
+        self.buttonGroup_2.addButton(self.radioButtonMetric)
         self.radioButtonMetric.setObjectName(u"radioButtonMetric")
 
         self.verticalLayoutUnits.addWidget(self.radioButtonMetric)
 
         self.radioButtonImperial = QRadioButton(self.gridLayoutWidget_5)
+        self.buttonGroup_2.addButton(self.radioButtonImperial)
         self.radioButtonImperial.setObjectName(u"radioButtonImperial")
+        self.radioButtonImperial.setChecked(True)
 
         self.verticalLayoutUnits.addWidget(self.radioButtonImperial)
 
@@ -1417,9 +1643,6 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.home_btn = QPushButton(self.widget)
         self.home_btn.setObjectName(u"home_btn")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.home_btn.sizePolicy().hasHeightForWidth())
         self.home_btn.setSizePolicy(sizePolicy1)
         icon = QIcon()
@@ -1465,7 +1688,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 607, 43))
+        self.menubar.setGeometry(QRect(0, 0, 607, 24))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -1484,22 +1707,21 @@ class Ui_MainWindow(object):
         self.search_btn.setText(QCoreApplication.translate("MainWindow", u"Search", None))
         self.search_entry.setText("")
         self.search_entry.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search for a location...", None))
-        self.hourlyLabel.setText(QCoreApplication.translate("MainWindow", u"Hourly Forecast", None))
-        self.time_1.setText(QCoreApplication.translate("MainWindow", u"Time", None))
-        self.temp_1.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
-        self.image_1.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
-        self.percipImage_1.setText("")
-        self.percipPer_1.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
+        self.time_3.setText(QCoreApplication.translate("MainWindow", u"Time", None))
+        self.temp_3.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
+        self.image_3.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
+        self.percipImage_8.setText("")
+        self.percipPer_3.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
+        self.time_6.setText(QCoreApplication.translate("MainWindow", u"Time", None))
+        self.temp_6.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
+        self.image_6.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
+        self.percipImage_11.setText("")
+        self.percipPer_6.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
         self.time_5.setText(QCoreApplication.translate("MainWindow", u"Time", None))
         self.temp_5.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
         self.image_5.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
         self.percipImage_10.setText("")
         self.percipPer_5.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
-        self.time_4.setText(QCoreApplication.translate("MainWindow", u"Time", None))
-        self.temp_4.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
-        self.image_4.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
-        self.percipImage_9.setText("")
-        self.percipPer_4.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
         self.time_7.setText(QCoreApplication.translate("MainWindow", u"Time", None))
         self.temp_7.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
         self.image_7.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
@@ -1510,53 +1732,18 @@ class Ui_MainWindow(object):
         self.image_2.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
         self.percipImage_2.setText("")
         self.percipPer_2.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
-        self.time_6.setText(QCoreApplication.translate("MainWindow", u"Time", None))
-        self.temp_6.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
-        self.image_6.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
-        self.percipImage_11.setText("")
-        self.percipPer_6.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
-        self.time_3.setText(QCoreApplication.translate("MainWindow", u"Time", None))
-        self.temp_3.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
-        self.image_3.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
-        self.percipImage_8.setText("")
-        self.percipPer_3.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
+        self.time_4.setText(QCoreApplication.translate("MainWindow", u"Time", None))
+        self.temp_4.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
+        self.image_4.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
+        self.percipImage_9.setText("")
+        self.percipPer_4.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
+        self.time_1.setText(QCoreApplication.translate("MainWindow", u"Time", None))
+        self.temp_1.setText(QCoreApplication.translate("MainWindow", u"Temp", None))
+        self.image_1.setText(QCoreApplication.translate("MainWindow", u"weatherImage", None))
+        self.percipImage_1.setText("")
+        self.percipPer_1.setText(QCoreApplication.translate("MainWindow", u"precipitationPercent", None))
+        self.hourlyLabel.setText(QCoreApplication.translate("MainWindow", u"Hourly Forecast", None))
         self.label_214.setText(QCoreApplication.translate("MainWindow", u"\u2308AD CONTAINER\u230b", None))
-        self.day2TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
-        self.day2Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
-        self.day2TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
-        self.percipImage_5.setText("")
-        self.day3Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
-        self.day4Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
-        self.day4Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.day1Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
-        self.day5TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
-        self.day5Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
-        self.day5TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
-        self.percipImage_13.setText("")
-        self.day5Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
-        self.day2Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
-        self.day6Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.day6Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
-        self.day6TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
-        self.day6Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
-        self.day6TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
-        self.percipImage_14.setText("")
-        self.day4TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
-        self.day4Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
-        self.day4TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
-        self.percipImage_7.setText("")
-        self.day3TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
-        self.day3Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
-        self.day3TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
-        self.percipImage_6.setText("")
-        self.day1TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
-        self.day1Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
-        self.day1TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
-        self.percipImage_3.setText("")
-        self.day3Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.day2Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.day5Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.day1Date.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
         self.chooseDay.setItemText(0, QCoreApplication.translate("MainWindow", u"7-Day Forecast", None))
         self.chooseDay.setItemText(1, QCoreApplication.translate("MainWindow", u"3-Day Forecast", None))
         self.chooseDay.setItemText(2, QCoreApplication.translate("MainWindow", u"14-Day Forecast", None))
@@ -1564,6 +1751,42 @@ class Ui_MainWindow(object):
         self.chooseDay.setCurrentText("")
         self.chooseDay.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Choose Days", None))
         self.label_250.setText(QCoreApplication.translate("MainWindow", u"Weather Forecast", None))
+        self.day2Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.day2TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
+        self.day2Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
+        self.day2TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
+        self.percipImage_5.setText("")
+        self.day4TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
+        self.day4Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
+        self.day4TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
+        self.percipImage_7.setText("")
+        self.day6TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
+        self.day6Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
+        self.day6TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
+        self.percipImage_14.setText("")
+        self.day1Date.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
+        self.day3Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.day1TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
+        self.day1Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
+        self.day1TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
+        self.percipImage_3.setText("")
+        self.day4Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
+        self.day5TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
+        self.day5Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
+        self.day5TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
+        self.percipImage_13.setText("")
+        self.day4Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.day2Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
+        self.day1Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
+        self.day5Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
+        self.day3TempLow.setText(QCoreApplication.translate("MainWindow", u"TempLow", None))
+        self.day3Desc.setText(QCoreApplication.translate("MainWindow", u"WDescrip", None))
+        self.day3TempHi.setText(QCoreApplication.translate("MainWindow", u"TempHigh", None))
+        self.percipImage_6.setText("")
+        self.day6Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.day6Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
+        self.day5Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.day3Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
         self.imageCurr.setText(QCoreApplication.translate("MainWindow", u"Wimage", None))
         self.tempLowCurr.setText(QCoreApplication.translate("MainWindow", u"TempLowDay", None))
         self.tempCurr.setText("")
@@ -1592,14 +1815,59 @@ class Ui_MainWindow(object):
         self.sunset.setText(QCoreApplication.translate("MainWindow", u"Sunset Time", None))
         self.label_81.setText("")
         self.label.setText("")
-        self.textEdit_2.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.labelTitle_2.setText(QCoreApplication.translate("MainWindow", u"News", None))
+        self.scienceButton_6.setText(QCoreApplication.translate("MainWindow", u"Science", None))
+        self.spaceButton_6.setText(QCoreApplication.translate("MainWindow", u"Space", None))
+        self.localButton_6.setText(QCoreApplication.translate("MainWindow", u"Local", None))
+        self.natureButton_6.setText(QCoreApplication.translate("MainWindow", u"Nature", None))
+        self.label_4.setText("")
+        self.label_3.setText("")
+        self.textEdit_21.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'.AppleSystemUIFont';\">News - The Weather Network</span></p></body></html>", None))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue'; font-size:18pt;\">Alberta wildfire season is off to a blazing start, 57 fires burning</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\"><br /></span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
+                        "n-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\">With the 2024 wildfire season heavily looming over the backs of Canadians after last year\u2019s historic wildfire season, none will be feeling the pressure more than Western Canada.\u00a0</span><a href=\"https://www.theweathernetwork.com/en/news/weather/severe/whats-the-recipe-for-a-severe-drought-in-western-canada\"><span style=\" font-family:'Helvetica Neue'; text-decoration: underline; color:#094fd1;\">Widespread drought</span></a><span style=\" font-family:'Helvetica Neue';\">, low snow-pack levels, and warm temperatures have many people fearing for what this season will bring.\u00a0</span><span style=\" font-family:'.AppleSystemUIFont';\"> </span></p></body></html>", None))
+        self.textEdit_22.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue'; font-size:18pt;\">April 8 solar eclipse is a must-see celestial event this spring</span><span style=\" font-family:'Helvetica Neue';\"><br /></span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Helvetica Neue';\"><br /></p>\n"
+"<p style=\" "
+                        "margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\">In addition to the bright planets and meteor showers visible throughout the spring season, a 'once-in-a-lifetime' solar eclipse will darken our daytime sky on April 8. \u00a0 On March 19, at precisely 11:06 p.m. EDT, the Sun will cross the celestial equator from south to north, signifying the\u00a0 [earliest start to spring in 128 years].</span></p></body></html>", None))
+        self.textEdit_23.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue'; font-size:18pt;\">Potent spring storm setup threatens heavy snow over parts of Quebec</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\"><br /></span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
+                        "n-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\">A dynamic storm system is forecast to sweep across Quebec this week, bringing with it the potential for rain, gusty winds, and heavy snow. Travel disruptions and power outages are possible\u00a0 \u00a0</span><span style=\" font-family:'.AppleSystemUIFont';\"> </span></p></body></html>", None))
+        self.label_2.setText("")
+        self.label_5.setText("")
+        self.textEdit_24.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue'; font-size:18pt;\">Canada faces a fickle April as winter wanes and summer teases</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\"><br /></span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-righ"
+                        "t:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\">April can be such a fickle month! While the middle of spring is notorious for delivering\u00a0 [parting shots from winter](https://www.theweathernetwork.com/en/news/weather/forecasts/reality-check-april-is-never-really-that-nice-canada) , it\u2019ll also tease us with brief tastes of summer-like warmth from time to time. Sometimes, we\u2019ll see both within a few days!\u00a0 \u00a0</span><span style=\" font-family:'.AppleSystemUIFont';\"> </span></p></body></html>", None))
         self.labelTitle.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
         self.imageProfile.setText(QCoreApplication.translate("MainWindow", u"Profile Image", None))
         self.labelUsername.setText(QCoreApplication.translate("MainWindow", u"Username", None))
