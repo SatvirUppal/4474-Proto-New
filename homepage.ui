@@ -78,7 +78,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-291</y>
+               <y>0</y>
                <width>572</width>
                <height>1873</height>
               </rect>
@@ -161,7 +161,7 @@
                      </property>
                      <property name="geometry">
                       <rect>
-                       <x>-35</x>
+                       <x>-463</x>
                        <y>0</y>
                        <width>1010</width>
                        <height>271</height>
@@ -255,7 +255,7 @@
                                <property name="maximumSize">
                                 <size>
                                  <width>75</width>
-                                 <height>67</height>
+                                 <height>75</height>
                                 </size>
                                </property>
                                <property name="text">
@@ -290,7 +290,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -383,7 +383,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -483,7 +483,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -583,7 +583,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -676,7 +676,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -776,7 +776,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -869,7 +869,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -1062,7 +1062,7 @@
                      </property>
                      <property name="geometry">
                       <rect>
-                       <x>0</x>
+                       <x>-481</x>
                        <y>0</y>
                        <width>1024</width>
                        <height>275</height>
@@ -1191,7 +1191,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -1250,7 +1250,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -1309,7 +1309,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -1424,7 +1424,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -1515,7 +1515,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -1684,7 +1684,7 @@
                                 <enum>Qt::AutoText</enum>
                                </property>
                                <property name="pixmap">
-                                <pixmap>icons/raindrop.png</pixmap>
+                                <pixmap resource="images.qrc">:/Appicons/icons/raindrop.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -1867,49 +1867,27 @@
                  <property name="geometry">
                   <rect>
                    <x>10</x>
-                   <y>70</y>
-                   <width>781</width>
-                   <height>251</height>
+                   <y>0</y>
+                   <width>531</width>
+                   <height>321</height>
                   </rect>
                  </property>
                  <layout class="QGridLayout" name="gridCurrent">
                   <item row="0" column="0">
                    <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,0,0,0,0">
-                    <item row="0" column="2" rowspan="2">
-                     <spacer name="horizontalSpacer_2">
-                      <property name="orientation">
-                       <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeType">
-                       <enum>QSizePolicy::Fixed</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>0</width>
-                        <height>10</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                    <item row="0" column="3" rowspan="2">
-                     <widget class="QLabel" name="imageCurr">
-                      <property name="maximumSize">
-                       <size>
-                        <width>150</width>
-                        <height>150</height>
-                       </size>
-                      </property>
-                      <property name="mouseTracking">
-                       <bool>false</bool>
+                    <item row="0" column="4" rowspan="2">
+                     <widget class="QLabel" name="locationCurr">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>24</pointsize>
+                       </font>
                       </property>
                       <property name="text">
-                       <string>Wimage</string>
-                      </property>
-                      <property name="scaledContents">
-                       <bool>true</bool>
+                       <string>Location</string>
                       </property>
                       <property name="alignment">
-                       <set>Qt::AlignCenter</set>
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -1929,6 +1907,45 @@
                       </property>
                       <property name="text">
                        <string>TempLowDay</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2" rowspan="2">
+                     <spacer name="horizontalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>13</width>
+                        <height>13</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="0" column="1" alignment="Qt::AlignBottom">
+                     <widget class="QLabel" name="tempHighCurr">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>18</pointsize>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>TempHighDay</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
@@ -1960,42 +1977,25 @@
                       </property>
                      </widget>
                     </item>
-                    <item row="0" column="1" alignment="Qt::AlignBottom">
-                     <widget class="QLabel" name="tempHighCurr">
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
+                    <item row="0" column="3" rowspan="2">
+                     <widget class="QLabel" name="imageCurr">
+                      <property name="maximumSize">
+                       <size>
+                        <width>150</width>
+                        <height>150</height>
+                       </size>
                       </property>
-                      <property name="font">
-                       <font>
-                        <family>Geneva</family>
-                        <pointsize>18</pointsize>
-                        <bold>false</bold>
-                       </font>
+                      <property name="mouseTracking">
+                       <bool>false</bool>
                       </property>
                       <property name="text">
-                       <string>TempHighDay</string>
+                       <string>Wimage</string>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="4" rowspan="2">
-                     <widget class="QLabel" name="locationCurr">
-                      <property name="font">
-                       <font>
-                        <family>Geneva</family>
-                        <pointsize>24</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Location</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -2013,111 +2013,59 @@
                   </rect>
                  </property>
                  <layout class="QGridLayout" name="gridMetrics">
-                  <item row="1" column="0">
-                   <layout class="QGridLayout" name="gridLayout_15">
-                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                     <widget class="QLabel" name="label_80">
-                      <property name="maximumSize">
-                       <size>
-                        <width>75</width>
-                        <height>75</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string/>
-                      </property>
-                      <property name="pixmap">
-                       <pixmap>icons/aQual.png</pixmap>
-                      </property>
-                      <property name="scaledContents">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
-                     <widget class="QLabel" name="precipTotal">
-                      <property name="font">
-                       <font>
-                        <family>Geneva</family>
-                        <pointsize>14</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Value</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
-                     <widget class="QLabel" name="label_82">
-                      <property name="font">
-                       <font>
-                        <family>Geneva</family>
-                        <pointsize>20</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Precipitation</string>
-                      </property>
-                      <property name="wordWrap">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                  <item row="1" column="2">
-                   <layout class="QGridLayout" name="gridLayout_16">
-                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                     <widget class="QLabel" name="label_83">
-                      <property name="maximumSize">
-                       <size>
-                        <width>60</width>
-                        <height>60</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string/>
-                      </property>
-                      <property name="pixmap">
-                       <pixmap>icons/pressure.png</pixmap>
-                      </property>
-                      <property name="scaledContents">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
-                     <widget class="QLabel" name="pressureVal">
-                      <property name="font">
-                       <font>
-                        <family>Geneva</family>
-                        <pointsize>14</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Value</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
-                     <widget class="QLabel" name="label_77">
-                      <property name="font">
-                       <font>
-                        <family>Geneva</family>
-                        <pointsize>20</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Pressure</string>
-                      </property>
-                      <property name="wordWrap">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
                   <item row="0" column="2">
+                   <layout class="QGridLayout" name="gridLayout_19">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_91">
+                      <property name="maximumSize">
+                       <size>
+                        <width>65</width>
+                        <height>65</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap resource="images.qrc">:/Appicons/icons/uvIndexIcon.webp</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                     <widget class="QLabel" name="uvIndex">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Value</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_93">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>UV-Index</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="4">
                    <layout class="QGridLayout" name="gridLayout_17">
                     <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                      <widget class="QLabel" name="label_85">
@@ -2131,7 +2079,7 @@
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap>icons/windSpeed.png</pixmap>
+                       <pixmap resource="images.qrc">:/Appicons/icons/windSpeed.png</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -2212,7 +2160,7 @@
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap>icons/visibility.png</pixmap>
+                       <pixmap resource="images.qrc">:/Appicons/icons/visibility.png</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -2224,7 +2172,7 @@
                     </item>
                    </layout>
                   </item>
-                  <item row="1" column="1">
+                  <item row="2" column="2">
                    <layout class="QGridLayout" name="gridLayout_18">
                     <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                      <widget class="QLabel" name="label_88">
@@ -2238,7 +2186,7 @@
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap>icons/humidityIndex.svg</pixmap>
+                       <pixmap resource="images.qrc">:/Appicons/icons/humidityIndex.svg</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -2276,21 +2224,28 @@
                     </item>
                    </layout>
                   </item>
-                  <item row="0" column="1">
-                   <layout class="QGridLayout" name="gridLayout_19">
+                  <item row="2" column="3">
+                   <widget class="Line" name="line_23">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <layout class="QGridLayout" name="gridLayout_15">
                     <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                     <widget class="QLabel" name="label_91">
+                     <widget class="QLabel" name="label_80">
                       <property name="maximumSize">
                        <size>
-                        <width>65</width>
-                        <height>65</height>
+                        <width>75</width>
+                        <height>75</height>
                        </size>
                       </property>
                       <property name="text">
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap>icons/uvIndexIcon.webp</pixmap>
+                       <pixmap resource="images.qrc">:/Appicons/icons/aQual.png</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -2298,7 +2253,7 @@
                      </widget>
                     </item>
                     <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
-                     <widget class="QLabel" name="uvIndex">
+                     <widget class="QLabel" name="precipTotal">
                       <property name="font">
                        <font>
                         <family>Geneva</family>
@@ -2311,7 +2266,7 @@
                      </widget>
                     </item>
                     <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
-                     <widget class="QLabel" name="label_93">
+                     <widget class="QLabel" name="label_82">
                       <property name="font">
                        <font>
                         <family>Geneva</family>
@@ -2319,7 +2274,7 @@
                        </font>
                       </property>
                       <property name="text">
-                       <string>UV-Index</string>
+                       <string>Precipitation</string>
                       </property>
                       <property name="wordWrap">
                        <bool>true</bool>
@@ -2327,6 +2282,72 @@
                      </widget>
                     </item>
                    </layout>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="Line" name="line_22">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="4">
+                   <layout class="QGridLayout" name="gridLayout_16">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_83">
+                      <property name="maximumSize">
+                       <size>
+                        <width>60</width>
+                        <height>60</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap resource="images.qrc">:/Appicons/icons/pressure.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                     <widget class="QLabel" name="pressureVal">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Value</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_77">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Pressure</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="Line" name="line_24">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
                   </item>
                  </layout>
                 </widget>
@@ -2363,7 +2384,7 @@
                          <string/>
                         </property>
                         <property name="pixmap">
-                         <pixmap>icons/sunrise.png</pixmap>
+                         <pixmap resource="images.qrc">:/Appicons/icons/sunrise.png</pixmap>
                         </property>
                         <property name="scaledContents">
                          <bool>true</bool>
@@ -2397,7 +2418,7 @@
                          <string/>
                         </property>
                         <property name="pixmap">
-                         <pixmap>icons/sunset.png</pixmap>
+                         <pixmap resource="images.qrc">:/Appicons/icons/sunset.png</pixmap>
                         </property>
                         <property name="scaledContents">
                          <bool>true</bool>
@@ -2442,7 +2463,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>images/Screenshot 2024-04-01 at 15.31.35.png</pixmap>
+             <pixmap resource="images.qrc">:/radarIcons/images/Screenshot 2024-04-01 at 15.31.35.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -2555,25 +2576,6 @@
                  <property name="sizeConstraint">
                   <enum>QLayout::SetFixedSize</enum>
                  </property>
-                 <item row="3" column="0">
-                  <widget class="QLabel" name="label_4">
-                   <property name="maximumSize">
-                    <size>
-                     <width>231</width>
-                     <height>151</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap>newsImgs/ficke.png</pixmap>
-                   </property>
-                   <property name="scaledContents">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="2" column="0">
                   <widget class="QLabel" name="label_3">
                    <property name="maximumSize">
@@ -2586,38 +2588,48 @@
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap>newsImgs/solarEclipse.png</pixmap>
+                    <pixmap resource="images.qrc">:/newsIcons/newsImgs/solarEclipse.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="1">
-                  <widget class="QTextEdit" name="textEdit_21">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_2">
                    <property name="maximumSize">
                     <size>
-                     <width>300</width>
+                     <width>231</width>
                      <height>151</height>
                     </size>
                    </property>
-                   <property name="html">
-                    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-size:18pt;&quot;&gt;Alberta wildfire season is off to a blazing start, 57 fires burning&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt;With the 2024 wildfire season heavily looming over the backs of Canadians after last year’s historic wildfire season, none will be feeling the pressure more than Western Canada. &lt;/span&gt;&lt;a href=&quot;https://www.theweathernetwork.com/en/news/weather/severe/whats-the-recipe-for-a-severe-drought-in-western-canada&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; text-decoration: underline; color:#094fd1;&quot;&gt;Widespread drought&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt;, low snow-pack levels, and warm temperatures have many people fearing for what this season will bring. &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="images.qrc">:/newsIcons/newsImgs/albertaFires.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_4">
+                   <property name="maximumSize">
+                    <size>
+                     <width>231</width>
+                     <height>151</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="images.qrc">:/newsIcons/newsImgs/ficke.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
                    </property>
                   </widget>
                  </item>
@@ -2677,22 +2689,31 @@ li.checked::marker { content: &quot;\2612&quot;; }
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="0">
-                  <widget class="QLabel" name="label_2">
+                 <item row="0" column="1">
+                  <widget class="QTextEdit" name="textEdit_21">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="maximumSize">
                     <size>
-                     <width>231</width>
+                     <width>300</width>
                      <height>151</height>
                     </size>
                    </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap>newsImgs/albertaFires.png</pixmap>
-                   </property>
-                   <property name="scaledContents">
-                    <bool>true</bool>
+                   <property name="html">
+                    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-size:18pt;&quot;&gt;Alberta wildfire season is off to a blazing start, 57 fires burning&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt;With the 2024 wildfire season heavily looming over the backs of Canadians after last year’s historic wildfire season, none will be feeling the pressure more than Western Canada. &lt;/span&gt;&lt;a href=&quot;https://www.theweathernetwork.com/en/news/weather/severe/whats-the-recipe-for-a-severe-drought-in-western-canada&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; text-decoration: underline; color:#094fd1;&quot;&gt;Widespread drought&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt;, low snow-pack levels, and warm temperatures have many people fearing for what this season will bring. &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                    </property>
                   </widget>
                  </item>
@@ -2708,7 +2729,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap>newsImgs/springStorm.png</pixmap>
+                    <pixmap resource="images.qrc">:/newsIcons/newsImgs/springStorm.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>
@@ -3220,8 +3241,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
               <string/>
              </property>
              <property name="icon">
-              <iconset>
-               <normaloff>icons/home_icon.png</normaloff>icons/home_icon.png</iconset>
+              <iconset resource="images.qrc">
+               <normaloff>:/Appicons/icons/home_icon.png</normaloff>:/Appicons/icons/home_icon.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -3237,8 +3258,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
               <string/>
              </property>
              <property name="icon">
-              <iconset>
-               <normaloff>icons/radar_icon.png</normaloff>icons/radar_icon.png</iconset>
+              <iconset resource="images.qrc">
+               <normaloff>:/Appicons/icons/radar_icon.png</normaloff>:/Appicons/icons/radar_icon.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -3254,8 +3275,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
               <string/>
              </property>
              <property name="icon">
-              <iconset>
-               <normaloff>icons/settings_icon.png</normaloff>icons/settings_icon.png</iconset>
+              <iconset resource="images.qrc">
+               <normaloff>:/Appicons/icons/settings_icon.png</normaloff>:/Appicons/icons/settings_icon.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -3271,8 +3292,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
               <string/>
              </property>
              <property name="icon">
-              <iconset>
-               <normaloff>icons/news_icon.png</normaloff>icons/news_icon.png</iconset>
+              <iconset resource="images.qrc">
+               <normaloff>:/Appicons/icons/news_icon.png</normaloff>:/Appicons/icons/news_icon.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -3303,7 +3324,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup_2"/>

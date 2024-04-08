@@ -1,0 +1,51 @@
+<RCC>
+    <qresource prefix="/Appicons">
+        <file>icons/ad template.jpeg</file>
+        <file>icons/airQual.png</file>
+        <file>icons/aQual.png</file>
+        <file>icons/home_icon.png</file>
+        <file>icons/humidityIndex.svg</file>
+        <file>icons/news_icon.png</file>
+        <file>icons/pollenIndex.png</file>
+        <file>icons/pressure.png</file>
+        <file>icons/radar_icon.png</file>
+        <file>icons/rain.png</file>
+        <file>icons/raindrop.png</file>
+        <file>icons/self-charging-toyota.jpg.webp</file>
+        <file>icons/settings_icon.png</file>
+        <file>icons/sunrise.png</file>
+        <file>icons/sunset.png</file>
+        <file>icons/uvIndex.png</file>
+        <file>icons/uvIndexIcon.webp</file>
+        <file>icons/visibility.png</file>
+        <file>icons/windSpeed.png</file>
+    </qresource>
+    <qresource prefix="/weatherIcons">
+        <file>weatherIcons/00-ClearSkyDay.png</file>
+        <file>weatherIcons/00-ClearSkyNight.png</file>
+        <file>weatherIcons/03-Overcast.png</file>
+        <file>weatherIcons/45-Fog.png</file>
+        <file>weatherIcons/45-FogDay.png</file>
+        <file>weatherIcons/45-FogNight.png</file>
+        <file>weatherIcons/63-Rain.png</file>
+        <file>weatherIcons/65-Rain.png</file>
+        <file>weatherIcons/95-Thunderstorm.png</file>
+        <file>weatherIcons/0102-ClearCloudyDay.png</file>
+        <file>weatherIcons/0102-ClearCloudyNight.png</file>
+        <file>weatherIcons/5153-DrizzleDay.png</file>
+        <file>weatherIcons/5153-DrizzleNight.png</file>
+        <file>weatherIcons/5561-DrizzleRain.png</file>
+        <file>weatherIcons/8586-SnowDay.png</file>
+        <file>weatherIcons/8586-SnowNight.png</file>
+        <file>weatherIcons/717375-Snow.png</file>
+    </qresource>
+    <qresource prefix="/newsIcons">
+        <file>newsImgs/albertaFires.png</file>
+        <file>newsImgs/ficke.png</file>
+        <file>newsImgs/solarEclipse.png</file>
+        <file>newsImgs/springStorm.png</file>
+    </qresource>
+    <qresource prefix="/radarIcons">
+        <file>images/Screenshot 2024-04-01 at 15.31.35.png</file>
+    </qresource>
+</RCC>

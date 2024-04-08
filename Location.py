@@ -2,7 +2,7 @@ import openmeteo_requests
 import requests_cache
 import pandas as pd
 from retry_requests import retry
-
+from datetime import datetime
 
 class Location:
 
@@ -256,19 +256,22 @@ class Location:
 
     def getWindDirection(self, offset=0):
         directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW']  # define directions possible
+        
         # add 22.5 (half 45, and divide by range of each section)
-        return directions[int((self._windDirection.iloc[offset] + 22.5) // 45)]
+        if (int((self._windDirection.iloc[offset] + 22.5) // 45) > 7):
+            return 'N'
+        else:
+            return directions[int((self._windDirection.iloc[offset] + 22.5) // 45)]
 
     def getUVIndex(self, offset=0):
         return round(self._uvIndex.iloc[offset])
 
     def getIconName(self, offset=0):
-        datetime_pd = pd.Timestamp(self._dateList.iloc[offset])
+        currTime = datetime.now()
+        morningStart = currTime.replace(hour=7, minute=0, second=0, microsecond=0)
+        eveningStart = currTime.replace(hour=20, minute=0, second=0, microsecond=0)
 
-        morningStart = datetime_pd.replace(hour=7, minute=0, second=0, microsecond=0)
-        eveningStart = datetime_pd.replace(hour=20, minute=0, second=0, microsecond=0)
-
-        if morningStart <= datetime_pd < eveningStart:
+        if morningStart <= currTime < eveningStart:
             weatherIconMap = {
                 0: "00-ClearSkyDay",
                 1: "0102-ClearCloudyDay",

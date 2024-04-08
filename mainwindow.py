@@ -4,15 +4,19 @@ import sys
 
 from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6 import QtGui, QtCore
+
 from datetime import datetime, timedelta
 
 from Location import Location
+
+import images
+
 
 # Important:
 # You need to run the following command to generate the ui_form.py file
 #     pyside6-uic form.ui -o ui_form.py, or
 #     pyside2-uic form.ui -o ui_form.py
-#from ui_form import Ui_MainWindow
+
 from ui_homepage import Ui_MainWindow
 
 class MainWindow(QMainWindow):
@@ -97,7 +101,7 @@ class MainWindow(QMainWindow):
         
         self.ui.tempLowCurr.setText(self.__tempFormat(locData.getMinTempCelc()))
         self.ui.imageCurr.setText("")
-        currWeather = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName()) + ".png")
+        currWeather = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName()) + ".png")
         self.ui.imageCurr.setPixmap(currWeather)
         self.ui.locationCurr.setText(loc)
 
@@ -107,7 +111,9 @@ class MainWindow(QMainWindow):
         nextTime = datetime.now() + timedelta(hours = 1)
         self.ui.time_1.setText(nextTime.strftime(self.__hourFormat()))
         self.ui.image_1.setText("")
-        hourly = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(1)) + ".png")
+
+        
+        hourly = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(1)) + ".png")
         self.ui.image_1.setPixmap(hourly)
         self.ui.temp_1.setText(self.__tempFormat(locData.getTemperature(1)))
         self.ui.percipPer_1.setText(str(locData.getPrecChance(1))+ "%")
@@ -116,7 +122,7 @@ class MainWindow(QMainWindow):
         nextTime = datetime.now() + timedelta(hours = 2)
         self.ui.time_2.setText(nextTime.strftime(self.__hourFormat()))
         self.ui.image_2.setText("")
-        hourly = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(2)) + ".png")
+        hourly = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(2)) + ".png")
         self.ui.image_2.setPixmap(hourly)
         self.ui.temp_2.setText(self.__tempFormat(locData.getTemperature(2)))
         self.ui.percipPer_2.setText(str(locData.getPrecChance(2))+ "%")
@@ -125,7 +131,7 @@ class MainWindow(QMainWindow):
         nextTime = datetime.now() + timedelta(hours = 3)
         self.ui.time_3.setText(nextTime.strftime(self.__hourFormat()))
         self.ui.image_3.setText("")
-        hourly = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(3)) + ".png")
+        hourly = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(3)) + ".png")
         self.ui.image_3.setPixmap(hourly)
         self.ui.temp_3.setText(self.__tempFormat(locData.getTemperature(3)))
         self.ui.percipPer_3.setText(str(locData.getPrecChance(3))+ "%")
@@ -134,7 +140,7 @@ class MainWindow(QMainWindow):
         nextTime = datetime.now() + timedelta(hours = 4)
         self.ui.time_4.setText(nextTime.strftime(self.__hourFormat()))
         self.ui.image_4.setText("")
-        hourly = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(4)) + ".png")
+        hourly = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(4)) + ".png")
         self.ui.image_4.setPixmap(hourly)
         self.ui.temp_4.setText(self.__tempFormat(locData.getTemperature(4)))
         self.ui.percipPer_4.setText(str(locData.getPrecChance(4))+ "%")
@@ -143,7 +149,7 @@ class MainWindow(QMainWindow):
         nextTime = datetime.now() + timedelta(hours = 5)
         self.ui.time_5.setText(nextTime.strftime(self.__hourFormat()))
         self.ui.image_5.setText("")
-        hourly = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(5)) + ".png")
+        hourly = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(5)) + ".png")
         self.ui.image_5.setPixmap(hourly)
         self.ui.temp_5.setText(self.__tempFormat(locData.getTemperature(5)))
         self.ui.percipPer_5.setText(str(locData.getPrecChance(5))+ "%")
@@ -152,7 +158,7 @@ class MainWindow(QMainWindow):
         nextTime = datetime.now() + timedelta(hours = 6)
         self.ui.time_6.setText(nextTime.strftime(self.__hourFormat()))
         self.ui.image_6.setText("")
-        hourly = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(6)) + ".png")
+        hourly = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(6)) + ".png")
         self.ui.image_6.setPixmap(hourly)
         self.ui.temp_6.setText(self.__tempFormat(locData.getTemperature(6)))
         self.ui.percipPer_6.setText(str(locData.getPrecChance(6))+ "%")
@@ -161,7 +167,7 @@ class MainWindow(QMainWindow):
         nextTime = datetime.now() + timedelta(hours = 7)
         self.ui.time_7.setText(nextTime.strftime(self.__hourFormat()))
         self.ui.image_7.setText("")
-        hourly = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(7)) + ".png")
+        hourly = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(7)) + ".png")
         self.ui.image_7.setPixmap(hourly)
         self.ui.temp_7.setText(self.__tempFormat(locData.getTemperature(7)))
         self.ui.percipPer_7.setText(str(locData.getPrecChance(7))+ "%")
@@ -181,7 +187,7 @@ class MainWindow(QMainWindow):
         nextDay = datetime.now() + timedelta(days=1)
         self.ui.day1Date.setText(nextDay.strftime('%m/%d'))
         self.ui.day1Image.setText("")
-        daily = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
+        daily = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
         self.ui.day1Image.setPixmap(daily)
         self.ui.day1TempHi.setText(self.__tempFormat(locData.getMaxTempCelc(hours_difference)))
         self.ui.day1TempLow.setText(self.__tempFormat(locData.getMinTempCelc(hours_difference)))
@@ -193,7 +199,7 @@ class MainWindow(QMainWindow):
         nextDay += timedelta(days=1)
         self.ui.day2Date.setText(nextDay.strftime('%m/%d'))
         self.ui.day2Image.setText("")
-        daily = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
+        daily = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
         self.ui.day2Image.setPixmap(daily)
         self.ui.day2TempHi.setText(self.__tempFormat(locData.getMaxTempCelc(hours_difference)))
         self.ui.day2TempLow.setText(self.__tempFormat(locData.getMinTempCelc(hours_difference)))
@@ -205,7 +211,7 @@ class MainWindow(QMainWindow):
         nextDay += timedelta(days=1)
         self.ui.day3Date.setText(nextDay.strftime('%m/%d'))
         self.ui.day3Image.setText("")
-        daily = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
+        daily = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
         self.ui.day3Image.setPixmap(daily)
         self.ui.day3TempHi.setText(self.__tempFormat(locData.getMaxTempCelc(hours_difference)))
         self.ui.day3TempLow.setText(self.__tempFormat(locData.getMinTempCelc(hours_difference)))
@@ -217,7 +223,7 @@ class MainWindow(QMainWindow):
         nextDay += timedelta(days=1)
         self.ui.day4Date.setText(nextDay.strftime('%m/%d'))
         self.ui.day4Image.setText("")
-        daily = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
+        daily = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
         self.ui.day4Image.setPixmap(daily)
         self.ui.day4TempHi.setText(self.__tempFormat(locData.getMaxTempCelc(hours_difference)))
         self.ui.day4TempLow.setText(self.__tempFormat(locData.getMinTempCelc(hours_difference)))
@@ -229,7 +235,7 @@ class MainWindow(QMainWindow):
         nextDay += timedelta(days=1)
         self.ui.day5Date.setText(nextDay.strftime('%m/%d'))
         self.ui.day5Image.setText("")
-        daily = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
+        daily = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
         self.ui.day5Image.setPixmap(daily)
         self.ui.day5TempHi.setText(self.__tempFormat(locData.getMaxTempCelc(hours_difference)))
         self.ui.day5TempLow.setText(self.__tempFormat(locData.getMinTempCelc(hours_difference)))
@@ -241,7 +247,7 @@ class MainWindow(QMainWindow):
         nextDay += timedelta(days=1)
         self.ui.day6Date.setText(nextDay.strftime('%m/%d'))
         self.ui.day6Image.setText("")
-        daily = QtGui.QPixmap("weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
+        daily = QtGui.QPixmap(":/weatherIcons/weatherIcons/" + str(locData.getIconName(hours_difference)) + ".png")
         self.ui.day6Image.setPixmap(daily)
         self.ui.day6TempHi.setText(self.__tempFormat(locData.getMaxTempCelc(hours_difference)))
         self.ui.day6TempLow.setText(self.__tempFormat(locData.getMinTempCelc(hours_difference)))
@@ -287,8 +293,6 @@ class MainWindow(QMainWindow):
         QApplication.processEvents()
         return 0;
     
-# TEST TEST TEST TEST
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     widget = MainWindow()

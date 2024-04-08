@@ -21,6 +21,7 @@ from PySide6.QtWidgets import (QApplication, QButtonGroup, QComboBox, QFrame,
     QRadioButton, QScrollArea, QSizePolicy, QSpacerItem,
     QStackedWidget, QStatusBar, QTextEdit, QVBoxLayout,
     QWidget)
+import rc_images
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -59,7 +60,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_8 = QWidget()
         self.scrollAreaWidgetContents_8.setObjectName(u"scrollAreaWidgetContents_8")
-        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, -291, 572, 1873))
+        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, 0, 572, 1873))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_8)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.searchGrid = QGridLayout()
@@ -101,7 +102,7 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_9 = QWidget()
         self.scrollAreaWidgetContents_9.setObjectName(u"scrollAreaWidgetContents_9")
         self.scrollAreaWidgetContents_9.setEnabled(True)
-        self.scrollAreaWidgetContents_9.setGeometry(QRect(-35, 0, 1010, 271))
+        self.scrollAreaWidgetContents_9.setGeometry(QRect(-463, 0, 1010, 271))
         self.verticalLayout_23 = QVBoxLayout(self.scrollAreaWidgetContents_9)
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
         self.verticalLayout_23.setContentsMargins(5, 5, 5, 5)
@@ -149,7 +150,7 @@ class Ui_MainWindow(object):
 
         self.image_3 = QLabel(self.frame_8)
         self.image_3.setObjectName(u"image_3")
-        self.image_3.setMaximumSize(QSize(75, 67))
+        self.image_3.setMaximumSize(QSize(75, 75))
         self.image_3.setScaledContents(True)
         self.image_3.setAlignment(Qt.AlignCenter)
 
@@ -160,7 +161,7 @@ class Ui_MainWindow(object):
         self.percipImage_8.setMinimumSize(QSize(30, 30))
         self.percipImage_8.setMaximumSize(QSize(30, 30))
         self.percipImage_8.setTextFormat(Qt.AutoText)
-        self.percipImage_8.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_8.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_8.setScaledContents(True)
         self.percipImage_8.setAlignment(Qt.AlignCenter)
         self.percipImage_8.setIndent(0)
@@ -204,7 +205,7 @@ class Ui_MainWindow(object):
         self.percipImage_11.setMinimumSize(QSize(30, 30))
         self.percipImage_11.setMaximumSize(QSize(30, 30))
         self.percipImage_11.setTextFormat(Qt.AutoText)
-        self.percipImage_11.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_11.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_11.setScaledContents(True)
         self.percipImage_11.setAlignment(Qt.AlignCenter)
         self.percipImage_11.setIndent(0)
@@ -255,7 +256,7 @@ class Ui_MainWindow(object):
         self.percipImage_10.setMinimumSize(QSize(30, 30))
         self.percipImage_10.setMaximumSize(QSize(30, 30))
         self.percipImage_10.setTextFormat(Qt.AutoText)
-        self.percipImage_10.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_10.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_10.setScaledContents(True)
         self.percipImage_10.setAlignment(Qt.AlignCenter)
         self.percipImage_10.setIndent(0)
@@ -306,7 +307,7 @@ class Ui_MainWindow(object):
         self.percipImage_12.setMinimumSize(QSize(30, 30))
         self.percipImage_12.setMaximumSize(QSize(30, 30))
         self.percipImage_12.setTextFormat(Qt.AutoText)
-        self.percipImage_12.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_12.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_12.setScaledContents(True)
         self.percipImage_12.setAlignment(Qt.AlignCenter)
         self.percipImage_12.setIndent(0)
@@ -350,7 +351,7 @@ class Ui_MainWindow(object):
         self.percipImage_2.setMinimumSize(QSize(30, 30))
         self.percipImage_2.setMaximumSize(QSize(30, 30))
         self.percipImage_2.setTextFormat(Qt.AutoText)
-        self.percipImage_2.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_2.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_2.setScaledContents(True)
         self.percipImage_2.setAlignment(Qt.AlignCenter)
         self.percipImage_2.setIndent(0)
@@ -401,7 +402,7 @@ class Ui_MainWindow(object):
         self.percipImage_9.setMinimumSize(QSize(30, 30))
         self.percipImage_9.setMaximumSize(QSize(30, 30))
         self.percipImage_9.setTextFormat(Qt.AutoText)
-        self.percipImage_9.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_9.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_9.setScaledContents(True)
         self.percipImage_9.setAlignment(Qt.AlignCenter)
         self.percipImage_9.setIndent(0)
@@ -445,7 +446,7 @@ class Ui_MainWindow(object):
         self.percipImage_1.setMinimumSize(QSize(30, 30))
         self.percipImage_1.setMaximumSize(QSize(30, 30))
         self.percipImage_1.setTextFormat(Qt.AutoText)
-        self.percipImage_1.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_1.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_1.setScaledContents(True)
         self.percipImage_1.setAlignment(Qt.AlignCenter)
         self.percipImage_1.setIndent(0)
@@ -561,7 +562,7 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_10 = QWidget()
         self.scrollAreaWidgetContents_10.setObjectName(u"scrollAreaWidgetContents_10")
         self.scrollAreaWidgetContents_10.setEnabled(True)
-        self.scrollAreaWidgetContents_10.setGeometry(QRect(0, 0, 1024, 275))
+        self.scrollAreaWidgetContents_10.setGeometry(QRect(-481, 0, 1024, 275))
         self.verticalLayout_31 = QVBoxLayout(self.scrollAreaWidgetContents_10)
         self.verticalLayout_31.setObjectName(u"verticalLayout_31")
         self.multiDay = QFrame(self.scrollAreaWidgetContents_10)
@@ -614,7 +615,7 @@ class Ui_MainWindow(object):
         self.percipImage_5.setMinimumSize(QSize(30, 30))
         self.percipImage_5.setMaximumSize(QSize(30, 30))
         self.percipImage_5.setTextFormat(Qt.AutoText)
-        self.percipImage_5.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_5.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_5.setScaledContents(True)
         self.percipImage_5.setAlignment(Qt.AlignCenter)
         self.percipImage_5.setIndent(0)
@@ -646,7 +647,7 @@ class Ui_MainWindow(object):
         self.percipImage_7.setMinimumSize(QSize(30, 30))
         self.percipImage_7.setMaximumSize(QSize(30, 30))
         self.percipImage_7.setTextFormat(Qt.AutoText)
-        self.percipImage_7.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_7.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_7.setScaledContents(True)
         self.percipImage_7.setAlignment(Qt.AlignCenter)
         self.percipImage_7.setIndent(0)
@@ -678,7 +679,7 @@ class Ui_MainWindow(object):
         self.percipImage_14.setMinimumSize(QSize(30, 30))
         self.percipImage_14.setMaximumSize(QSize(30, 30))
         self.percipImage_14.setTextFormat(Qt.AutoText)
-        self.percipImage_14.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_14.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_14.setScaledContents(True)
         self.percipImage_14.setAlignment(Qt.AlignCenter)
         self.percipImage_14.setIndent(0)
@@ -728,7 +729,7 @@ class Ui_MainWindow(object):
         self.percipImage_3.setMinimumSize(QSize(30, 30))
         self.percipImage_3.setMaximumSize(QSize(30, 30))
         self.percipImage_3.setTextFormat(Qt.AutoText)
-        self.percipImage_3.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_3.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_3.setScaledContents(True)
         self.percipImage_3.setAlignment(Qt.AlignCenter)
         self.percipImage_3.setIndent(0)
@@ -776,7 +777,7 @@ class Ui_MainWindow(object):
         self.percipImage_13.setMinimumSize(QSize(30, 30))
         self.percipImage_13.setMaximumSize(QSize(30, 30))
         self.percipImage_13.setTextFormat(Qt.AutoText)
-        self.percipImage_13.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_13.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_13.setScaledContents(True)
         self.percipImage_13.setAlignment(Qt.AlignCenter)
         self.percipImage_13.setIndent(0)
@@ -851,7 +852,7 @@ class Ui_MainWindow(object):
         self.percipImage_6.setMinimumSize(QSize(30, 30))
         self.percipImage_6.setMaximumSize(QSize(30, 30))
         self.percipImage_6.setTextFormat(Qt.AutoText)
-        self.percipImage_6.setPixmap(QPixmap(u"icons/raindrop.png"))
+        self.percipImage_6.setPixmap(QPixmap(u":/Appicons/icons/raindrop.png"))
         self.percipImage_6.setScaledContents(True)
         self.percipImage_6.setAlignment(Qt.AlignCenter)
         self.percipImage_6.setIndent(0)
@@ -940,24 +941,21 @@ class Ui_MainWindow(object):
         self.line_18.setFrameShadow(QFrame.Sunken)
         self.gridLayoutWidget_3 = QWidget(self.frame_7)
         self.gridLayoutWidget_3.setObjectName(u"gridLayoutWidget_3")
-        self.gridLayoutWidget_3.setGeometry(QRect(10, 70, 781, 251))
+        self.gridLayoutWidget_3.setGeometry(QRect(10, 0, 531, 321))
         self.gridCurrent = QGridLayout(self.gridLayoutWidget_3)
         self.gridCurrent.setObjectName(u"gridCurrent")
         self.gridCurrent.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_3 = QGridLayout()
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.horizontalSpacer_2 = QSpacerItem(0, 10, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        self.locationCurr = QLabel(self.gridLayoutWidget_3)
+        self.locationCurr.setObjectName(u"locationCurr")
+        font4 = QFont()
+        font4.setFamilies([u"Geneva"])
+        font4.setPointSize(24)
+        self.locationCurr.setFont(font4)
+        self.locationCurr.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.gridLayout_3.addItem(self.horizontalSpacer_2, 0, 2, 2, 1)
-
-        self.imageCurr = QLabel(self.gridLayoutWidget_3)
-        self.imageCurr.setObjectName(u"imageCurr")
-        self.imageCurr.setMaximumSize(QSize(150, 150))
-        self.imageCurr.setMouseTracking(False)
-        self.imageCurr.setScaledContents(True)
-        self.imageCurr.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_3.addWidget(self.imageCurr, 0, 3, 2, 1)
+        self.gridLayout_3.addWidget(self.locationCurr, 0, 4, 2, 1)
 
         self.tempLowCurr = QLabel(self.gridLayoutWidget_3)
         self.tempLowCurr.setObjectName(u"tempLowCurr")
@@ -968,18 +966,9 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.tempLowCurr, 1, 1, 1, 1, Qt.AlignHCenter|Qt.AlignTop)
 
-        self.tempCurr = QLabel(self.gridLayoutWidget_3)
-        self.tempCurr.setObjectName(u"tempCurr")
-        sizePolicy.setHeightForWidth(self.tempCurr.sizePolicy().hasHeightForWidth())
-        self.tempCurr.setSizePolicy(sizePolicy)
-        font4 = QFont()
-        font4.setFamilies([u"Geneva"])
-        font4.setPointSize(48)
-        self.tempCurr.setFont(font4)
-        self.tempCurr.setAutoFillBackground(False)
-        self.tempCurr.setAlignment(Qt.AlignCenter)
+        self.horizontalSpacer_2 = QSpacerItem(13, 13, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
-        self.gridLayout_3.addWidget(self.tempCurr, 0, 0, 2, 1)
+        self.gridLayout_3.addItem(self.horizontalSpacer_2, 0, 2, 2, 1)
 
         self.tempHighCurr = QLabel(self.gridLayoutWidget_3)
         self.tempHighCurr.setObjectName(u"tempHighCurr")
@@ -994,15 +983,27 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.tempHighCurr, 0, 1, 1, 1, Qt.AlignBottom)
 
-        self.locationCurr = QLabel(self.gridLayoutWidget_3)
-        self.locationCurr.setObjectName(u"locationCurr")
+        self.tempCurr = QLabel(self.gridLayoutWidget_3)
+        self.tempCurr.setObjectName(u"tempCurr")
+        sizePolicy.setHeightForWidth(self.tempCurr.sizePolicy().hasHeightForWidth())
+        self.tempCurr.setSizePolicy(sizePolicy)
         font6 = QFont()
         font6.setFamilies([u"Geneva"])
-        font6.setPointSize(24)
-        self.locationCurr.setFont(font6)
-        self.locationCurr.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        font6.setPointSize(48)
+        self.tempCurr.setFont(font6)
+        self.tempCurr.setAutoFillBackground(False)
+        self.tempCurr.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_3.addWidget(self.locationCurr, 0, 4, 2, 1)
+        self.gridLayout_3.addWidget(self.tempCurr, 0, 0, 2, 1)
+
+        self.imageCurr = QLabel(self.gridLayoutWidget_3)
+        self.imageCurr.setObjectName(u"imageCurr")
+        self.imageCurr.setMaximumSize(QSize(150, 150))
+        self.imageCurr.setMouseTracking(False)
+        self.imageCurr.setScaledContents(True)
+        self.imageCurr.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_3.addWidget(self.imageCurr, 0, 3, 2, 1)
 
 
         self.gridCurrent.addLayout(self.gridLayout_3, 0, 0, 1, 1)
@@ -1013,64 +1014,38 @@ class Ui_MainWindow(object):
         self.gridMetrics = QGridLayout(self.gridLayoutWidget_14)
         self.gridMetrics.setObjectName(u"gridMetrics")
         self.gridMetrics.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout_15 = QGridLayout()
-        self.gridLayout_15.setObjectName(u"gridLayout_15")
-        self.label_80 = QLabel(self.gridLayoutWidget_14)
-        self.label_80.setObjectName(u"label_80")
-        self.label_80.setMaximumSize(QSize(75, 75))
-        self.label_80.setPixmap(QPixmap(u"icons/aQual.png"))
-        self.label_80.setScaledContents(True)
+        self.gridLayout_19 = QGridLayout()
+        self.gridLayout_19.setObjectName(u"gridLayout_19")
+        self.label_91 = QLabel(self.gridLayoutWidget_14)
+        self.label_91.setObjectName(u"label_91")
+        self.label_91.setMaximumSize(QSize(65, 65))
+        self.label_91.setPixmap(QPixmap(u":/Appicons/icons/uvIndexIcon.webp"))
+        self.label_91.setScaledContents(True)
 
-        self.gridLayout_15.addWidget(self.label_80, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.gridLayout_19.addWidget(self.label_91, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
-        self.precipTotal = QLabel(self.gridLayoutWidget_14)
-        self.precipTotal.setObjectName(u"precipTotal")
-        self.precipTotal.setFont(font1)
+        self.uvIndex = QLabel(self.gridLayoutWidget_14)
+        self.uvIndex.setObjectName(u"uvIndex")
+        self.uvIndex.setFont(font1)
 
-        self.gridLayout_15.addWidget(self.precipTotal, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+        self.gridLayout_19.addWidget(self.uvIndex, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.label_82 = QLabel(self.gridLayoutWidget_14)
-        self.label_82.setObjectName(u"label_82")
-        self.label_82.setFont(font2)
-        self.label_82.setWordWrap(True)
+        self.label_93 = QLabel(self.gridLayoutWidget_14)
+        self.label_93.setObjectName(u"label_93")
+        self.label_93.setFont(font2)
+        self.label_93.setWordWrap(True)
 
-        self.gridLayout_15.addWidget(self.label_82, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
-
-
-        self.gridMetrics.addLayout(self.gridLayout_15, 1, 0, 1, 1)
-
-        self.gridLayout_16 = QGridLayout()
-        self.gridLayout_16.setObjectName(u"gridLayout_16")
-        self.label_83 = QLabel(self.gridLayoutWidget_14)
-        self.label_83.setObjectName(u"label_83")
-        self.label_83.setMaximumSize(QSize(60, 60))
-        self.label_83.setPixmap(QPixmap(u"icons/pressure.png"))
-        self.label_83.setScaledContents(True)
-
-        self.gridLayout_16.addWidget(self.label_83, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
-
-        self.pressureVal = QLabel(self.gridLayoutWidget_14)
-        self.pressureVal.setObjectName(u"pressureVal")
-        self.pressureVal.setFont(font1)
-
-        self.gridLayout_16.addWidget(self.pressureVal, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.label_77 = QLabel(self.gridLayoutWidget_14)
-        self.label_77.setObjectName(u"label_77")
-        self.label_77.setFont(font2)
-        self.label_77.setWordWrap(True)
-
-        self.gridLayout_16.addWidget(self.label_77, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
+        self.gridLayout_19.addWidget(self.label_93, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
 
 
-        self.gridMetrics.addLayout(self.gridLayout_16, 1, 2, 1, 1)
+        self.gridMetrics.addLayout(self.gridLayout_19, 0, 2, 1, 1)
 
         self.gridLayout_17 = QGridLayout()
         self.gridLayout_17.setObjectName(u"gridLayout_17")
         self.label_85 = QLabel(self.gridLayoutWidget_14)
         self.label_85.setObjectName(u"label_85")
         self.label_85.setMaximumSize(QSize(75, 75))
-        self.label_85.setPixmap(QPixmap(u"icons/windSpeed.png"))
+        self.label_85.setPixmap(QPixmap(u":/Appicons/icons/windSpeed.png"))
         self.label_85.setScaledContents(True)
 
         self.gridLayout_17.addWidget(self.label_85, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
@@ -1089,7 +1064,7 @@ class Ui_MainWindow(object):
         self.gridLayout_17.addWidget(self.label_87, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
 
 
-        self.gridMetrics.addLayout(self.gridLayout_17, 0, 2, 1, 1)
+        self.gridMetrics.addLayout(self.gridLayout_17, 0, 4, 1, 1)
 
         self.gridLayout_14 = QGridLayout()
         self.gridLayout_14.setObjectName(u"gridLayout_14")
@@ -1109,7 +1084,7 @@ class Ui_MainWindow(object):
         self.label_78 = QLabel(self.gridLayoutWidget_14)
         self.label_78.setObjectName(u"label_78")
         self.label_78.setMaximumSize(QSize(75, 75))
-        self.label_78.setPixmap(QPixmap(u"icons/visibility.png"))
+        self.label_78.setPixmap(QPixmap(u":/Appicons/icons/visibility.png"))
         self.label_78.setScaledContents(True)
         self.label_78.setAlignment(Qt.AlignCenter)
 
@@ -1123,7 +1098,7 @@ class Ui_MainWindow(object):
         self.label_88 = QLabel(self.gridLayoutWidget_14)
         self.label_88.setObjectName(u"label_88")
         self.label_88.setMaximumSize(QSize(60, 60))
-        self.label_88.setPixmap(QPixmap(u"icons/humidityIndex.svg"))
+        self.label_88.setPixmap(QPixmap(u":/Appicons/icons/humidityIndex.svg"))
         self.label_88.setScaledContents(True)
 
         self.gridLayout_18.addWidget(self.label_88, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
@@ -1142,33 +1117,80 @@ class Ui_MainWindow(object):
         self.gridLayout_18.addWidget(self.label_90, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
 
 
-        self.gridMetrics.addLayout(self.gridLayout_18, 1, 1, 1, 1)
+        self.gridMetrics.addLayout(self.gridLayout_18, 2, 2, 1, 1)
 
-        self.gridLayout_19 = QGridLayout()
-        self.gridLayout_19.setObjectName(u"gridLayout_19")
-        self.label_91 = QLabel(self.gridLayoutWidget_14)
-        self.label_91.setObjectName(u"label_91")
-        self.label_91.setMaximumSize(QSize(65, 65))
-        self.label_91.setPixmap(QPixmap(u"icons/uvIndexIcon.webp"))
-        self.label_91.setScaledContents(True)
+        self.line_23 = QFrame(self.gridLayoutWidget_14)
+        self.line_23.setObjectName(u"line_23")
+        self.line_23.setFrameShape(QFrame.VLine)
+        self.line_23.setFrameShadow(QFrame.Sunken)
 
-        self.gridLayout_19.addWidget(self.label_91, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.gridMetrics.addWidget(self.line_23, 2, 3, 1, 1)
 
-        self.uvIndex = QLabel(self.gridLayoutWidget_14)
-        self.uvIndex.setObjectName(u"uvIndex")
-        self.uvIndex.setFont(font1)
+        self.gridLayout_15 = QGridLayout()
+        self.gridLayout_15.setObjectName(u"gridLayout_15")
+        self.label_80 = QLabel(self.gridLayoutWidget_14)
+        self.label_80.setObjectName(u"label_80")
+        self.label_80.setMaximumSize(QSize(75, 75))
+        self.label_80.setPixmap(QPixmap(u":/Appicons/icons/aQual.png"))
+        self.label_80.setScaledContents(True)
 
-        self.gridLayout_19.addWidget(self.uvIndex, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+        self.gridLayout_15.addWidget(self.label_80, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
-        self.label_93 = QLabel(self.gridLayoutWidget_14)
-        self.label_93.setObjectName(u"label_93")
-        self.label_93.setFont(font2)
-        self.label_93.setWordWrap(True)
+        self.precipTotal = QLabel(self.gridLayoutWidget_14)
+        self.precipTotal.setObjectName(u"precipTotal")
+        self.precipTotal.setFont(font1)
 
-        self.gridLayout_19.addWidget(self.label_93, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
+        self.gridLayout_15.addWidget(self.precipTotal, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.label_82 = QLabel(self.gridLayoutWidget_14)
+        self.label_82.setObjectName(u"label_82")
+        self.label_82.setFont(font2)
+        self.label_82.setWordWrap(True)
+
+        self.gridLayout_15.addWidget(self.label_82, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
 
 
-        self.gridMetrics.addLayout(self.gridLayout_19, 0, 1, 1, 1)
+        self.gridMetrics.addLayout(self.gridLayout_15, 2, 0, 1, 1)
+
+        self.line_22 = QFrame(self.gridLayoutWidget_14)
+        self.line_22.setObjectName(u"line_22")
+        self.line_22.setFrameShape(QFrame.VLine)
+        self.line_22.setFrameShadow(QFrame.Sunken)
+
+        self.gridMetrics.addWidget(self.line_22, 2, 1, 1, 1)
+
+        self.gridLayout_16 = QGridLayout()
+        self.gridLayout_16.setObjectName(u"gridLayout_16")
+        self.label_83 = QLabel(self.gridLayoutWidget_14)
+        self.label_83.setObjectName(u"label_83")
+        self.label_83.setMaximumSize(QSize(60, 60))
+        self.label_83.setPixmap(QPixmap(u":/Appicons/icons/pressure.png"))
+        self.label_83.setScaledContents(True)
+
+        self.gridLayout_16.addWidget(self.label_83, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.pressureVal = QLabel(self.gridLayoutWidget_14)
+        self.pressureVal.setObjectName(u"pressureVal")
+        self.pressureVal.setFont(font1)
+
+        self.gridLayout_16.addWidget(self.pressureVal, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.label_77 = QLabel(self.gridLayoutWidget_14)
+        self.label_77.setObjectName(u"label_77")
+        self.label_77.setFont(font2)
+        self.label_77.setWordWrap(True)
+
+        self.gridLayout_16.addWidget(self.label_77, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
+
+
+        self.gridMetrics.addLayout(self.gridLayout_16, 2, 4, 1, 1)
+
+        self.line_24 = QFrame(self.gridLayoutWidget_14)
+        self.line_24.setObjectName(u"line_24")
+        self.line_24.setFrameShape(QFrame.HLine)
+        self.line_24.setFrameShadow(QFrame.Sunken)
+
+        self.gridMetrics.addWidget(self.line_24, 1, 0, 1, 1)
 
         self.horizontalLayoutWidget_2 = QWidget(self.frame_7)
         self.horizontalLayoutWidget_2.setObjectName(u"horizontalLayoutWidget_2")
@@ -1188,7 +1210,7 @@ class Ui_MainWindow(object):
         self.label_84 = QLabel(self.horizontalLayoutWidget_2)
         self.label_84.setObjectName(u"label_84")
         self.label_84.setMaximumSize(QSize(75, 75))
-        self.label_84.setPixmap(QPixmap(u"icons/sunrise.png"))
+        self.label_84.setPixmap(QPixmap(u":/Appicons/icons/sunrise.png"))
         self.label_84.setScaledContents(True)
 
         self.horizontalLayout_5.addWidget(self.label_84, 0, Qt.AlignHCenter|Qt.AlignBottom)
@@ -1211,7 +1233,7 @@ class Ui_MainWindow(object):
         self.label_81 = QLabel(self.horizontalLayoutWidget_2)
         self.label_81.setObjectName(u"label_81")
         self.label_81.setMaximumSize(QSize(75, 75))
-        self.label_81.setPixmap(QPixmap(u"icons/sunset.png"))
+        self.label_81.setPixmap(QPixmap(u":/Appicons/icons/sunset.png"))
         self.label_81.setScaledContents(True)
 
         self.horizontalLayout_2.addWidget(self.label_81, 0, Qt.AlignHCenter|Qt.AlignBottom)
@@ -1241,7 +1263,7 @@ class Ui_MainWindow(object):
         self.label = QLabel(self.gridLayoutWidget_2)
         self.label.setObjectName(u"label")
         self.label.setMaximumSize(QSize(589, 779))
-        self.label.setPixmap(QPixmap(u"images/Screenshot 2024-04-01 at 15.31.35.png"))
+        self.label.setPixmap(QPixmap(u":/radarIcons/images/Screenshot 2024-04-01 at 15.31.35.png"))
         self.label.setScaledContents(True)
 
         self.gridLayout_2.addWidget(self.label, 0, 0, 1, 1)
@@ -1312,29 +1334,29 @@ class Ui_MainWindow(object):
         self.gridLayout_25.setObjectName(u"gridLayout_25")
         self.gridLayout_25.setSizeConstraint(QLayout.SetFixedSize)
         self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
-        self.label_4 = QLabel(self.gridLayoutWidget_6)
-        self.label_4.setObjectName(u"label_4")
-        self.label_4.setMaximumSize(QSize(231, 151))
-        self.label_4.setPixmap(QPixmap(u"newsImgs/ficke.png"))
-        self.label_4.setScaledContents(True)
-
-        self.gridLayout_25.addWidget(self.label_4, 3, 0, 1, 1)
-
         self.label_3 = QLabel(self.gridLayoutWidget_6)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMaximumSize(QSize(231, 151))
-        self.label_3.setPixmap(QPixmap(u"newsImgs/solarEclipse.png"))
+        self.label_3.setPixmap(QPixmap(u":/newsIcons/newsImgs/solarEclipse.png"))
         self.label_3.setScaledContents(True)
 
         self.gridLayout_25.addWidget(self.label_3, 2, 0, 1, 1)
 
-        self.textEdit_21 = QTextEdit(self.gridLayoutWidget_6)
-        self.textEdit_21.setObjectName(u"textEdit_21")
-        sizePolicy.setHeightForWidth(self.textEdit_21.sizePolicy().hasHeightForWidth())
-        self.textEdit_21.setSizePolicy(sizePolicy)
-        self.textEdit_21.setMaximumSize(QSize(300, 151))
+        self.label_2 = QLabel(self.gridLayoutWidget_6)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMaximumSize(QSize(231, 151))
+        self.label_2.setPixmap(QPixmap(u":/newsIcons/newsImgs/albertaFires.png"))
+        self.label_2.setScaledContents(True)
 
-        self.gridLayout_25.addWidget(self.textEdit_21, 0, 1, 1, 1)
+        self.gridLayout_25.addWidget(self.label_2, 0, 0, 1, 1)
+
+        self.label_4 = QLabel(self.gridLayoutWidget_6)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setMaximumSize(QSize(231, 151))
+        self.label_4.setPixmap(QPixmap(u":/newsIcons/newsImgs/ficke.png"))
+        self.label_4.setScaledContents(True)
+
+        self.gridLayout_25.addWidget(self.label_4, 3, 0, 1, 1)
 
         self.textEdit_22 = QTextEdit(self.gridLayoutWidget_6)
         self.textEdit_22.setObjectName(u"textEdit_22")
@@ -1352,18 +1374,18 @@ class Ui_MainWindow(object):
 
         self.gridLayout_25.addWidget(self.textEdit_23, 1, 1, 1, 1)
 
-        self.label_2 = QLabel(self.gridLayoutWidget_6)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setMaximumSize(QSize(231, 151))
-        self.label_2.setPixmap(QPixmap(u"newsImgs/albertaFires.png"))
-        self.label_2.setScaledContents(True)
+        self.textEdit_21 = QTextEdit(self.gridLayoutWidget_6)
+        self.textEdit_21.setObjectName(u"textEdit_21")
+        sizePolicy.setHeightForWidth(self.textEdit_21.sizePolicy().hasHeightForWidth())
+        self.textEdit_21.setSizePolicy(sizePolicy)
+        self.textEdit_21.setMaximumSize(QSize(300, 151))
 
-        self.gridLayout_25.addWidget(self.label_2, 0, 0, 1, 1)
+        self.gridLayout_25.addWidget(self.textEdit_21, 0, 1, 1, 1)
 
         self.label_5 = QLabel(self.gridLayoutWidget_6)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setMaximumSize(QSize(231, 151))
-        self.label_5.setPixmap(QPixmap(u"newsImgs/springStorm.png"))
+        self.label_5.setPixmap(QPixmap(u":/newsIcons/newsImgs/springStorm.png"))
         self.label_5.setScaledContents(True)
 
         self.gridLayout_25.addWidget(self.label_5, 1, 0, 1, 1)
@@ -1646,7 +1668,7 @@ class Ui_MainWindow(object):
         sizePolicy1.setHeightForWidth(self.home_btn.sizePolicy().hasHeightForWidth())
         self.home_btn.setSizePolicy(sizePolicy1)
         icon = QIcon()
-        icon.addFile(u"icons/home_icon.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/Appicons/icons/home_icon.png", QSize(), QIcon.Normal, QIcon.Off)
         self.home_btn.setIcon(icon)
         self.home_btn.setIconSize(QSize(50, 50))
 
@@ -1655,7 +1677,7 @@ class Ui_MainWindow(object):
         self.radar_btn = QPushButton(self.widget)
         self.radar_btn.setObjectName(u"radar_btn")
         icon1 = QIcon()
-        icon1.addFile(u"icons/radar_icon.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/Appicons/icons/radar_icon.png", QSize(), QIcon.Normal, QIcon.Off)
         self.radar_btn.setIcon(icon1)
         self.radar_btn.setIconSize(QSize(50, 50))
 
@@ -1664,7 +1686,7 @@ class Ui_MainWindow(object):
         self.sett_btn = QPushButton(self.widget)
         self.sett_btn.setObjectName(u"sett_btn")
         icon2 = QIcon()
-        icon2.addFile(u"icons/settings_icon.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/Appicons/icons/settings_icon.png", QSize(), QIcon.Normal, QIcon.Off)
         self.sett_btn.setIcon(icon2)
         self.sett_btn.setIconSize(QSize(50, 50))
 
@@ -1673,7 +1695,7 @@ class Ui_MainWindow(object):
         self.news_btn = QPushButton(self.widget)
         self.news_btn.setObjectName(u"news_btn")
         icon3 = QIcon()
-        icon3.addFile(u"icons/news_icon.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/Appicons/icons/news_icon.png", QSize(), QIcon.Normal, QIcon.Off)
         self.news_btn.setIcon(icon3)
         self.news_btn.setIconSize(QSize(50, 50))
 
@@ -1787,17 +1809,14 @@ class Ui_MainWindow(object):
         self.day6Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
         self.day5Date.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.day3Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
-        self.imageCurr.setText(QCoreApplication.translate("MainWindow", u"Wimage", None))
-        self.tempLowCurr.setText(QCoreApplication.translate("MainWindow", u"TempLowDay", None))
-        self.tempCurr.setText("")
-        self.tempHighCurr.setText(QCoreApplication.translate("MainWindow", u"TempHighDay", None))
         self.locationCurr.setText(QCoreApplication.translate("MainWindow", u"Location", None))
-        self.label_80.setText("")
-        self.precipTotal.setText(QCoreApplication.translate("MainWindow", u"Value", None))
-        self.label_82.setText(QCoreApplication.translate("MainWindow", u"Precipitation", None))
-        self.label_83.setText("")
-        self.pressureVal.setText(QCoreApplication.translate("MainWindow", u"Value", None))
-        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Pressure", None))
+        self.tempLowCurr.setText(QCoreApplication.translate("MainWindow", u"TempLowDay", None))
+        self.tempHighCurr.setText(QCoreApplication.translate("MainWindow", u"TempHighDay", None))
+        self.tempCurr.setText("")
+        self.imageCurr.setText(QCoreApplication.translate("MainWindow", u"Wimage", None))
+        self.label_91.setText("")
+        self.uvIndex.setText(QCoreApplication.translate("MainWindow", u"Value", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"UV-Index", None))
         self.label_85.setText("")
         self.windSpeed.setText(QCoreApplication.translate("MainWindow", u"Value", None))
         self.label_87.setText(QCoreApplication.translate("MainWindow", u"Wind", None))
@@ -1807,9 +1826,12 @@ class Ui_MainWindow(object):
         self.label_88.setText("")
         self.humidityIndex.setText(QCoreApplication.translate("MainWindow", u"Value", None))
         self.label_90.setText(QCoreApplication.translate("MainWindow", u"Humidity", None))
-        self.label_91.setText("")
-        self.uvIndex.setText(QCoreApplication.translate("MainWindow", u"Value", None))
-        self.label_93.setText(QCoreApplication.translate("MainWindow", u"UV-Index", None))
+        self.label_80.setText("")
+        self.precipTotal.setText(QCoreApplication.translate("MainWindow", u"Value", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"Precipitation", None))
+        self.label_83.setText("")
+        self.pressureVal.setText(QCoreApplication.translate("MainWindow", u"Value", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Pressure", None))
         self.sunrise.setText(QCoreApplication.translate("MainWindow", u"Sunrise Time", None))
         self.label_84.setText("")
         self.sunset.setText(QCoreApplication.translate("MainWindow", u"Sunset Time", None))
@@ -1820,19 +1842,9 @@ class Ui_MainWindow(object):
         self.spaceButton_6.setText(QCoreApplication.translate("MainWindow", u"Space", None))
         self.localButton_6.setText(QCoreApplication.translate("MainWindow", u"Local", None))
         self.natureButton_6.setText(QCoreApplication.translate("MainWindow", u"Nature", None))
-        self.label_4.setText("")
         self.label_3.setText("")
-        self.textEdit_21.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue'; font-size:18pt;\">Alberta wildfire season is off to a blazing start, 57 fires burning</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\"><br /></span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
-                        "n-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\">With the 2024 wildfire season heavily looming over the backs of Canadians after last year\u2019s historic wildfire season, none will be feeling the pressure more than Western Canada.\u00a0</span><a href=\"https://www.theweathernetwork.com/en/news/weather/severe/whats-the-recipe-for-a-severe-drought-in-western-canada\"><span style=\" font-family:'Helvetica Neue'; text-decoration: underline; color:#094fd1;\">Widespread drought</span></a><span style=\" font-family:'Helvetica Neue';\">, low snow-pack levels, and warm temperatures have many people fearing for what this season will bring.\u00a0</span><span style=\" font-family:'.AppleSystemUIFont';\"> </span></p></body></html>", None))
+        self.label_2.setText("")
+        self.label_4.setText("")
         self.textEdit_22.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -1855,7 +1867,17 @@ class Ui_MainWindow(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\"><br /></span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
                         "n-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\">A dynamic storm system is forecast to sweep across Quebec this week, bringing with it the potential for rain, gusty winds, and heavy snow. Travel disruptions and power outages are possible\u00a0 \u00a0</span><span style=\" font-family:'.AppleSystemUIFont';\"> </span></p></body></html>", None))
-        self.label_2.setText("")
+        self.textEdit_21.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Geneva'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue'; font-size:18pt;\">Alberta wildfire season is off to a blazing start, 57 fires burning</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\"><br /></span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
+                        "n-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Helvetica Neue';\">With the 2024 wildfire season heavily looming over the backs of Canadians after last year\u2019s historic wildfire season, none will be feeling the pressure more than Western Canada.\u00a0</span><a href=\"https://www.theweathernetwork.com/en/news/weather/severe/whats-the-recipe-for-a-severe-drought-in-western-canada\"><span style=\" font-family:'Helvetica Neue'; text-decoration: underline; color:#094fd1;\">Widespread drought</span></a><span style=\" font-family:'Helvetica Neue';\">, low snow-pack levels, and warm temperatures have many people fearing for what this season will bring.\u00a0</span><span style=\" font-family:'.AppleSystemUIFont';\"> </span></p></body></html>", None))
         self.label_5.setText("")
         self.textEdit_24.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"

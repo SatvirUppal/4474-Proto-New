@@ -2,6 +2,7 @@
     "files": [
         "mainwindow.py",
         "da_form.ui",
-        "homepage.ui"
+        "homepage.ui",
+        "images.qrc"
     ]
 }

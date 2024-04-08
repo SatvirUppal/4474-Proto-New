@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>607</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>607</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>591</width>
+      <height>901</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QWidget" name="verticalWidget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>-983</y>
+             <width>570</width>
+             <height>1824</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_22">
+            <item>
+             <widget class="QFrame" name="frame_7">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>1800</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QWidget" name="gridLayoutWidget_9">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>10</y>
+                 <width>431</width>
+                 <height>33</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridSearch_3">
+                <item row="0" column="0">
+                 <widget class="QLineEdit" name="searchLineCurr">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Search for a location...</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="searchButtonCurr">
+                  <property name="text">
+                   <string>Search</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="gridLayoutWidget_10">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>602</width>
+                 <height>251</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridCurrent_3">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_35" columnstretch="0,0,0,0,10">
+                  <item row="0" column="0" rowspan="2">
+                   <widget class="QLabel" name="tempCurr">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="text">
+                     <string>Current Temperature</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="tempLowCurr">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>7</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>TempLowDay</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="tempHighCurr">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>7</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>TempHighDay</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3" rowspan="2">
+                   <widget class="QLabel" name="imageCurr">
+                    <property name="text">
+                     <string>Wimage</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2" rowspan="2">
+                   <spacer name="horizontalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>200</width>
+                      <height>10</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="4" rowspan="2">
+                   <widget class="QLabel" name="locationCurr">
+                    <property name="text">
+                     <string>Location</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="gridLayoutWidget_11">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>320</y>
+                 <width>551</width>
+                 <height>331</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridHourly_3">
+                <item row="0" column="0">
+                 <widget class="Line" name="line_13">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_185">
+                  <property name="text">
+                   <string>Hourly Forecast</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="Line" name="line_14">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QScrollArea" name="scrollArea_6">
+                  <property name="verticalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAsNeeded</enum>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAsNeeded</enum>
+                  </property>
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_9">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>1024</width>
+                     <height>274</height>
+                    </rect>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_23">
+                    <item>
+                     <widget class="QFrame" name="frame_8">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>1000</width>
+                        <height>250</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>1000</width>
+                        <height>250</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_6">
+                       <item>
+                        <layout class="QGridLayout" name="gridLayout_36">
+                         <item row="0" column="2">
+                          <layout class="QVBoxLayout" name="verticalLayout_24">
+                           <item>
+                            <widget class="QLabel" name="label_186">
+                             <property name="text">
+                              <string>weatherImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_187">
+                             <property name="text">
+                              <string>Time</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_188">
+                             <property name="text">
+                              <string>precipitationImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_189">
+                             <property name="text">
+                              <string>precipitationPercent</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="0" column="0">
+                          <layout class="QVBoxLayout" name="verticalLayout_25">
+                           <item>
+                            <widget class="QLabel" name="label_190">
+                             <property name="text">
+                              <string>weatherImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_191">
+                             <property name="text">
+                              <string>Time</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_192">
+                             <property name="text">
+                              <string>precipitationImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_193">
+                             <property name="text">
+                              <string>precipitationPercent</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="0" column="4">
+                          <layout class="QVBoxLayout" name="verticalLayout_26">
+                           <item>
+                            <widget class="QLabel" name="label_194">
+                             <property name="text">
+                              <string>weatherImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_195">
+                             <property name="text">
+                              <string>Time</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_196">
+                             <property name="text">
+                              <string>precipitationImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_197">
+                             <property name="text">
+                              <string>precipitationPercent</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="0" column="3">
+                          <layout class="QVBoxLayout" name="verticalLayout_27">
+                           <item>
+                            <widget class="QLabel" name="label_198">
+                             <property name="text">
+                              <string>weatherImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_199">
+                             <property name="text">
+                              <string>Time</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_200">
+                             <property name="text">
+                              <string>precipitationImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_201">
+                             <property name="text">
+                              <string>precipitationPercent</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="0" column="6">
+                          <layout class="QVBoxLayout" name="verticalLayout_28">
+                           <item>
+                            <widget class="QLabel" name="label_202">
+                             <property name="text">
+                              <string>weatherImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_203">
+                             <property name="text">
+                              <string>Time</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_204">
+                             <property name="text">
+                              <string>precipitationImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_205">
+                             <property name="text">
+                              <string>precipitationPercent</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="0" column="1">
+                          <layout class="QVBoxLayout" name="verticalLayout_29">
+                           <item>
+                            <widget class="QLabel" name="label_206">
+                             <property name="text">
+                              <string>weatherImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_207">
+                             <property name="text">
+                              <string>Time</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_208">
+                             <property name="text">
+                              <string>precipitationImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_209">
+                             <property name="text">
+                              <string>precipitationPercent</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="0" column="5">
+                          <layout class="QVBoxLayout" name="verticalLayout_30">
+                           <item>
+                            <widget class="QLabel" name="label_210">
+                             <property name="text">
+                              <string>weatherImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_211">
+                             <property name="text">
+                              <string>Time</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_212">
+                             <property name="text">
+                              <string>precipitationImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_213">
+                             <property name="text">
+                              <string>precipitationPercent</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QLabel" name="label_214">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>640</y>
+                 <width>551</width>
+                 <height>101</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Ad Container</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QWidget" name="gridLayoutWidget_12">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>730</y>
+                 <width>551</width>
+                 <height>361</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridMultipleDay_3">
+                <item row="3" column="0">
+                 <widget class="QScrollArea" name="scrollArea_7">
+                  <property name="verticalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAsNeeded</enum>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAsNeeded</enum>
+                  </property>
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_10">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>1024</width>
+                     <height>274</height>
+                    </rect>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_31">
+                    <item>
+                     <widget class="QFrame" name="frame_9">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>1000</width>
+                        <height>250</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>1000</width>
+                        <height>250</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_7">
+                       <item>
+                        <layout class="QGridLayout" name="gridLayout_37">
+                         <item row="0" column="1">
+                          <widget class="QLabel" name="label_215">
+                           <property name="text">
+                            <string>TextLabel</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="4">
+                          <widget class="QLabel" name="label_216">
+                           <property name="text">
+                            <string>TextLabel</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="QLabel" name="label_217">
+                           <property name="text">
+                            <string>Date/Day</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="6">
+                          <widget class="QLabel" name="label_218">
+                           <property name="text">
+                            <string>TextLabel</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="5">
+                          <widget class="QLabel" name="label_219">
+                           <property name="text">
+                            <string>TextLabel</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="2">
+                          <widget class="QLabel" name="label_220">
+                           <property name="text">
+                            <string>TextLabel</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <layout class="QGridLayout" name="gridLayout_38">
+                           <item row="1" column="1">
+                            <widget class="QLabel" name="label_221">
+                             <property name="text">
+                              <string>TempLow</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_222">
+                             <property name="text">
+                              <string>WDescrip</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_223">
+                             <property name="text">
+                              <string>WImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_224">
+                             <property name="text">
+                              <string>TempHigh</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="1">
+                          <layout class="QGridLayout" name="gridLayout_39">
+                           <item row="1" column="1">
+                            <widget class="QLabel" name="label_225">
+                             <property name="text">
+                              <string>TempLow</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_226">
+                             <property name="text">
+                              <string>WDescrip</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_227">
+                             <property name="text">
+                              <string>WImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_228">
+                             <property name="text">
+                              <string>TempHigh</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="2">
+                          <layout class="QGridLayout" name="gridLayout_40">
+                           <item row="1" column="1">
+                            <widget class="QLabel" name="label_229">
+                             <property name="text">
+                              <string>TempLow</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_230">
+                             <property name="text">
+                              <string>WDescrip</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_231">
+                             <property name="text">
+                              <string>WImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_232">
+                             <property name="text">
+                              <string>TempHigh</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="3">
+                          <layout class="QGridLayout" name="gridLayout_41">
+                           <item row="1" column="1">
+                            <widget class="QLabel" name="label_233">
+                             <property name="text">
+                              <string>TempLow</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_234">
+                             <property name="text">
+                              <string>WDescrip</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_235">
+                             <property name="text">
+                              <string>WImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_236">
+                             <property name="text">
+                              <string>TempHigh</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="4">
+                          <layout class="QGridLayout" name="gridLayout_42">
+                           <item row="1" column="1">
+                            <widget class="QLabel" name="label_237">
+                             <property name="text">
+                              <string>TempLow</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_238">
+                             <property name="text">
+                              <string>WDescrip</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_239">
+                             <property name="text">
+                              <string>WImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_240">
+                             <property name="text">
+                              <string>TempHigh</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="5">
+                          <layout class="QGridLayout" name="gridLayout_43">
+                           <item row="1" column="1">
+                            <widget class="QLabel" name="label_241">
+                             <property name="text">
+                              <string>TempLow</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_242">
+                             <property name="text">
+                              <string>WDescrip</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_243">
+                             <property name="text">
+                              <string>WImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_244">
+                             <property name="text">
+                              <string>TempHigh</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="6">
+                          <layout class="QGridLayout" name="gridLayout_44">
+                           <item row="1" column="1">
+                            <widget class="QLabel" name="label_245">
+                             <property name="text">
+                              <string>TempLow</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_246">
+                             <property name="text">
+                              <string>WDescrip</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_247">
+                             <property name="text">
+                              <string>WImage</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_248">
+                             <property name="text">
+                              <string>TempHigh</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="0" column="3">
+                          <widget class="QLabel" name="label_249">
+                           <property name="text">
+                            <string>TextLabel</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QComboBox" name="comboBox_3">
+                  <property name="editable">
+                   <bool>false</bool>
+                  </property>
+                  <property name="currentText">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Choose Days</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_250">
+                  <property name="text">
+                   <string>Weather Forecast</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="Line" name="line_15">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="Line" name="line_16">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="Line" name="line_17">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>1100</y>
+                 <width>551</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+              <widget class="QWidget" name="gridLayoutWidget_16">
+               <property name="geometry">
+                <rect>
+                 <x>-1</x>
+                 <y>1119</y>
+                 <width>561</width>
+                 <height>431</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridMetrics_3">
+                <item row="1" column="0">
+                 <layout class="QGridLayout" name="gridLayout_45">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_251">
+                    <property name="text">
+                     <string>Icon</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_252">
+                    <property name="text">
+                     <string>Value</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QLabel" name="label_253">
+                    <property name="text">
+                     <string>Metric Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="2">
+                 <layout class="QGridLayout" name="gridLayout_46">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_254">
+                    <property name="text">
+                     <string>Icon</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_255">
+                    <property name="text">
+                     <string>Value</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QLabel" name="label_256">
+                    <property name="text">
+                     <string>Metric Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="2">
+                 <layout class="QGridLayout" name="gridLayout_47">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_257">
+                    <property name="text">
+                     <string>Icon</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_258">
+                    <property name="text">
+                     <string>Value</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QLabel" name="label_259">
+                    <property name="text">
+                     <string>Metric Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_48">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_260">
+                    <property name="text">
+                     <string>Icon</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_261">
+                    <property name="text">
+                     <string>Value</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QLabel" name="label_262">
+                    <property name="text">
+                     <string>Metric Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="1">
+                 <layout class="QGridLayout" name="gridLayout_49">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_263">
+                    <property name="text">
+                     <string>Icon</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_264">
+                    <property name="text">
+                     <string>Value</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QLabel" name="label_265">
+                    <property name="text">
+                     <string>Metric Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="1">
+                 <layout class="QGridLayout" name="gridLayout_50">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_266">
+                    <property name="text">
+                     <string>Icon</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_267">
+                    <property name="text">
+                     <string>Value</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QLabel" name="label_268">
+                    <property name="text">
+                     <string>Metric Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="gridLayoutWidget_23">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>1580</y>
+                 <width>121</width>
+                 <height>66</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_32">
+                <item>
+                 <widget class="QLabel" name="label_269">
+                  <property name="text">
+                   <string>Sunrise/Sunset Icon</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_270">
+                  <property name="text">
+                   <string>Sunrise Time</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_271">
+                  <property name="text">
+                   <string>Sunset Time</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="Line" name="line_18">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>1550</y>
+                 <width>551</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="1" column="2">
+            <widget class="QPushButton" name="natureNews_3">
+             <property name="text">
+              <string>News</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="localNews_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Home</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="worldNews_3">
+             <property name="text">
+              <string>Radar</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QPushButton" name="spaceNews_3">
+             <property name="text">
+              <string>Settings</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>607</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
