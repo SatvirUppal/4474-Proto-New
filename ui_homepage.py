@@ -60,7 +60,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_8 = QWidget()
         self.scrollAreaWidgetContents_8.setObjectName(u"scrollAreaWidgetContents_8")
-        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, -1046, 572, 1873))
+        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, -661, 572, 1873))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_8)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.searchGrid = QGridLayout()
@@ -562,7 +562,7 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_10 = QWidget()
         self.scrollAreaWidgetContents_10.setObjectName(u"scrollAreaWidgetContents_10")
         self.scrollAreaWidgetContents_10.setEnabled(True)
-        self.scrollAreaWidgetContents_10.setGeometry(QRect(-481, 0, 1024, 275))
+        self.scrollAreaWidgetContents_10.setGeometry(QRect(0, 0, 1024, 275))
         self.verticalLayout_31 = QVBoxLayout(self.scrollAreaWidgetContents_10)
         self.verticalLayout_31.setObjectName(u"verticalLayout_31")
         self.multiDay = QFrame(self.scrollAreaWidgetContents_10)
@@ -590,7 +590,7 @@ class Ui_MainWindow(object):
         self.day2Date.setFont(font3)
         self.day2Date.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_37.addWidget(self.day2Date, 0, 2, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+        self.gridLayout_37.addWidget(self.day2Date, 0, 2, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.day2Info = QGridLayout()
         self.day2Info.setObjectName(u"day2Info")
@@ -696,7 +696,7 @@ class Ui_MainWindow(object):
         self.day1Date.setFont(font3)
         self.day1Date.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_37.addWidget(self.day1Date, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+        self.gridLayout_37.addWidget(self.day1Date, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.day3Date = QLabel(self.multiDay)
         self.day3Date.setObjectName(u"day3Date")
@@ -705,7 +705,7 @@ class Ui_MainWindow(object):
         self.day3Date.setFont(font3)
         self.day3Date.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_37.addWidget(self.day3Date, 0, 4, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+        self.gridLayout_37.addWidget(self.day3Date, 0, 4, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.day1Info = QGridLayout()
         self.day1Info.setObjectName(u"day1Info")
@@ -794,7 +794,7 @@ class Ui_MainWindow(object):
         self.day4Date.setFont(font3)
         self.day4Date.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_37.addWidget(self.day4Date, 0, 6, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+        self.gridLayout_37.addWidget(self.day4Date, 0, 6, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.day2Image = QLabel(self.multiDay)
         self.day2Image.setObjectName(u"day2Image")
@@ -869,7 +869,7 @@ class Ui_MainWindow(object):
         self.day6Date.setFont(font3)
         self.day6Date.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_37.addWidget(self.day6Date, 0, 10, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+        self.gridLayout_37.addWidget(self.day6Date, 0, 10, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.line_3 = QFrame(self.multiDay)
         self.line_3.setObjectName(u"line_3")
@@ -901,7 +901,7 @@ class Ui_MainWindow(object):
         self.day5Date.setFont(font3)
         self.day5Date.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_37.addWidget(self.day5Date, 0, 8, 1, 1, Qt.AlignHCenter|Qt.AlignBottom)
+        self.gridLayout_37.addWidget(self.day5Date, 0, 8, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.day3Image = QLabel(self.multiDay)
         self.day3Image.setObjectName(u"day3Image")
@@ -970,6 +970,20 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addItem(self.horizontalSpacer_2, 0, 2, 2, 1)
 
+        self.imageCurr = QLabel(self.gridLayoutWidget_3)
+        self.imageCurr.setObjectName(u"imageCurr")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Maximum, QSizePolicy.Policy.Maximum)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.imageCurr.sizePolicy().hasHeightForWidth())
+        self.imageCurr.setSizePolicy(sizePolicy1)
+        self.imageCurr.setMaximumSize(QSize(150, 150))
+        self.imageCurr.setMouseTracking(False)
+        self.imageCurr.setScaledContents(True)
+        self.imageCurr.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_3.addWidget(self.imageCurr, 0, 3, 2, 1)
+
         self.tempHighCurr = QLabel(self.gridLayoutWidget_3)
         self.tempHighCurr.setObjectName(u"tempHighCurr")
         sizePolicy.setHeightForWidth(self.tempHighCurr.sizePolicy().hasHeightForWidth())
@@ -995,15 +1009,6 @@ class Ui_MainWindow(object):
         self.tempCurr.setAlignment(Qt.AlignCenter)
 
         self.gridLayout_3.addWidget(self.tempCurr, 0, 0, 2, 1)
-
-        self.imageCurr = QLabel(self.gridLayoutWidget_3)
-        self.imageCurr.setObjectName(u"imageCurr")
-        self.imageCurr.setMaximumSize(QSize(150, 150))
-        self.imageCurr.setMouseTracking(False)
-        self.imageCurr.setScaledContents(True)
-        self.imageCurr.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_3.addWidget(self.imageCurr, 0, 3, 2, 1)
 
 
         self.gridCurrent.addLayout(self.gridLayout_3, 0, 0, 1, 1)
@@ -1342,11 +1347,11 @@ class Ui_MainWindow(object):
 
         self.localButton_6 = QPushButton(self.layoutWidget_6)
         self.localButton_6.setObjectName(u"localButton_6")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.localButton_6.sizePolicy().hasHeightForWidth())
-        self.localButton_6.setSizePolicy(sizePolicy1)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.localButton_6.sizePolicy().hasHeightForWidth())
+        self.localButton_6.setSizePolicy(sizePolicy2)
 
         self.gridLayout_24.addWidget(self.localButton_6, 0, 0, 1, 1)
 
@@ -1693,8 +1698,8 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.home_btn = QPushButton(self.widget)
         self.home_btn.setObjectName(u"home_btn")
-        sizePolicy1.setHeightForWidth(self.home_btn.sizePolicy().hasHeightForWidth())
-        self.home_btn.setSizePolicy(sizePolicy1)
+        sizePolicy2.setHeightForWidth(self.home_btn.sizePolicy().hasHeightForWidth())
+        self.home_btn.setSizePolicy(sizePolicy2)
         icon = QIcon()
         icon.addFile(u":/Appicons/icons/home_icon.png", QSize(), QIcon.Normal, QIcon.Off)
         self.home_btn.setIcon(icon)
@@ -1839,9 +1844,9 @@ class Ui_MainWindow(object):
         self.day3Image.setText(QCoreApplication.translate("MainWindow", u"Date/Day", None))
         self.locationCurr.setText(QCoreApplication.translate("MainWindow", u"Location", None))
         self.tempLowCurr.setText(QCoreApplication.translate("MainWindow", u"TempLowDay", None))
+        self.imageCurr.setText(QCoreApplication.translate("MainWindow", u"Wimage", None))
         self.tempHighCurr.setText(QCoreApplication.translate("MainWindow", u"TempHighDay", None))
         self.tempCurr.setText("")
-        self.imageCurr.setText(QCoreApplication.translate("MainWindow", u"Wimage", None))
         self.label_93.setText(QCoreApplication.translate("MainWindow", u"UV-Index", None))
         self.label_91.setText("")
         self.uvIndex.setText(QCoreApplication.translate("MainWindow", u"Value", None))

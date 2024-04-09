@@ -78,7 +78,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-1046</y>
+               <y>-661</y>
                <width>572</width>
                <height>1873</height>
               </rect>
@@ -1062,7 +1062,7 @@
                      </property>
                      <property name="geometry">
                       <rect>
-                       <x>-481</x>
+                       <x>0</x>
                        <y>0</y>
                        <width>1024</width>
                        <height>275</height>
@@ -1116,7 +1116,7 @@
                          </property>
                          <item>
                           <layout class="QGridLayout" name="gridLayout_37">
-                           <item row="0" column="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item row="0" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                             <widget class="QLabel" name="day2Date">
                              <property name="minimumSize">
                               <size>
@@ -1324,7 +1324,7 @@
                              </item>
                             </layout>
                            </item>
-                           <item row="0" column="0" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item row="0" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                             <widget class="QLabel" name="day1Date">
                              <property name="minimumSize">
                               <size>
@@ -1352,7 +1352,7 @@
                              </property>
                             </widget>
                            </item>
-                           <item row="0" column="4" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item row="0" column="4" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                             <widget class="QLabel" name="day3Date">
                              <property name="minimumSize">
                               <size>
@@ -1530,7 +1530,7 @@
                              </item>
                             </layout>
                            </item>
-                           <item row="0" column="6" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item row="0" column="6" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                             <widget class="QLabel" name="day4Date">
                              <property name="minimumSize">
                               <size>
@@ -1699,7 +1699,7 @@
                              </item>
                             </layout>
                            </item>
-                           <item row="0" column="10" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item row="0" column="10" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                             <widget class="QLabel" name="day6Date">
                              <property name="minimumSize">
                               <size>
@@ -1766,7 +1766,7 @@
                              </property>
                             </widget>
                            </item>
-                           <item row="0" column="8" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item row="0" column="8" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                             <widget class="QLabel" name="day5Date">
                              <property name="minimumSize">
                               <size>
@@ -1929,6 +1929,34 @@
                       </property>
                      </spacer>
                     </item>
+                    <item row="0" column="3" rowspan="2">
+                     <widget class="QLabel" name="imageCurr">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>150</width>
+                        <height>150</height>
+                       </size>
+                      </property>
+                      <property name="mouseTracking">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>Wimage</string>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
                     <item row="0" column="1" alignment="Qt::AlignBottom">
                      <widget class="QLabel" name="tempHighCurr">
                       <property name="sizePolicy">
@@ -1971,28 +1999,6 @@
                       </property>
                       <property name="text">
                        <string/>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="3" rowspan="2">
-                     <widget class="QLabel" name="imageCurr">
-                      <property name="maximumSize">
-                       <size>
-                        <width>150</width>
-                        <height>150</height>
-                       </size>
-                      </property>
-                      <property name="mouseTracking">
-                       <bool>false</bool>
-                      </property>
-                      <property name="text">
-                       <string>Wimage</string>
-                      </property>
-                      <property name="scaledContents">
-                       <bool>true</bool>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignCenter</set>
