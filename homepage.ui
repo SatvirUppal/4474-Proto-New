@@ -28,7 +28,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>The Weather Network</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="enabled">
@@ -78,7 +78,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>0</y>
+               <y>-1046</y>
                <width>572</width>
                <height>1873</height>
               </rect>
@@ -161,7 +161,7 @@
                      </property>
                      <property name="geometry">
                       <rect>
-                       <x>-463</x>
+                       <x>-132</x>
                        <y>0</y>
                        <width>1010</width>
                        <height>271</height>
@@ -2013,8 +2013,38 @@
                   </rect>
                  </property>
                  <layout class="QGridLayout" name="gridMetrics">
+                  <item row="0" column="3">
+                   <widget class="Line" name="line_28">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4">
+                   <widget class="Line" name="line_26">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
                   <item row="0" column="2">
                    <layout class="QGridLayout" name="gridLayout_19">
+                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_93">
+                      <property name="font">
+                       <font>
+                        <family>Geneva</family>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>UV-Index</string>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
                     <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                      <widget class="QLabel" name="label_91">
                       <property name="maximumSize">
@@ -2044,22 +2074,6 @@
                       </property>
                       <property name="text">
                        <string>Value</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignBottom">
-                     <widget class="QLabel" name="label_93">
-                      <property name="font">
-                       <font>
-                        <family>Geneva</family>
-                        <pointsize>20</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>UV-Index</string>
-                      </property>
-                      <property name="wordWrap">
-                       <bool>true</bool>
                       </property>
                      </widget>
                     </item>
@@ -2119,6 +2133,28 @@
                   </item>
                   <item row="0" column="0">
                    <layout class="QGridLayout" name="gridLayout_14">
+                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_78">
+                      <property name="maximumSize">
+                       <size>
+                        <width>75</width>
+                        <height>75</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap resource="images.qrc">:/Appicons/icons/visibility.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
                     <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
                      <widget class="QLabel" name="airQual">
                       <property name="font">
@@ -2145,28 +2181,6 @@
                       </property>
                       <property name="wordWrap">
                        <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                     <widget class="QLabel" name="label_78">
-                      <property name="maximumSize">
-                       <size>
-                        <width>75</width>
-                        <height>75</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string/>
-                      </property>
-                      <property name="pixmap">
-                       <pixmap resource="images.qrc">:/Appicons/icons/visibility.png</pixmap>
-                      </property>
-                      <property name="scaledContents">
-                       <bool>true</bool>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -2228,6 +2242,27 @@
                    <widget class="Line" name="line_23">
                     <property name="orientation">
                      <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="Line" name="line_25">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="Line" name="line_27">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="Line" name="line_24">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
                     </property>
                    </widget>
                   </item>
@@ -2341,13 +2376,6 @@
                      </widget>
                     </item>
                    </layout>
-                  </item>
-                  <item row="1" column="0">
-                   <widget class="Line" name="line_24">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                   </widget>
                   </item>
                  </layout>
                 </widget>

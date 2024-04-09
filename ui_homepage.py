@@ -60,7 +60,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_8 = QWidget()
         self.scrollAreaWidgetContents_8.setObjectName(u"scrollAreaWidgetContents_8")
-        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, 0, 572, 1873))
+        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, -1046, 572, 1873))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_8)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.searchGrid = QGridLayout()
@@ -102,7 +102,7 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_9 = QWidget()
         self.scrollAreaWidgetContents_9.setObjectName(u"scrollAreaWidgetContents_9")
         self.scrollAreaWidgetContents_9.setEnabled(True)
-        self.scrollAreaWidgetContents_9.setGeometry(QRect(-463, 0, 1010, 271))
+        self.scrollAreaWidgetContents_9.setGeometry(QRect(-132, 0, 1010, 271))
         self.verticalLayout_23 = QVBoxLayout(self.scrollAreaWidgetContents_9)
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
         self.verticalLayout_23.setContentsMargins(5, 5, 5, 5)
@@ -1014,8 +1014,29 @@ class Ui_MainWindow(object):
         self.gridMetrics = QGridLayout(self.gridLayoutWidget_14)
         self.gridMetrics.setObjectName(u"gridMetrics")
         self.gridMetrics.setContentsMargins(0, 0, 0, 0)
+        self.line_28 = QFrame(self.gridLayoutWidget_14)
+        self.line_28.setObjectName(u"line_28")
+        self.line_28.setFrameShape(QFrame.VLine)
+        self.line_28.setFrameShadow(QFrame.Sunken)
+
+        self.gridMetrics.addWidget(self.line_28, 0, 3, 1, 1)
+
+        self.line_26 = QFrame(self.gridLayoutWidget_14)
+        self.line_26.setObjectName(u"line_26")
+        self.line_26.setFrameShape(QFrame.HLine)
+        self.line_26.setFrameShadow(QFrame.Sunken)
+
+        self.gridMetrics.addWidget(self.line_26, 1, 4, 1, 1)
+
         self.gridLayout_19 = QGridLayout()
         self.gridLayout_19.setObjectName(u"gridLayout_19")
+        self.label_93 = QLabel(self.gridLayoutWidget_14)
+        self.label_93.setObjectName(u"label_93")
+        self.label_93.setFont(font2)
+        self.label_93.setWordWrap(True)
+
+        self.gridLayout_19.addWidget(self.label_93, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
+
         self.label_91 = QLabel(self.gridLayoutWidget_14)
         self.label_91.setObjectName(u"label_91")
         self.label_91.setMaximumSize(QSize(65, 65))
@@ -1029,13 +1050,6 @@ class Ui_MainWindow(object):
         self.uvIndex.setFont(font1)
 
         self.gridLayout_19.addWidget(self.uvIndex, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.label_93 = QLabel(self.gridLayoutWidget_14)
-        self.label_93.setObjectName(u"label_93")
-        self.label_93.setFont(font2)
-        self.label_93.setWordWrap(True)
-
-        self.gridLayout_19.addWidget(self.label_93, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
 
 
         self.gridMetrics.addLayout(self.gridLayout_19, 0, 2, 1, 1)
@@ -1068,6 +1082,15 @@ class Ui_MainWindow(object):
 
         self.gridLayout_14 = QGridLayout()
         self.gridLayout_14.setObjectName(u"gridLayout_14")
+        self.label_78 = QLabel(self.gridLayoutWidget_14)
+        self.label_78.setObjectName(u"label_78")
+        self.label_78.setMaximumSize(QSize(75, 75))
+        self.label_78.setPixmap(QPixmap(u":/Appicons/icons/visibility.png"))
+        self.label_78.setScaledContents(True)
+        self.label_78.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_14.addWidget(self.label_78, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
         self.airQual = QLabel(self.gridLayoutWidget_14)
         self.airQual.setObjectName(u"airQual")
         self.airQual.setFont(font1)
@@ -1080,15 +1103,6 @@ class Ui_MainWindow(object):
         self.label_76.setWordWrap(True)
 
         self.gridLayout_14.addWidget(self.label_76, 0, 0, 1, 2, Qt.AlignHCenter|Qt.AlignBottom)
-
-        self.label_78 = QLabel(self.gridLayoutWidget_14)
-        self.label_78.setObjectName(u"label_78")
-        self.label_78.setMaximumSize(QSize(75, 75))
-        self.label_78.setPixmap(QPixmap(u":/Appicons/icons/visibility.png"))
-        self.label_78.setScaledContents(True)
-        self.label_78.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_14.addWidget(self.label_78, 1, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
 
 
         self.gridMetrics.addLayout(self.gridLayout_14, 0, 0, 1, 1)
@@ -1125,6 +1139,27 @@ class Ui_MainWindow(object):
         self.line_23.setFrameShadow(QFrame.Sunken)
 
         self.gridMetrics.addWidget(self.line_23, 2, 3, 1, 1)
+
+        self.line_25 = QFrame(self.gridLayoutWidget_14)
+        self.line_25.setObjectName(u"line_25")
+        self.line_25.setFrameShape(QFrame.HLine)
+        self.line_25.setFrameShadow(QFrame.Sunken)
+
+        self.gridMetrics.addWidget(self.line_25, 1, 2, 1, 1)
+
+        self.line_27 = QFrame(self.gridLayoutWidget_14)
+        self.line_27.setObjectName(u"line_27")
+        self.line_27.setFrameShape(QFrame.VLine)
+        self.line_27.setFrameShadow(QFrame.Sunken)
+
+        self.gridMetrics.addWidget(self.line_27, 0, 1, 1, 1)
+
+        self.line_24 = QFrame(self.gridLayoutWidget_14)
+        self.line_24.setObjectName(u"line_24")
+        self.line_24.setFrameShape(QFrame.HLine)
+        self.line_24.setFrameShadow(QFrame.Sunken)
+
+        self.gridMetrics.addWidget(self.line_24, 1, 0, 1, 1)
 
         self.gridLayout_15 = QGridLayout()
         self.gridLayout_15.setObjectName(u"gridLayout_15")
@@ -1184,13 +1219,6 @@ class Ui_MainWindow(object):
 
 
         self.gridMetrics.addLayout(self.gridLayout_16, 2, 4, 1, 1)
-
-        self.line_24 = QFrame(self.gridLayoutWidget_14)
-        self.line_24.setObjectName(u"line_24")
-        self.line_24.setFrameShape(QFrame.HLine)
-        self.line_24.setFrameShadow(QFrame.Sunken)
-
-        self.gridMetrics.addWidget(self.line_24, 1, 0, 1, 1)
 
         self.horizontalLayoutWidget_2 = QWidget(self.frame_7)
         self.horizontalLayoutWidget_2.setObjectName(u"horizontalLayoutWidget_2")
@@ -1725,7 +1753,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"The Weather Network", None))
         self.search_btn.setText(QCoreApplication.translate("MainWindow", u"Search", None))
         self.search_entry.setText("")
         self.search_entry.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search for a location...", None))
@@ -1814,15 +1842,15 @@ class Ui_MainWindow(object):
         self.tempHighCurr.setText(QCoreApplication.translate("MainWindow", u"TempHighDay", None))
         self.tempCurr.setText("")
         self.imageCurr.setText(QCoreApplication.translate("MainWindow", u"Wimage", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"UV-Index", None))
         self.label_91.setText("")
         self.uvIndex.setText(QCoreApplication.translate("MainWindow", u"Value", None))
-        self.label_93.setText(QCoreApplication.translate("MainWindow", u"UV-Index", None))
         self.label_85.setText("")
         self.windSpeed.setText(QCoreApplication.translate("MainWindow", u"Value", None))
         self.label_87.setText(QCoreApplication.translate("MainWindow", u"Wind", None))
+        self.label_78.setText("")
         self.airQual.setText(QCoreApplication.translate("MainWindow", u"Value", None))
         self.label_76.setText(QCoreApplication.translate("MainWindow", u"Visibility", None))
-        self.label_78.setText("")
         self.label_88.setText("")
         self.humidityIndex.setText(QCoreApplication.translate("MainWindow", u"Value", None))
         self.label_90.setText(QCoreApplication.translate("MainWindow", u"Humidity", None))
