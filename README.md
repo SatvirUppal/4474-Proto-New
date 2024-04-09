@@ -14,7 +14,7 @@ To run this project, ensure you have the following items installed:
       - Python 3.9.X or newer
   - Once everything has been installed, in the terminal of QtCreator, use the venv's instance of pip to run the following commands:
       - ```pip install openmeteo-requests```
-      - ``` pip install retry-requests```
+      - ```pip install retry-requests```
       - ```pip install requests-cache```
       - ```pip install pandas```
       - ```pip install pyinstaller```
