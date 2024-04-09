@@ -1,6 +1,6 @@
 CS4474B - Final Group Project
 
-This project aims to serve as a replacemen to The Weather Network mobile app. 
+This project aims to serve as a replacement to The Weather Network mobile app. 
 
 
 To run this project, ensure you have the following items installed:
