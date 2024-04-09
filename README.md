@@ -26,14 +26,14 @@ To create a .exe please use the following command:
 Once the command has finished, navigate to the newly created ```dist``` folder and run mainwindow.exe
 
 Here are a list of locations you are able to run the application from, please choose one:
-			      New York, NY,
-            Los Angeles, CA,
-            Chicago, IL,
-            Houston, TX,
-            Phoenix, AZ,
-            Philadelphia, PA,
-            San Antonio, TX,
-            San Diego, CA,
-            Dallas, TX,
-            San Jose, FL,
+	- New York, NY,
+	- Los Angeles, CA,
+	- Chicago, IL,
+	- Houston, TX,
+	- Phoenix, AZ,
+	- Philadelphia, PA,
+	- San Antonio, TX,
+	- San Diego, CA,
+	- Dallas, TX,
+	- San Jose, FL,
     
