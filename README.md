@@ -12,13 +12,14 @@ To run this project, ensure you have the following items installed:
       - If this is not installed, please contact Satvir Uppal (suppal46@uwo.ca) to resolve the issue, there sometimes is an issue with the code and we will be able to resolve it quickly via some finesse
       - PySide 6
       - Python 3.9.X or newer
-  - Once everything has been installed, in the terminal of QtCreator, use the venv's instance of pip to run the following commands:
+  - Once everything has been installed, in the terminal of QtCreator, use the venv's instance of pip to run the commands. To change the pip on the current machine run the following command in the terminal:  
+      - ```.\venv\Scripts\activate``` This should change to the venv of the project. You can proceed to run the commands below:
       - ```pip install openmeteo-requests```
       - ```pip install retry-requests```
       - ```pip install requests-cache```
       - ```pip install pandas```
       - ```pip install pyinstaller```
-Now that the dependencies have been installed, you should be able to use QtCreator to run the application as a test to ensure the dependencies are installed correctly. If they are not, please repeat the above section again but using the venv/ instance of pip.
+Now that the dependencies have been installed, you should be able to use QtCreator to run the application by clicking the green play arrow as a test to ensure the dependencies are installed correctly. If they are not, please repeat the above section again but using the venv/ instance of pip.
 
 To create a .exe please use the following command:
 ``` pyinstaller --noconsole --onefile --windowed mainwindow.py```
